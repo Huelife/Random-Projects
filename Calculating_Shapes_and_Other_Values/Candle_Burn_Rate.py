@@ -1,8 +1,10 @@
+#importing decimal and rounding to round up
 from decimal import Decimal, ROUND_UP
 
 print("Hi! Let's figure out your candle's burn rate!\nFirst, weigh your candle before your burn it.")
 print("")
 
+#while loop continues until a value >= 0 is chosen
 while True:
   try:
     iweight = float(input("What's the weight in grams?"))
@@ -17,6 +19,7 @@ print("")
 print("Ok! Now use your candle for at least 30 minutes while timing it.")
 print("")
 
+#while loop continues until a value >= 0 is chosen
 while True:
   try:
     time = int(input("How man minutes was your candle burning for?"))
@@ -27,6 +30,7 @@ while True:
       continue
     break
 
+#while loop continues until a value > 0 is chosen
 while True:
   try:
     fweight = float(input("How much does your candle weigh now?"))
@@ -37,6 +41,9 @@ while True:
       continue
     break
 
+#all values obtained by user input is calculated, rounded up, and printed for user
+#rate in grams/mins and how many total hours the candle can burn for
+#these actions are done outside of any of the previous while loops
 print("")
 tweight = (iweight - fweight)
 rate = tweight / time
