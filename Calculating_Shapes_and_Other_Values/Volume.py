@@ -56,7 +56,7 @@ while True:
           if radius <= 0:
             continue
           break
-#volume of a sphere is calculated and printed using user input value: radius. Pi value and rounding used
+#volume of a sphere is calculated and printed using user input value: radius. Pi value and rounding used to 0.1 of a decimal
       volume = (4/3) * pi * (radius ** 3)
       svolume = Decimal(str(volume)).quantize(Decimal('.1'))
       print("")
@@ -90,7 +90,7 @@ while True:
           if height <= 0:
             continue
           break
-#volume of a pyramid is calculated and printed using user input value: length, width, and height. Rounding used
+#volume of a pyramid is calculated and printed using user input value: length, width, and height. Rounding used to 0.1 of a decimal
       volume = (length * width * height) / 3
       svolume = Decimal(str(volume)).quantize(Decimal('.1'))
       print("")
