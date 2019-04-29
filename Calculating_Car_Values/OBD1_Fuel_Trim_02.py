@@ -1,3 +1,4 @@
+#printing to user to find Vfi value
 print("""Hi! Let's figure out your cars Learned Value Fuel Trims! 
 You will need a 10 megaohm+ input impedance voltmeter/
 multimeter for this procedure. First, warm up your car 
@@ -10,6 +11,7 @@ your red positive wire to the Vf1 pin and probe your
 black negative wire to the E1 pin.""")
 print("")
 
+#values used to determine cutoff for each percentage, voltages, and whether car is running rich, normal, or lean
 # 0-1.24v = rich, -11 to -20
 # 1.25-3.75v = normal, -10 to +10
 # 3.76-5v = Lean, +11 to +20
@@ -60,6 +62,7 @@ print("")
 # 4.875 = +19
 # 5.000 = +20
 
+#program loops until a float > 0 from user is obtained
 while True:
   try:
     vf = float(input("What is your voltage reading? "))
@@ -72,6 +75,8 @@ while True:
       print("Please enter a positive value.")
       print("")
       continue
+#positive voltage values are from 0-5 and give specific strings, anything over 5 just displays a generic string
+#voltage values are in increments of 0.125 and strings from -20 to + 20
     elif (vf >= 0.000 and vf < 1.250):
       f = "rich"
       if (vf == 0.000):
@@ -175,5 +180,6 @@ while True:
       break
     else:
       continue
+#printed results
 print("")
 print("Based on your input, your car is running " + f + ",\nwith a " + p + "% fuel trim.")
