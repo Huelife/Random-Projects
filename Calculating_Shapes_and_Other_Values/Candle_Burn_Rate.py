@@ -45,6 +45,7 @@ while True:
 #initial weight, time for candle burn, and final weight are from user input
 #total weight difference, rate of burn, total time in minutes, and total time in hours calculated from user input
 #these actions are done outside of any of the previous while loops
+#rate of burn and total time in hours rounded to 0.01 of a decimal
 print("")
 tweight = (iweight - fweight)
 rate = tweight / time
