@@ -1,4 +1,4 @@
-#importing decimal and math, decimal for rounding and math for pi
+#importing decimal and pi, decimal for rounding and pi for its value
 from decimal import Decimal
 from math import pi
 
@@ -12,6 +12,7 @@ while True:
   except ValueError:
     continue
   else:
+#user input for 'box'
     if shape in ("box", "BOX", "bOx", "BoX", "boX", "Box", "BOx"):
       while True:
         try:
