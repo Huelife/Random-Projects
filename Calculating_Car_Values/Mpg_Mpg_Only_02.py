@@ -1,8 +1,10 @@
+#importing decimal and rounding
 from decimal import Decimal, ROUND_UP, ROUND_DOWN
 
 print("Let's calculate City/Highway MPG!")
 print("")
 
+#program loops until a float > 0 is entered
 while True:
   try:
     mpg = float(input("What's your mpg? "))
@@ -14,6 +16,7 @@ while True:
     if mpg <= 0:
       print("Please enter a number > 0")
       continue
+#calculating, rounding, and printing 100% city and 100% highway mpg
     city100 = 0.857 * mpg
     highway100 = mpg / 0.807
 
