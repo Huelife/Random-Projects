@@ -29,6 +29,7 @@ inol_add = 0
 #for loop created, program loops based on total sets from user input
 for x in range(sets_total):
 #while loop continues until user inputs a float value > 0
+#fluff code, lines 33-42 can be deleted without affecting program, warmup_weight value isnt used
   while True:
     try:
       warmup_weight = float(input("What's your " + sets[x] + " warmup weight?"))
