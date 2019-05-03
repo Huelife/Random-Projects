@@ -19,20 +19,29 @@ while True:
     if pickup == "yes":
       pickup_random = randint(0,10)
       if pickup_random in (0,1,4,6,8,9,10):
+        print("_"*25)
         print("Found: Sword A!")
-        print(stats)
+        for stats_column in stats:
+          print(" ",stats_column,stats[stats_column])
+        print("_"*25)
       elif pickup_random in (2,5,7):
         stats["Damage"] = [220, 2, 2]
         stats["Agility"] = [190, 8, 8]
         stats["Speed"] = [190, 8, 8]
+        print("_"*25)
         print("Found: Sword B!")
-        print(stats)
+        for stats_column in stats:
+          print(" ",stats_column,stats[stats_column])
+        print("_"*25)
       elif pickup_random == 3:
         stats["Damage"] = [150, 1, 1]
         stats["Agility"] = [300, 10, 10]
         stats["Speed"] = [300, 10, 10]
+        print("_"*25)
         print("Found: Sword C!")
-        print(stats)
+        for stats_column in stats:
+          print(" ",stats_column,stats[stats_column])
+        print("_"*25)
     elif pickup == "no":
       break
     continue
