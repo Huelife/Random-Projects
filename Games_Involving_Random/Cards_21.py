@@ -11,8 +11,8 @@ print("")
 print("--"*20)
 
 #value of cards and image of cards displayed
-cards_letters = [0,"A",2,3,4,5,6,7,8,9,10,"J","Q","K"]
-cards_numbers = [0,1,2,3,4,5,6,7,8,9,10,10,10,10]
+cards_letters = (0,"A",2,3,4,5,6,7,8,9,10,"J","Q","K")
+cards_numbers = (0,1,2,3,4,5,6,7,8,9,10,10,10,10)
 #things I want to add later
 # if dealer = 16-21 stay
 #    hitme = input("Type HITME to add card, otherwise, type STAY")
