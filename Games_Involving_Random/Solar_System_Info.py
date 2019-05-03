@@ -1,8 +1,10 @@
+#importing randint to randomize what gets printed
 from random import randint
 
 print("Hi! There are currently 8 planets in our solar system. Here are some information that I have gathered for each.")
 print("")
 
+#empty variables for each planet with string values that should contain interesting facts
 # Mercury
 me1 = "me1"
 me2 = "me2"
@@ -94,13 +96,15 @@ n10 = "n10"
 
 while True:
   try:
-    p = input("Which planet would you like information on? ")
+    p = input("Which planet would you like information on? Enter 'Q' to quit. ")
   except ValueError:
     continue
   else:
     print("")
     roll = randint(1,10)
-    if p in ("mercury", "MERCURY", "Mercury", "MErcury", "m", "M"):
+    if p == "Q":
+      break
+    elif p in ("mercury", "MERCURY", "Mercury", "MErcury", "m", "M"):
       if roll == 1:
         print(me1)
       elif roll == 2:
@@ -121,9 +125,7 @@ while True:
         print(me9)
       elif roll == 10:
         print(me10)
-      else:
-        continue
-      break
+      continue
     elif p in ("venus", "VENUS", "Venus", "VEnus", "v", "V"):
       if roll == 1:
         print(v1)
@@ -145,9 +147,7 @@ while True:
         print(v9)
       elif roll == 10:
         print(v10)
-      else:
-        continue
-      break
+      continue
     elif p in ("earth", "EARTH", "Earth", "EArth", "e", "E"):
       if roll == 1:
         print(e1)
@@ -169,9 +169,7 @@ while True:
         print(e9)
       elif roll == 10:
         print(e10)
-      else:
-        continue
-      break
+      continue
     elif p in ("mars", "MARS", "Mars", "MArs", "m", "M"):
       if roll == 1:
         print(ma1)
@@ -193,9 +191,7 @@ while True:
         print(ma9)
       elif roll == 10:
         print(ma10)
-      else:
-        continue
-      break
+      continue
     elif p in ("jupiter", "JUPITER", "Jupiter", "JUpiter", "j", "J"):
       if roll == 1:
         print(j1)
@@ -217,9 +213,7 @@ while True:
         print(j9)
       elif roll == 10:
         print(j10)
-      else:
-        continue
-      break
+      continue
     elif p in ("saturn", "SATURN", "Saturn", "SAturn", "s", "S"):
       if roll == 1:
         print(s1)
@@ -241,9 +235,7 @@ while True:
         print(s9)
       elif roll == 10:
         print(s10)
-      else:
-        continue
-      break
+      continue
     elif p in ("uranus", "URANUS", "Uranus", "URanus", "u", "U"):
       if roll == 1:
         print(u1)
@@ -265,9 +257,7 @@ while True:
         print(u9)
       elif roll == 10:
         print(u10)
-      else:
-        continue
-      break
+      continue
     elif p in ("neptune", "NEPTUNE", "Neptune", "NEptune", "n", "N"):
       if roll == 1:
         print(n1)
@@ -289,9 +279,5 @@ while True:
         print(n9)
       elif roll == 10:
         print(n10)
-      else:
-        continue
-      break
-    else:
       continue
-    break
+    continue
