@@ -1,8 +1,10 @@
 print("Choose your weapon!")
 print("")
+#declaring weapon_list list
 weapon_list = ["Legendary Sword", "Legendary Shield", "Legendary Gun", "Legendary Bow", "Legendary Axe"]
 print(weapon_list)
 print("")
+#creating Weapon_stats class for attributes
 class Weapon_stats:
   def __init__(self,str,agi,spd,defe,vit,res,pie,rng):
     self.str = str
@@ -14,12 +16,14 @@ class Weapon_stats:
     self.pie = pie
     self.rng = rng
 
+#stat values for items in weapon_list
 legendary_sword = Weapon_stats("+100","+50","+50",0,0,0,0,0)
 legendary_shield = Weapon_stats(0,0,0,"+200","+200","+200",0,0)
 legendary_gun = Weapon_stats(0,"+100","+200",0,0,0,"+100",0)
 legendary_bow = Weapon_stats(0,"+200","+200",0,0,0,0,"+100")
 legendary_axe = Weapon_stats("+200","+25",0,0,"+50",0,0,0)
 
+#while loop continues until user inputs 'Quit'
 while True:
   try:
     weapon = input("Enter a number from 1-5 to see weapon name and attributes, otherwise, enter 'Quit' to leave")
@@ -74,5 +78,3 @@ while True:
       print("Vit:",legendary_axe.vit)
       print ("")
     continue
-
-
