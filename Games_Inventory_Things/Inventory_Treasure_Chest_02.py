@@ -11,7 +11,7 @@ pickup_random = 0
 while True:
   try:
     print("Please choose 'yes' or 'no'.")
-    pickup = input("Do you want to open the treasure chest?")
+    pickup = input("Do you want to open the treasure chest? ")
   except ValueError:
     continue
   else:
