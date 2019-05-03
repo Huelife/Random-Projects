@@ -104,7 +104,7 @@ while True:
     roll = randint(1,10)
     if p == "Q":
       break
-    elif p in ("mercury", "MERCURY", "Mercury", "MErcury", "m", "M"):
+    elif p in ("mercury", "MERCURY", "Mercury", "MErcury", "me", "Me"):
       if roll == 1:
         print(me1)
       elif roll == 2:
@@ -125,6 +125,7 @@ while True:
         print(me9)
       elif roll == 10:
         print(me10)
+      print("")
       continue
     elif p in ("venus", "VENUS", "Venus", "VEnus", "v", "V"):
       if roll == 1:
@@ -147,6 +148,7 @@ while True:
         print(v9)
       elif roll == 10:
         print(v10)
+      print("")
       continue
     elif p in ("earth", "EARTH", "Earth", "EArth", "e", "E"):
       if roll == 1:
@@ -169,8 +171,9 @@ while True:
         print(e9)
       elif roll == 10:
         print(e10)
+      print("")
       continue
-    elif p in ("mars", "MARS", "Mars", "MArs", "m", "M"):
+    elif p in ("mars", "MARS", "Mars", "MArs", "ma", "Ma"):
       if roll == 1:
         print(ma1)
       elif roll == 2:
@@ -191,6 +194,7 @@ while True:
         print(ma9)
       elif roll == 10:
         print(ma10)
+      print("")
       continue
     elif p in ("jupiter", "JUPITER", "Jupiter", "JUpiter", "j", "J"):
       if roll == 1:
@@ -213,6 +217,7 @@ while True:
         print(j9)
       elif roll == 10:
         print(j10)
+      print("")
       continue
     elif p in ("saturn", "SATURN", "Saturn", "SAturn", "s", "S"):
       if roll == 1:
@@ -235,6 +240,7 @@ while True:
         print(s9)
       elif roll == 10:
         print(s10)
+      print("")
       continue
     elif p in ("uranus", "URANUS", "Uranus", "URanus", "u", "U"):
       if roll == 1:
@@ -257,6 +263,7 @@ while True:
         print(u9)
       elif roll == 10:
         print(u10)
+      print("")
       continue
     elif p in ("neptune", "NEPTUNE", "Neptune", "NEptune", "n", "N"):
       if roll == 1:
@@ -279,5 +286,6 @@ while True:
         print(n9)
       elif roll == 10:
         print(n10)
+      print("")
       continue
     continue
