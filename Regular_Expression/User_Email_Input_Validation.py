@@ -1,5 +1,4 @@
 #simple user input email check
-
 import re
 
 user_email_check = r"[0-9a-z]+@[a-z]+\.[a-z]{2,3}"
