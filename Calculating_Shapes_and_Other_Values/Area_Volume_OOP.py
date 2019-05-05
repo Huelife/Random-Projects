@@ -1,10 +1,10 @@
 from math import pi
-#-----------------------Area-Volume-Super-Class----------------
+#-----------------------Area-Volume-Super-Class------------------
 class Area_Volume:
   shape_name = ""
   def __init__(self,name):
     self.name = name
-#-----------------------Area-Classes---------------------------
+#-----------------------Area-Classes-----------------------------
 class Circle_Area(Area_Volume):
   def __init__(self,name,radius,area):
     self.shape_name = "circle"
@@ -27,7 +27,7 @@ class Triangle_Area(Area_Volume):
     self.base = base
     self.area = (height * base) / 2
     super().__init__(name)
-#-----------------------Volume-Classes--------------------------
+#-----------------------Volume-Classes----------------------------
 class Sphere_Volume(Area_Volume):
   def __init__(self,name,radius,volume):
     self.shape_name = "sphere"
@@ -52,7 +52,7 @@ class Pyramid_Volume(Area_Volume):
     self.height = height
     self.volume = round(((length * width * height) / 3),1)
     super().__init__(name)
-#-----------------------Shapes-Dict-----------------------------
+#-----------------------Shapes-Dict-------------------------------
 shapes_dict = {
   "circle": Circle_Area,
   "square": Square_Area,
@@ -70,12 +70,13 @@ while True:
   else:
     if user_area_volume == "q":
       break
+#-----------------------while loop for area----------------------    
     elif user_area_volume == "area":
       while True:
         try:
           for key, value in shapes_dict.items():
             if key in ("circle","square","triangle"):
-              print(key)
+              print(*"  "+key)
           user_shape = input("Please choose a shape. 'q' to quit. ").lower()
         except ValueError:
           continue
@@ -87,7 +88,9 @@ while True:
               except ValueError:
                 continue
               else:
-                print(shapes_dict[user_shape]("",radius,"").area)
+                print("")
+                print("Area: "+str(shapes_dict[user_shape]("",radius,"").area)+" units^2")
+                print("")
               break
           elif user_shape in shapes_dict and user_shape == "square":
             while True:
@@ -97,7 +100,9 @@ while True:
               except ValueError:
                 continue
               else:
-                print(shapes_dict[user_shape]("",length,width,"").area)
+                print("")
+                print("Area: "+str(shapes_dict[user_shape]("",length,width,"").area)+" units^2")
+                print("")
               break
           elif user_shape in shapes_dict and user_shape == "triangle":
             while True:
@@ -107,17 +112,20 @@ while True:
               except ValueError:
                 continue
               else:
-                print(shapes_dict[user_shape]("",height,base,"").area)
+                print("")
+                print("Area: "+str(shapes_dict[user_shape]("",height,base,"").area)+" units^2")
+                print("")
               break
           elif user_shape == "q":
             break
           continue
+#-----------------------while loop for volume--------------------
     elif user_area_volume == "volume":
       while True:
         try:
           for key, value in shapes_dict.items():
             if key in ("sphere","box","pyramid"):
-              print(key)
+              print(*"  "+key)
           user_shape = input("Please choose a shape. 'q' to quit. ").lower()
         except ValueError:
           continue
@@ -129,7 +137,9 @@ while True:
               except ValueError:
                 continue
               else:
-                print(shapes_dict[user_shape]("",radius,"").volume)
+                print("")
+                print("Volume: "+str(shapes_dict[user_shape]("",radius,"").volume)+" units^3")
+                print("")
               break
           elif user_shape in shapes_dict and user_shape == "box":
             while True:
@@ -140,7 +150,9 @@ while True:
               except ValueError:
                 continue
               else:
-                print(shapes_dict[user_shape]("",length,width,height,"").volume)
+                print("")
+                print("Volume: "+str(shapes_dict[user_shape]("",length,width,height,"").volume)+" units^3")
+                print("")
               break
           elif user_shape in shapes_dict and user_shape == "pyramid":
             while True:
@@ -151,7 +163,9 @@ while True:
               except ValueError:
                 continue
               else:
-                print(shapes_dict[user_shape]("",length,width,height,"").volume)
+                print("")
+                print("Volume: "+str(shapes_dict[user_shape]("",length,width,height,"").volume)+" units^3")
+                print("")
               break
           elif user_shape == "q":
             break
