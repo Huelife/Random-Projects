@@ -56,7 +56,7 @@ class Pyramid_Volume(Area_Volume):
 shapes_dict = {
   "circle": Circle_Area,
   "square": Square_Area,
-  "triangle": Triangle_Area
+  "triangle": Triangle_Area,
   "sphere": Sphere_Volume,
   "box": Box_Volume,
   "pyramid": Pyramid_Volume
@@ -74,7 +74,8 @@ while True:
       while True:
         try:
           for key, value in shapes_dict.items():
-            print(key)
+            if key in ("circle","square","triangle"):
+              print(key)
           user_shape = input("Please choose a shape. 'q' to quit. ").lower()
         except ValueError:
           continue
@@ -115,7 +116,8 @@ while True:
       while True:
         try:
           for key, value in shapes_dict.items():
-            print(key)
+            if key in ("sphere","box","pyramid"):
+              print(key)
           user_shape = input("Please choose a shape. 'q' to quit. ").lower()
         except ValueError:
           continue
