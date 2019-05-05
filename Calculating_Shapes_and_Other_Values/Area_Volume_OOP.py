@@ -9,7 +9,7 @@ class Circle_Area(Area_Volume):
   def __init__(self,name,radius,area):
     self.shape_name = "circle"
     self.radius = radius
-    self.area = round((4 * pi * (radius ** 2)),1)
+    self.area = round((pi * (radius ** 2)),1)
     super().__init__(name)
 
 class Square_Area(Area_Volume):
