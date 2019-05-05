@@ -53,13 +53,10 @@ class Pyramid_Volume(Area_Volume):
     self.volume = round(((length * width * height) / 3),1)
     super().__init__(name)
 #-----------------------Shapes-Dict-----------------------------
-shapes_area_dict = {
+shapes_dict = {
   "circle": Circle_Area,
   "square": Square_Area,
   "triangle": Triangle_Area
-}
-
-shapes_volume_dict = {
   "sphere": Sphere_Volume,
   "box": Box_Volume,
   "pyramid": Pyramid_Volume
@@ -67,31 +64,31 @@ shapes_volume_dict = {
 #-----------------------while loop continues until user inputs 'q'
 while True:
   try:
-    user_input_av = input("Do you want to find 'area' or 'volume'? 'q' to quit. ").lower()
+    user_area_volume = input("Do you want to find 'area' or 'volume'? 'q' to quit. ").lower()
   except ValueError:
     continue
   else:
-    if user_input_av == "q":
+    if user_area_volume == "q":
       break
-    elif user_input_av == "area":
+    elif user_area_volume == "area":
       while True:
         try:
-          for key, value in shapes_area_dict.items():
+          for key, value in shapes_dict.items():
             print(key)
-          user_input_shape = input("Please choose a shape. 'q' to quit. ").lower()
+          user_shape = input("Please choose a shape. 'q' to quit. ").lower()
         except ValueError:
           continue
         else:
-          if user_input_shape in shapes_area_dict and user_input_shape == "circle":
+          if user_shape in shapes_dict and user_shape == "circle":
             while True:
               try:
                 radius = float(input("What's the radius? "))
               except ValueError:
                 continue
               else:
-                print(shapes_area_dict[user_input_shape]("",radius,"").area)
+                print(shapes_dict[user_shape]("",radius,"").area)
               break
-          elif user_input_shape in shapes_area_dict and user_input_shape == "square":
+          elif user_shape in shapes_dict and user_shape == "square":
             while True:
               try:
                 length = float(input("What's the length? "))
@@ -99,9 +96,9 @@ while True:
               except ValueError:
                 continue
               else:
-                print(shapes_area_dict[user_input_shape]("",length,width,"").area)
+                print(shapes_dict[user_shape]("",length,width,"").area)
               break
-          elif user_input_shape in shapes_area_dict and user_input_shape == "triangle":
+          elif user_shape in shapes_dict and user_shape == "triangle":
             while True:
               try:
                 height = float(input("What's the height? "))
@@ -109,30 +106,30 @@ while True:
               except ValueError:
                 continue
               else:
-                print(shapes_area_dict[user_input_shape]("",height,base,"").area)
+                print(shapes_dict[user_shape]("",height,base,"").area)
               break
-          elif user_input_shape == "q":
+          elif user_shape == "q":
             break
           continue
-    elif user_input_av == "volume":
+    elif user_area_volume == "volume":
       while True:
         try:
-          for key, value in shapes_volume_dict.items():
+          for key, value in shapes_dict.items():
             print(key)
-          user_input_shape = input("Please choose a shape. 'q' to quit. ").lower()
+          user_shape = input("Please choose a shape. 'q' to quit. ").lower()
         except ValueError:
           continue
         else:
-          if user_input_shape in shapes_volume_dict and user_input_shape == "sphere":
+          if user_shape in shapes_dict and user_shape == "sphere":
             while True:
               try:
                 radius = float(input("What's the radius? "))
               except ValueError:
                 continue
               else:
-                print(shapes_volume_dict[user_input_shape]("",radius,"").volume)
+                print(shapes_dict[user_shape]("",radius,"").volume)
               break
-          elif user_input_shape in shapes_volume_dict and user_input_shape == "box":
+          elif user_shape in shapes_dict and user_shape == "box":
             while True:
               try:
                 length = float(input("What's the length? "))
@@ -141,9 +138,9 @@ while True:
               except ValueError:
                 continue
               else:
-                print(shapes_volume_dict[user_input_shape]("",length,width,height,"").volume)
+                print(shapes_dict[user_shape]("",length,width,height,"").volume)
               break
-          elif user_input_shape in shapes_volume_dict and user_input_shape == "pyramid":
+          elif user_shape in shapes_dict and user_shape == "pyramid":
             while True:
               try:
                 length = float(input("What's the length? "))
@@ -152,9 +149,9 @@ while True:
               except ValueError:
                 continue
               else:
-                print(shapes_volume_dict[user_input_shape]("",length,width,height,"").volume)
+                print(shapes_dict[user_shape]("",length,width,height,"").volume)
               break
-          elif user_input_shape == "q":
+          elif user_shape == "q":
             break
           continue
     continue
