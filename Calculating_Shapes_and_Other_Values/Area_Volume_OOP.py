@@ -86,36 +86,68 @@ while True:
               try:
                 radius = float(input("What's the radius? "))
               except ValueError:
+                print("Please enter a number > 0.")
                 continue
               else:
+                if radius <= 0:
+                  print("Please enter a number > 0.")
+                  continue
                 print("")
                 print("Area: "+str(shapes_dict[user_shape]("",radius,"").area)+" units^2")
                 print("")
-              break
+                break
           elif user_shape in shapes_dict and user_shape == "square":
             while True:
               try:
                 length = float(input("What's the length? "))
-                width = float(input("What's the width? "))
               except ValueError:
+                print("Please enter a number > 0.")
                 continue
               else:
-                print("")
-                print("Area: "+str(shapes_dict[user_shape]("",length,width,"").area)+" units^2")
-                print("")
-              break
+                if length <= 0:
+                  print("Please enter a number > 0.")
+                  continue
+                while True:
+                  try:
+                    width = float(input("What's the width? "))
+                  except ValueError:
+                    print("Please enter a number > 0.")
+                    continue
+                  else:
+                    if width <= 0:
+                      print("Please enter a number > 0.")
+                      continue
+                    print("")
+                    print("Area: "+str(shapes_dict[user_shape]("",length,width,"").area)+" units^2")
+                    print("")
+                    break
+                break
           elif user_shape in shapes_dict and user_shape == "triangle":
             while True:
               try:
                 height = float(input("What's the height? "))
-                base = float(input("What's the base? "))
               except ValueError:
+                print("Please enter a number > 0.")
                 continue
               else:
-                print("")
-                print("Area: "+str(shapes_dict[user_shape]("",height,base,"").area)+" units^2")
-                print("")
-              break
+                if height <= 0:
+                  print("Please enter a number > 0.")
+                  continue
+                while True:
+                  try:
+                    base = float(input("What's the base? "))
+                  except ValueError:
+                    print("Please enter a number > 0.")
+                    continue
+                  else:
+                    if base <= 0:
+                      print("Please enter a number > 0.")
+                      continue 
+                    print("")
+                    print("Area: "+str(shapes_dict[user_shape]("",height,base,"").area)+" units^2")
+                    print("")
+                    break
+                break
           elif user_shape == "q":
             break
           continue
@@ -135,38 +167,53 @@ while True:
               try:
                 radius = float(input("What's the radius? "))
               except ValueError:
+                print("Please enter a number > 0.")
                 continue
               else:
+                if radius <= 0:
+                  print("Please enter a number > 0.")
+                  continue
                 print("")
                 print("Volume: "+str(shapes_dict[user_shape]("",radius,"").volume)+" units^3")
                 print("")
-              break
-          elif user_shape in shapes_dict and user_shape == "box":
+                break
+          elif user_shape in shapes_dict and user_shape == "box" or user_shape == "pyramid":
             while True:
               try:
                 length = float(input("What's the length? "))
-                width = float(input("What's the width? "))
-                height = float(input("What's the height? "))
               except ValueError:
+                print("Please enter a number > 0.")
                 continue
               else:
-                print("")
-                print("Volume: "+str(shapes_dict[user_shape]("",length,width,height,"").volume)+" units^3")
-                print("")
-              break
-          elif user_shape in shapes_dict and user_shape == "pyramid":
-            while True:
-              try:
-                length = float(input("What's the length? "))
-                width = float(input("What's the width? "))
-                height = float(input("What's the height? "))
-              except ValueError:
-                continue
-              else:
-                print("")
-                print("Volume: "+str(shapes_dict[user_shape]("",length,width,height,"").volume)+" units^3")
-                print("")
-              break
+                if length <= 0:
+                  print("Please enter a number > 0.")
+                  continue
+                while True:
+                  try:
+                    width = float(input("What's the width? "))
+                  except ValueError:
+                    print("Please enter a number > 0.")
+                    continue
+                  else:
+                    if width <= 0:
+                      print("Please enter a number > 0.")
+                      continue
+                    while True:
+                      try:
+                        height = float(input("What's the height? "))
+                      except ValueError:
+                        print("Please enter a number > 0.")
+                        continue
+                      else:
+                        if height <=0:
+                          print("Please enter a number > 0.")
+                          continue
+                        print("")
+                        print("Volume: "+str(shapes_dict[user_shape]("",length,width,height,"").volume)+" units^3")
+                        print("")
+                        break
+                    break
+                break
           elif user_shape == "q":
             break
           continue
