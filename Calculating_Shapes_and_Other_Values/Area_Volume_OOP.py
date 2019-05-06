@@ -13,11 +13,11 @@ class Circle_Area(Area_Volume):
     super().__init__(name)
 
 class Square_Area(Area_Volume):
-  def __init__(self,name,length,width,area):
+  def __init__(self,name,height,base,area):
     self.shape_name = "square"
-    self.length = length
-    self.width = width
-    self.area = length * width
+    self.height = height
+    self.base = base
+    self.area = height * base
     super().__init__(name)
 
 class Triangle_Area(Area_Volume):
@@ -96,33 +96,7 @@ while True:
                 print("Area: "+str(shapes_dict[user_shape]("",radius,"").area)+" units^2")
                 print("")
                 break
-          elif user_shape in shapes_dict and user_shape == "square":
-            while True:
-              try:
-                length = float(input("What's the length? "))
-              except ValueError:
-                print("Please enter a number > 0.")
-                continue
-              else:
-                if length <= 0:
-                  print("Please enter a number > 0.")
-                  continue
-                while True:
-                  try:
-                    width = float(input("What's the width? "))
-                  except ValueError:
-                    print("Please enter a number > 0.")
-                    continue
-                  else:
-                    if width <= 0:
-                      print("Please enter a number > 0.")
-                      continue
-                    print("")
-                    print("Area: "+str(shapes_dict[user_shape]("",length,width,"").area)+" units^2")
-                    print("")
-                    break
-                break
-          elif user_shape in shapes_dict and user_shape == "triangle":
+          elif user_shape in shapes_dict and user_shape == "square" or user_shape == "triangle":
             while True:
               try:
                 height = float(input("What's the height? "))
