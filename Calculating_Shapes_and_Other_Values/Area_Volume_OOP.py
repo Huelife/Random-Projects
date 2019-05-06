@@ -28,43 +28,46 @@ class Triangle_Area(Area_Volume):
     self.area = (height * base) / 2
     super().__init__(name)
 #-----------------------Volume-Classes----------------------------
-class Sphere_Volume(Area_Volume):
-  def __init__(self,name,radius,volume):
+class Sphere(Area_Volume):
+  def __init__(self,name,radius,volume,surface_area):
     self.shape_name = "sphere"
     self.radius = radius
     self.volume = round(((4/3) * pi * (radius ** 3)),1)
+    self.surface_area = round(((4 * pi) * (radius ** 2)),1)
     super().__init__(name)
 
-class Box_Volume(Area_Volume):
-  def __init__(self,name,length,width,height,volume):
+class Box(Area_Volume):
+  def __init__(self,name,length,width,height,volume,surface_area):
     self.shape_name = "box"
     self.length = length
     self.width = width
     self.height = height
     self.volume = length * width * height
+    self.surface_area = (2 * length * width) + (2 * width * height) + (2 * length * height)
     super().__init__(name)
 
-class Pyramid_Volume(Area_Volume):
-  def __init__(self,name,length,width,height,volume):
+class Pyramid(Area_Volume):
+  def __init__(self,name,length,width,height,volume,surface_area):
     self.shape_name = "pyramid"
     self.length = length
     self.width = width
     self.height = height
     self.volume = round(((length * width * height) / 3),1)
+    self.surface_area = (length * width) + (length % (((width / 2)**2) + (height**2))) + (width % (((length / 2)**2) + (height**2)))
     super().__init__(name)
 #-----------------------Shapes-Dict-------------------------------
 shapes_dict = {
   "circle": Circle_Area,
   "square": Square_Area,
   "triangle": Triangle_Area,
-  "sphere": Sphere_Volume,
-  "box": Box_Volume,
-  "pyramid": Pyramid_Volume
+  "sphere": Sphere,
+  "box": Box,
+  "pyramid": Pyramid
 }
 #-----------------------while loop continues until user inputs 'q'
 while True:
   try:
-    user_area_volume = input("Do you want to find 'area' or 'volume'? 'q' to quit. ").lower()
+    user_area_volume = input("Do you want to find 'area', 'volume', or 'surface area'? 'q' to quit. ").lower()
   except ValueError:
     continue
   else:
@@ -126,7 +129,7 @@ while True:
             break
           continue
 #-----------------------while loop for volume--------------------
-    elif user_area_volume == "volume":
+    elif user_area_volume == "volume" or user_area_volume == "surface area":
       while True:
         try:
           for key, value in shapes_dict.items():
@@ -147,9 +150,14 @@ while True:
                 if radius <= 0:
                   print("Please enter a number > 0.")
                   continue
-                print("")
-                print("Volume: "+str(shapes_dict[user_shape]("",radius,"").volume)+" units^3")
-                print("")
+                elif user_area_volume == "volume":
+                  print("")
+                  print("Volume: "+str(shapes_dict[user_shape]("",radius,"","").volume)+" units^3")
+                  print("")
+                elif user_area_volume == "surface area":
+                  print("")
+                  print("Surface Area: "+str(shapes_dict[user_shape]("",radius,"","").surface_area)+" units^2")
+                  print("")
                 break
           elif user_shape in shapes_dict and user_shape == "box" or user_shape == "pyramid":
             while True:
@@ -182,9 +190,14 @@ while True:
                         if height <=0:
                           print("Please enter a number > 0.")
                           continue
-                        print("")
-                        print("Volume: "+str(shapes_dict[user_shape]("",length,width,height,"").volume)+" units^3")
-                        print("")
+                        elif user_area_volume == "volume":
+                          print("")
+                          print("Volume: "+str(shapes_dict[user_shape]("",length,width,height,"","").volume)+" units^3")
+                          print("")
+                        elif user_area_volume == "surface_area":
+                          print("")
+                          print("Surface Area: "+str(shapes_dict[user_shape]("",length,width,height,"","").surface_area)+" units^2")
+                          print("")
                         break
                     break
                 break
