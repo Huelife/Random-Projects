@@ -53,7 +53,7 @@ class Pyramid(Area_Volume):
     self.width = width
     self.height = height
     self.volume = round(((length * width * height) / 3),1)
-    self.surface_area = (length * width) + (length % (((width / 2)**2) + (height**2))) + (width % (((length / 2)**2) + (height**2)))
+    self.surface_area = round(((length * width) + (length % (((width / 2)**2) + (height**2))) + (width % (((length / 2)**2) + (height**2)))),1)
     super().__init__(name)
 #-----------------------Shapes-Dict-------------------------------
 shapes_dict = {
