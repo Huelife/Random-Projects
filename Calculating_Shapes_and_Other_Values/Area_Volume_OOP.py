@@ -194,7 +194,7 @@ while True:
                           print("")
                           print("Volume: "+str(shapes_dict[user_shape]("",length,width,height,"","").volume)+" units^3")
                           print("")
-                        elif user_area_volume == "surface_area":
+                        elif user_area_volume == "surface area":
                           print("")
                           print("Surface Area: "+str(shapes_dict[user_shape]("",length,width,height,"","").surface_area)+" units^2")
                           print("")
