@@ -109,7 +109,7 @@ while True:
     continue
   else:
     print("")
-    roll = randint(1,10)
+    roll = randint(0,9)
     if planet == "Q":
       break
     elif planet in ("mercury", "MERCURY", "Mercury", "MErcury", "me", "Me"):
