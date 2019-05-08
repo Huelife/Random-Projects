@@ -1,5 +1,3 @@
-#a forked and modified program from SoloLearn
-
 #importing datetime and setting hour value to check current hour
 import datetime
 
@@ -11,26 +9,26 @@ current_time = now.hour
 #creating Game superclass
 class Game:
   class_name = ""
-  desc = ""
+  reply = ""
   objects = {}
   
   def __init__(self,name):
     self.name = name
     Game.objects[self.class_name] = self
-  def get_desc(self):
-    return self.desc
+  def get_reply(self):
+    return self.reply
 
 #creating Peter subclass
 class Peter(Game):
   def __init__(self,name):
     self.class_name = "peter"
     self.time = current_time
-    self._desc = "\nPeter:\nWhat's up!?"
+    self._reply = "\nPeter:\nWhat's up!?"
     super().__init__(name)
 
 #modifying and adding to Game superclass based on time of day
   @property
-  def desc(self):
+  def reply(self):
     if self.time == 11:
       greeting = "It's gym time!"
     elif self.time < 11 and self.time >= 0:
@@ -39,10 +37,10 @@ class Peter(Game):
       greeting = "Let's work!"
     elif self.time > 19 and self.time < 24:
       greeting = "Let's party!"
-    return self._desc + "\n\nPeter:\n" + greeting
-  @desc.setter
-  def desc(self,value):
-    self._desc = value
+    return self._reply + "\n\nPeter:\n" + greeting
+  @reply.setter
+  def reply(self,value):
+    self._reply = value
 
 peter = Peter("Pete")
 
@@ -51,12 +49,12 @@ class Rob(Game):
   def __init__(self,name):
     self.class_name = "rob"
     self.time = current_time
-    self._desc = "\nRob:\nYo!"
+    self._reply = "\nRob:\nYo!"
     super().__init__(name)
 
 #modifying and adding to Game superclass based on time of day
   @property
-  def desc(self):
+  def reply(self):
     if self.time == 14:
       greeting = "Let's go climbing!"
     elif self.time < 14 and self.time >= 0:
@@ -65,17 +63,17 @@ class Rob(Game):
       greeting = "Work time!"
     elif self.time > 19 and self.time < 24:
       greeting = "Let's go bar hopping!"
-    return self._desc + "\n\nRob:\n" + greeting
-  @desc.setter
-  def desc(self,value):
-    self._desc = value
+    return self._reply + "\n\nRob:\n" + greeting
+  @reply.setter
+  def reply(self,value):
+    self._reply = value
 
 rob = Rob("Robert")
 
 #hello function
 def hello(name):
   if name in Game.objects:
-    return Game.objects[name].get_desc()
+    return Game.objects[name].get_reply()
   else:
     return "There's no {} here.".format(name)
 
