@@ -81,7 +81,7 @@ def hello(name):
 
 #input function and splitting user input into 2 variables
 def get_input():
-  command = input("").split()
+  command = input("").lower().split()
   speak_word = command[0]
   if speak_word in speak:
     speak_verb = speak[speak_word]
