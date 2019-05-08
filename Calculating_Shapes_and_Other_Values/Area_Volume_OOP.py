@@ -77,9 +77,7 @@ while True:
     elif user_area_volume == "area":
       while True:
         try:
-          for key, value in shapes_dict.items():
-            if key in ("circle","square","triangle"):
-              print(*"  "+key)
+          print("  circle\n  square\n  triangle")
           user_shape = input("Please choose a shape. 'q' to quit. ").lower()
         except ValueError:
           continue
@@ -132,9 +130,7 @@ while True:
     elif user_area_volume == "volume" or user_area_volume == "surface area":
       while True:
         try:
-          for key, value in shapes_dict.items():
-            if key in ("sphere","box","pyramid"):
-              print(*"  "+key)
+          print("  sphere\n  box\n  pyramid")
           user_shape = input("Please choose a shape. 'q' to quit. ").lower()
         except ValueError:
           continue
