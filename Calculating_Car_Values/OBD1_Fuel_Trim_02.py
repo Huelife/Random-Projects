@@ -61,125 +61,51 @@ print("")
 # 4.750 = +18
 # 4.875 = +19
 # 5.000 = +20
+# 5.125 = +21
+# 5.250 = +22
+# 5.375 = +23
+# 5.500 = +24
+# 5.625 = +25
+# 5.750 = +26
+# 5.875 = +27
+# 6.000 = +28
+# 6.125 = +29
+# 6.250 = +30
 
-#program loops until a float > 0 from user is obtained
+x_range = -124
+y_range = 1
+percentage = -20
+fuel_trim_percentage = 0
+fuel_trim = ""
+#program loops until user inputs a float value
 while True:
   try:
-    vf = float(input("What is your voltage reading? "))
+    vf = float(input("What is your voltage reading? "))*1000
   except ValueError:
     print("Not a number!")
-    print("")
     continue
   else:
-    if (vf < 0.000):
-      print("Please enter a positive value.")
-      print("")
-      continue
-#positive voltage values are from 0-5 and give specific strings, anything over 5 just displays a generic string
-#voltage values are in increments of 0.125 and strings from -20 to + 20
-    elif (vf >= 0.000 and vf < 1.250):
-      f = "rich"
-      if (vf == 0.000):
-        p = "-20"
-      elif (vf > 0.000 and vf <= 0.125):
-        p = "-19"
-      elif (vf > 0.125 and vf <= 0.250):
-        p = "-18"
-      elif (vf > 0.250 and vf <= 0.375):
-        p = "-17"
-      elif (vf > 0.375 and vf <= 0.500):
-        p = "-16"
-      elif (vf > 0.500 and vf <= 0.625):
-        p = "-15"
-      elif (vf > 0.625 and vf <= 0.750):
-        p = "-14"
-      elif (vf > 0.750 and vf <= 0.875):
-        p = "-13"
-      elif (vf > 0.875 and vf <= 1.000):
-        p = "-12"
-      elif (vf > 1.000 and vf <= 1.125):
-        p = "-11"
-      else:
-        continue
-      break
-    elif (vf >= 1.250 and vf <= 3.750):
-      f = "normal"
-      if (vf > 1.125 and vf <= 1.250):
-        p = "-10"
-      elif (vf > 1.250 and vf <= 1.375):
-        p = "-9"
-      elif (vf > 1.375 and vf <= 1.500):
-        p = "-8"
-      elif (vf > 1.500 and vf <= 1.625):
-        p = "-7"
-      elif (vf > 1.625 and vf <= 1.750):
-        p = "-6"
-      elif (vf > 1.750 and vf <= 1.875):
-        p = "-5"
-      elif (vf > 1.875 and vf <= 2.000):
-        p = "-4"
-      elif (vf > 2.000 and vf <= 2.125):
-        p = "-3"
-      elif (vf > 2.125 and vf <= 2.250):
-        p = "-2"
-      elif (vf > 2.250 and vf <= 2.375):
-        p = "-1"
-      elif (vf > 2.375 and vf <= 2.500):
-        p = "0"
-      elif (vf > 2.500 and vf <= 2.625):
-        p = "+1"
-      elif (vf > 2.625 and vf <= 2.750):
-        p = "+2"
-      elif (vf > 2.750 and vf <= 2.875):
-        p = "+3"
-      elif (vf > 2.875 and vf <= 3.000):
-        p = "+4"
-      elif (vf > 3.000 and vf <= 3.125):
-        p = "+5"
-      elif (vf > 3.125 and vf <= 3.250):
-        p = "+6"
-      elif (vf > 3.250 and vf <= 3.375):
-        p = "+7"
-      elif (vf > 3.375 and vf <= 3.500):
-        p = "+8"
-      elif (vf > 3.500 and vf <= 3.625):
-        p = "+9"
-      elif (vf > 3.625 and vf <= 3.750):
-        p = "+10"
-      else:
-        continue
-      break
-    elif (vf > 3.750 and vf <= 5.000):
-      f = "lean"
-      if (vf > 3.750 and vf <= 3.875):
-        p = "+11"
-      elif (vf > 3.875 and vf <= 4.000):
-        p = "+12"
-      elif (vf > 4.000 and vf <= 4.125):
-        p = "+13"
-      elif (vf > 4.125 and vf <= 4.250):
-        p = "+14"
-      elif (vf > 4.250 and vf <= 4.375):
-        p = "+15"
-      elif (vf > 4.375 and vf <= 4.500):
-        p = "+16"
-      elif (vf > 4.500 and vf <= 4.625):
-        p = "+17"
-      elif (vf > 4.625 and vf <= 4.750):
-        p = "+18"
-      elif (vf > 4.750 and vf <= 4.875):
-        p = "+19"
-      elif (vf > 4.875 and vf <= 5.000):
-        p = "+20"
-      else:
-        continue
-      break
-    elif (vf > 5.000):
-      f = "SUPER LEAN"
-      p = "+2x value, out of range"
-      break
-    else:
-      continue
+    for i in range(51):
+      if vf in range(x_range,y_range):
+        fuel_trim_percentage = percentage
+      elif vf < -125:
+        fuel_trim_percentage = "-2x"
+      elif vf > 6250:
+        fuel_trim_percentage = "3x"
+      if vf < 0:
+        fuel_trim = "SUPER RICH"
+      elif vf in range(-1,1250):
+        fuel_trim = "rich"
+      elif vf in range(1249,3751):
+        fuel_trim = "normal"
+      elif vf in range(3750,5001):
+        fuel_trim = "lean"
+      elif vf > 5000:
+        fuel_trim = "SUPER LEAN"
+      percentage += 1
+      x_range += 125
+      y_range += 125      
+    break
 #printed results
 print("")
-print("Based on your input, your car is running " + f + ",\nwith a " + p + "% fuel trim.")
+print("Your car is running " + str(fuel_trim) + ",\nwith a " + str(fuel_trim_percentage) + "% fuel trim.")
