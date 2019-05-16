@@ -6,7 +6,7 @@ print("")
 #while loop continues until a value >= 0 is chosen
 while True:
   try:
-    iweight = float(input("What's the weight in grams?"))
+    iweight = float(input("What's the weight in grams?  "))
   except ValueError:
     continue
   else:
@@ -20,7 +20,7 @@ print("")
 #while loop continues until a value >= 0 is chosen
 while True:
   try:
-    time = int(input("How man minutes was your candle burning for?"))
+    time = int(input("How man minutes was your candle burning for? "))
   except ValueError:
     continue
   else:
@@ -30,7 +30,7 @@ while True:
 #while loop continues until a value > 0 is chosen
 while True:
   try:
-    fweight = float(input("How much does your candle weigh now?"))
+    fweight = float(input("How much does your candle weigh now? "))
   except ValueError:
     continue
   else:
