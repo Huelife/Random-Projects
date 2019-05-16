@@ -1,17 +1,14 @@
 #importing decimal for rounding
 from decimal import Decimal
-
 #INOL stands for Intensity Number Of Lifts
 print("Let's figure out your daily INOL value!")
 print("")
-
 #sets tuple created with 12 possible values that can be called
 sets = ("first","second","third","fourth","fifth","sixth","seventh","eighth","ninth","tenth","eleventh","twelfth")
-
 #while loop created to determine total sets. While loop continues until user inputs an int > 0, but less than 13 
 while True:
   try:
-    sets_total = int(input("How many warmup sets do you have?"))
+    sets_total = int(input("How many warmup sets do you have? "))
   except ValueError:
     continue
   else:
@@ -22,17 +19,15 @@ while True:
       print("12 max sets!")
       continue
     break
-
 #inol_add created so inol value gets added based on total number of sets
 inol_add = 0
-
 #for loop created, program loops based on total sets from user input
 for x in range(sets_total):
 #while loop continues until user inputs a float value > 0
 #fluff code, lines 33-42 can be deleted without affecting program, warmup_weight value isnt used
   while True:
     try:
-      warmup_weight = float(input("What's your " + sets[x] + " warmup weight?"))
+      warmup_weight = float(input("What's your " + sets[x] + " warmup weight? "))
     except ValueError:
       continue
     else:
@@ -43,7 +38,7 @@ for x in range(sets_total):
 #while loop continues until user inputs a float value > 0 and <= 100
   while True:
     try:
-      warmup_percentage = float(input("What's your " + sets[x] + " warmup percentage of your 1 rep max?"))
+      warmup_percentage = float(input("What's your " + sets[x] + " warmup percentage of your 1 rep max? "))
     except ValueError:
       continue
     else:
@@ -54,7 +49,7 @@ for x in range(sets_total):
 #while loop continues until user inputs an int value > 0
   while True:
     try:
-      warmup_set = int(input("How many sets in your " + sets[x] + " warmup?"))
+      warmup_set = int(input("How many sets in your " + sets[x] + " warmup? "))
     except ValueError:
       continue
     else:
@@ -65,7 +60,7 @@ for x in range(sets_total):
 #while loop continues until user inputs an int value > 0
   while True:
     try:
-      warmup_rep = int(input("How many reps in your " + sets[x] + " warmup?"))
+      warmup_rep = int(input("How many reps in your " + sets[x] + " warmup? "))
     except ValueError:
       continue
     else:
@@ -83,8 +78,8 @@ for x in range(sets_total):
 #inol for current set is added to inol_add
       inol_add += swarmup_inol
       print("")
-      print("INOL: " + str(swarmup_inol))
+      print("INOL: {}".format(swarmup_inol))
       print("")
       break
 #total inol value from each added set is printed
-print("Total warmup INOL: " + str(inol_add))
+print("Total warmup INOL: {}".format(inol_add))
