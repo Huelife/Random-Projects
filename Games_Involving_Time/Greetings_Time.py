@@ -13,33 +13,28 @@ bob = Greetings("How's the weather,","Afternoon,","Evening,")
 peter = Greetings("What's up, how's your morning so far","Good afternoon,","How's your evening,")
 anne = Greetings("How's your morning,","Good day,","Good evening,")
 
+name_dict = {
+  "bob": bob,
+  "peter": peter,
+  "anne": anne
+}
+
 while True:
   try:
-    name = input("Choose 'Bob', 'Peter', or 'Anne'.")
+    name = input("Choose 'Bob', 'Peter', or 'Anne'. ").lower()
   except ValueError:
     continue
   else:
-    if name == "Bob":
-      if now.hour >= 0 and now.hour < 12:
-        print(bob.morning,name+"!?")
-      elif now.hour >= 12 and now.hour < 18:
-        print(bob.afternoon,name+"!")
-      elif now.hour >= 18 and now.hour < 24:
-        print(bob.evening,name+"!")
-    elif name == "Peter":
-      if now.hour >= 0 and now.hour < 12:
-        print(peter.morning,name+"!?")
-      elif now.hour >= 12 and now.hour < 18:
-        print(peter.afternoon,name+"!")
-      elif now.hour >= 18 and now.hour < 24:
-        print(peter.evening,name+"!?")
-    elif name == "Anne":
-      if now.hour >= 0 and now.hour < 12:
-        print(anne.morning,name+"!?")
-      elif now.hour >= 12 and now.hour < 18:
-        print(anne.afternoon,name+"!")
-      elif now.hour >= 18 and now.hour < 24:
-        print(anne.evening,name+"!")
-    else:
-      continue
+    for key,value in name_dict.items():
+      if name in name_dict and name == key:
+        if now.hour >= 0 and now.hour < 12:
+          print(value.morning,name.title()+"!?")
+        elif now.hour >= 12 and now.hour < 18:
+          print(value.afternoon,name.title()+"!")
+        elif now.hour >= 18 and now.hour < 24:
+          print(value.evening,name.title()+"!")
+        break
+      else:
+        continue
+      break
     break
