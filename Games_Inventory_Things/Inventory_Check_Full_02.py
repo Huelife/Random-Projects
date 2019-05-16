@@ -1,7 +1,6 @@
 #full inventory check program
 print("")
 print("Let's check your inventory!")
-
 #setting item class for attributes
 class Item_Stats:
   def __init__(self,stre,agi,spd,defe,vit,res,pie,rng,name,desc):
@@ -17,7 +16,6 @@ class Item_Stats:
     self.desc = desc
   def __repr__(self):
     return str(self.name)
-
 #setting individual item stats from inventory
 bronze_sword = Item_Stats("+100","+50","+50",0,0,0,0,0,"Bronze Sword","A cheap, but effective sword for combat.")
 steel_sword = Item_Stats("+150","+100","+100",0,0,0,0,0,"Steel Sword","A strong, sturdy sword for combat.")
@@ -46,7 +44,6 @@ legendary_boots = Item_Stats(0,"+300","+300",0,0,"+55",0,0,"Legendary Boots","A 
 cloth_gloves = Item_Stats("+50","+100","+100",0,0,0,0,0,"Cloth Gloves","A cheap, but effective pair of gloves for defense.")
 leather_gloves = Item_Stats("+100","+150","+150",0,0,0,0,0,"Leather Gloves","A strong, sturdy pair of gloves for defense.")
 legendary_gloves = Item_Stats("+200","+300","+300",0,0,0,0,0,"Legendary Gloves","A powerful pair of gloves for defense.")
-
 #setting items in swords,helmets,armors,shields,guns,boots,and gloves list
 swords = [bronze_sword,bronze_sword,bronze_sword,steel_sword,steel_sword,legendary_sword]
 helmets = [bronze_helmet,bronze_helmet,bronze_helmet,steel_helmet,steel_helmet,legendary_helmet]
@@ -55,11 +52,9 @@ shields = [bronze_shield,bronze_shield,bronze_shield,steel_shield,steel_shield,l
 guns = [bronze_gun,bronze_gun,bronze_gun,steel_gun,steel_gun,legendary_gun]
 boots = [cloth_boots,cloth_boots,cloth_boots,leather_boots,leather_boots,legendary_boots]
 gloves = [cloth_gloves,cloth_gloves,cloth_gloves,leather_gloves,leather_gloves,legendary_gloves]
-
 #setting items in inventory_gear tuple and inventory_gear_list tuple
 inventory_gear = (swords,helmets,armors,shields,guns,boots,gloves)
 inventory_gear_list = ("Swords","Helmets","Armors","Shields","Guns","Boots","Gloves")
-
 #while loop continues until user inputs 'Quit'
 while True:
   try:
@@ -74,7 +69,7 @@ while True:
         try:
           print("Gear options:")
           for inventory_gear_list_names in inventory_gear_list:
-            print(" "+str(inventory_gear_list_names))
+            print(" {}".format(inventory_gear_list_names))
           check_gear = input("Enter 'Check Swords' or other gear options. Enter 'Quit' to leave. ")
         except ValueError:
           continue
@@ -85,9 +80,9 @@ while True:
 #while loop for sword stats
             while True:
               try:
-                print("Sword list("+str(len(swords))+"):")
+                print("Sword list({}):".format(len(swords)))
                 for swords_list in swords:
-                  print(" "+str(swords_list))
+                  print(" {}".format(swords_list))
                 check_swords_stats = input("Enter 'Check Bronze Sword' or other sword options. Enter 'Quit' to leave. ")
               except ValueError:
                 continue
@@ -133,9 +128,9 @@ while True:
 #while loop for helmet stats
             while True:
               try:
-                print("Helmet list("+str(len(helmets))+"):")
+                print("Helmet list({}):".format(len(helmets)))
                 for helmets_list in helmets:
-                  print(" "+str(helmets_list))
+                  print(" {}".format(helmets_list))
                 check_helmets_stats = input("Enter 'Check Bronze Helmet' or other helmet options. Enter 'Quit' to leave. ")
               except ValueError:
                 continue
@@ -181,9 +176,9 @@ while True:
 #while loop for armor stats
             while True:
               try:
-                print("Armor list("+str(len(armors))+"):")
+                print("Armor list({}):".format(len(armors)))
                 for armors_list in armors:
-                  print(" "+str(armors_list))
+                  print(" {}".format(armors_list))
                 check_armors_stats = input("Enter 'Check Bronze Armor' or other armor options. Enter 'Quit' to leave. ")
               except ValueError:
                 continue
@@ -229,9 +224,9 @@ while True:
 #while loop for shield stats
             while True:
               try:
-                print("Shield list("+str(len(shields))+"):")
+                print("Shield list({}):".format(len(shields)))
                 for shields_list in shields:
-                  print(" "+str(shields_list))
+                  print(" {}".format(shields_list))
                 check_shields_stats = input("Enter 'Check Bronze Shield' or other shield options. Enter 'Quit' to leave. ")
               except ValueError:
                 continue
@@ -277,9 +272,9 @@ while True:
 #while loop for gun stats
             while True:
               try:
-                print("Guns list("+str(len(guns))+"):")
+                print("Guns list({}):".format(len(guns)))
                 for guns_list in guns:
-                  print(" "+str(guns_list))
+                  print(" {}".format(guns_list))
                 check_guns_stats = input("Enter 'Check Bronze Guns' or other gun options. Enter 'Quit' to leave. ")
               except ValueError:
                 continue
@@ -328,9 +323,9 @@ while True:
 #while loop for boots stats
             while True:
               try:
-                print("Boots list("+str(len(boots))+"):")
+                print("Boots list({}):".format(len(boots)))
                 for boots_list in boots:
-                  print(" "+str(boots_list))
+                  print(" {}".format(boots_list))
                 check_boots_stats = input("Enter 'Check Cloth Boots' or other boots options. Enter 'Quit' to leave. ")
               except ValueError:
                 continue
@@ -376,9 +371,9 @@ while True:
 #while loop for gloves stats
             while True:
               try:
-                print("Gloves list("+str(len(gloves))+"):")
+                print("Gloves list({}):".format(len(gloves)))
                 for gloves_list in gloves:
-                  print(" "+str(gloves_list))
+                  print(" {}".format(gloves_list))
                 check_gloves_stats = input("Enter 'Check Cloth Gloves' or other gloves options. Enter 'Quit' to leave. ")
               except ValueError:
                 continue
