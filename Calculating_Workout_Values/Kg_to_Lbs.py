@@ -1,6 +1,5 @@
 print ("Let's convert pounds and kilograms!")
 print ("")
-
 #while loop continues until a float value > 0 is given
 while True:
   try:
@@ -21,7 +20,7 @@ while True:
   else:
 #user input can be 4 different iterations of lbs
 #converting kgs value to lbs
-    if units in("lbs","lb","l","Ls"):
+    if units in("lbs","lb","l","ls"):
       solution = weight * 2.20
       unit1 = "kgs"
       unit2 = "lbs"
@@ -36,4 +35,4 @@ while True:
     break
 #printing initial weight with units and converted weight with units
 print("")
-print("You converted " + str(weight) + " " + unit1 + " to " + str(solution) + " " + unit2)
+print("You converted {} {} to {} {}.".format(weight,unit1,solution,unit2))
