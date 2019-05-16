@@ -1,19 +1,18 @@
 print("Let's check your inventory!")
-
 #setting items in inventory list
 inventory = ["sword","helmet","armor","shield","gun","boots","gloves"]
 #while loop continues until user inputs 'check' string
 while True:
   try:
-    check = input("Type 'check' to check inventory.")
+    check = input("Type 'check' to check inventory. ")
   except ValueError:
     continue
   else:
     if check == "check":
 #printing number of items in inventory list
       print("")
-      print("You have "+str(len(inventory))+" items in your inventory.")
-      print("Let's check what you have: "+str(inventory))
+      print("You have {} items in your inventory.".format(len(inventory)))
+      print("Let's check what you have: {}".format(inventory))
       print("")
       break
     else:
@@ -29,14 +28,14 @@ add_sword()
 #while loop continues until user inputs 'sword' string
 while True:
   try:
-    sword_value = input("Type 'sword' to check the total number of swords in your inventory.")
+    sword_value = input("Type 'sword' to check the total number of swords in your inventory. ")
   except ValueError:
     continue
   else:
     if sword_value == "sword":
 #entering 'sword' prints total number of 'swords' in inventory list
       print("")
-      print("You have ("+str(inventory.count("sword"))+") swords")
+      print("You have ({}) swords".format(inventory.count("sword")))
       break
     else:
       continue
