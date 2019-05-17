@@ -10,7 +10,7 @@ class Greetings:
     self.evening = evening
 
 bob = Greetings("How's the weather,","Afternoon,","Evening,")
-peter = Greetings("What's up, how's your morning so far","Good afternoon,","How's your evening,")
+peter = Greetings("What's up, how's your morning so far","Good afternoon,","It's a great evening,")
 anne = Greetings("How's your morning,","Good day,","Good evening,")
 
 name_dict = {
