@@ -64,21 +64,19 @@ shapes_dict = {
   "box": Box,
   "pyramid": Pyramid
 }
-#-----------------------while loop continues until user inputs 'q'
+#-----------------------while loop continues until user chooses an option
 while True:
   try:
-    user_area_volume = input("Do you want to find 'area', 'volume', or 'surface area'? 'q' to quit. ").lower()
+    user_area_volume = input("Do you want to find 'area', 'volume', or 'surface area'? ").lower()
   except ValueError:
     continue
   else:
-    if user_area_volume == "q":
-      break
 #-----------------------while loop for area----------------------    
-    elif user_area_volume == "area":
+    if user_area_volume == "area":
       while True:
         try:
           print("  circle\n  square\n  triangle")
-          user_shape = input("Please choose a shape. 'q' to quit. ").lower()
+          user_shape = input("Please choose a shape. ").lower()
         except ValueError:
           continue
         else:
@@ -123,15 +121,13 @@ while True:
                     print("")
                     break
                 break
-          elif user_shape == "q":
-            break
-          continue
+          break
 #-----------------------while loop for volume--------------------
     elif user_area_volume == "volume" or user_area_volume == "surface area":
       while True:
         try:
           print("  sphere\n  box\n  pyramid")
-          user_shape = input("Please choose a shape. 'q' to quit. ").lower()
+          user_shape = input("Please choose a shape. ").lower()
         except ValueError:
           continue
         else:
@@ -197,7 +193,5 @@ while True:
                         break
                     break
                 break
-          elif user_shape == "q":
-            break
-          continue
-    continue
+          break
+    break
