@@ -27,7 +27,7 @@ for x in range(sets_total):
 #fluff code, lines 33-42 can be deleted without affecting program, warmup_weight value isnt used
   while True:
     try:
-      warmup_weight = float(input("What's your " + sets[x] + " warmup weight? "))
+      warmup_weight = float(input("What's your {} warmup weight? ".format(sets[x])))
     except ValueError:
       continue
     else:
@@ -38,7 +38,7 @@ for x in range(sets_total):
 #while loop continues until user inputs a float value > 0 and <= 100
   while True:
     try:
-      warmup_percentage = float(input("What's your " + sets[x] + " warmup percentage of your 1 rep max? "))
+      warmup_percentage = float(input("What's your {} warmup percentage of your 1 rep max? ".format(sets[x])))
     except ValueError:
       continue
     else:
@@ -49,7 +49,7 @@ for x in range(sets_total):
 #while loop continues until user inputs an int value > 0
   while True:
     try:
-      warmup_set = int(input("How many sets in your " + sets[x] + " warmup? "))
+      warmup_set = int(input("How many sets in your {} warmup? ".format(sets[x])))
     except ValueError:
       continue
     else:
@@ -60,7 +60,7 @@ for x in range(sets_total):
 #while loop continues until user inputs an int value > 0
   while True:
     try:
-      warmup_rep = int(input("How many reps in your " + sets[x] + " warmup? "))
+      warmup_rep = int(input("How many reps in your {} warmup? ".format(sets[x])))
     except ValueError:
       continue
     else:
