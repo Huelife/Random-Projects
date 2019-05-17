@@ -94,7 +94,7 @@ while True:
                   print("Please enter a number > 0.")
                   continue
                 print("")
-                print("Area: "+str(shapes_dict[user_shape]("",radius,"").area)+" units^2")
+                print("Area: {} units^2".format(shapes_dict[user_shape]("",radius,"").area))
                 print("")
                 break
           elif user_shape in shapes_dict and user_shape == "square" or user_shape == "triangle":
@@ -119,7 +119,7 @@ while True:
                       print("Please enter a number > 0.")
                       continue 
                     print("")
-                    print("Area: "+str(shapes_dict[user_shape]("",height,base,"").area)+" units^2")
+                    print("Area: {} units^2".format(shapes_dict[user_shape]("",height,base,"").area))
                     print("")
                     break
                 break
@@ -148,11 +148,11 @@ while True:
                   continue
                 elif user_area_volume == "volume":
                   print("")
-                  print("Volume: "+str(shapes_dict[user_shape]("",radius,"","").volume)+" units^3")
+                  print("Volume: {} units^3".format(shapes_dict[user_shape]("",radius,"","").volume))
                   print("")
                 elif user_area_volume == "surface area":
                   print("")
-                  print("Surface Area: "+str(shapes_dict[user_shape]("",radius,"","").surface_area)+" units^2")
+                  print("Surface Area: {} units^2".format(shapes_dict[user_shape]("",radius,"","").surface_area))
                   print("")
                 break
           elif user_shape in shapes_dict and user_shape == "box" or user_shape == "pyramid":
@@ -188,11 +188,11 @@ while True:
                           continue
                         elif user_area_volume == "volume":
                           print("")
-                          print("Volume: "+str(shapes_dict[user_shape]("",length,width,height,"","").volume)+" units^3")
+                          print("Volume: {} units^3".format(shapes_dict[user_shape]("",length,width,height,"","").volume))
                           print("")
                         elif user_area_volume == "surface area":
                           print("")
-                          print("Surface Area: "+str(shapes_dict[user_shape]("",length,width,height,"","").surface_area)+" units^2")
+                          print("Surface Area: {} units^2".format(shapes_dict[user_shape]("",length,width,height,"","").surface_area))
                           print("")
                         break
                     break
