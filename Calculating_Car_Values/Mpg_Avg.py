@@ -1,6 +1,5 @@
 from statistics import mean
-import datetime
-
+#for later//import datetime
 mpg_dict = {
   "04/12/18": 18.3,
   "04/14/18": 21.6,
