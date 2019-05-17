@@ -46,8 +46,8 @@ while True:
       your_total = cards_numbers[roll_one] + cards_numbers[roll_two]
       dealer_total = cards_numbers[dealer_roll_one] + cards_numbers[dealer_roll_two]
 #printing playing card images and total, using the created lists, based on the random numbers created for user and dealer
-      print("You: [" + str(cards_letters[roll_one]) + "]" + "[" + str(cards_letters[roll_two]) + "]" + " = " + str(your_total))
-      print("Dealer: [" + str(cards_letters[dealer_roll_one]) + "]" + "[" + str(cards_letters[dealer_roll_two]) + "]" + " = " + str(dealer_total))
+      print("You: [{}][{}] = {}".format(cards_letters[roll_one],cards_letters[roll_two],your_total))
+      print("Dealer: [{}][{}] = {}".format(cards_letters[dealer_roll_one],cards_letters[dealer_roll_two],dealer_total))
       print("")
 #determining if user wins, wins with black jack, loses, or if it's a draw
 #user only gets 1 chance, unless it's a draw. Game repeats for draws until user wins or loses
