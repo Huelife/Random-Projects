@@ -1,4 +1,4 @@
-#printing to user to find Vfi value
+#printing to user to find vf value
 print("""Hi! Let's figure out your cars Learned Value Fuel Trims! 
 You will need a 10 megaohm+ input impedance voltmeter/
 multimeter for this procedure. First, warm up your car 
@@ -110,4 +110,4 @@ while True:
     break
 #printed results
 print("")
-print("Your car is running " + str(fuel_trim) + ",\nwith a " + str(fuel_trim_percentage) + "% fuel trim.")
+print("Your car is running {},\nwith a {}% fuel trim.".format(fuel_trim,fuel_trim_percentage))
