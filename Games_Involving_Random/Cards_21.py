@@ -1,5 +1,6 @@
 #importing randint
 from random import randint
+
 #rules and info for user
 print("Let's play 21!")
 print("""Rules are simple:
@@ -8,14 +9,18 @@ print("""Rules are simple:
            Over 21 loses...""")
 print("")
 print("--"*20)
+
 #value of cards and image of cards displayed
 cards_letters = (0,"A",2,3,4,5,6,7,8,9,10,"J","Q","K")
 cards_numbers = (0,1,2,3,4,5,6,7,8,9,10,10,10,10)
+
 #things I want to add later
 # if dealer = 16-21 stay
 #    hitme = input("Type HITME to add card, otherwise, type STAY")
 #    if hitme == "HITME":
+
 you = 0
+
 #while loop that continues until 'you' variable is '1' or more
 while True:
   try:
@@ -60,10 +65,11 @@ while True:
         you += 1
       elif your_total > dealer_total and your_total <= 21:
         you += 1
-      break
     else:
+      print("{} is an invalid option.".format(play))
       continue
     break
+
 #message that appears at the end to show if the user wins, wins with black jack, or loses
 if you >= 1 and your_total == 21:
   print("Black Jack! CONGRATULATIONS! YOUVE WON!")
