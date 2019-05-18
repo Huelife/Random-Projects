@@ -85,7 +85,7 @@ while True:
               try:
                 radius = float(input("What's the radius? "))
               except ValueError:
-                print("Please enter a number > 0.")
+                print("Not a number!")
                 continue
               else:
                 if radius <= 0:
@@ -100,7 +100,7 @@ while True:
               try:
                 height = float(input("What's the height? "))
               except ValueError:
-                print("Please enter a number > 0.")
+                print("Not a number!")
                 continue
               else:
                 if height <= 0:
@@ -110,7 +110,7 @@ while True:
                   try:
                     base = float(input("What's the base? "))
                   except ValueError:
-                    print("Please enter a number > 0.")
+                    print("Not a number!")
                     continue
                   else:
                     if base <= 0:
@@ -138,7 +138,7 @@ while True:
               try:
                 radius = float(input("What's the radius? "))
               except ValueError:
-                print("Please enter a number > 0.")
+                print("Not a number!")
                 continue
               else:
                 if radius <= 0:
@@ -158,7 +158,7 @@ while True:
               try:
                 length = float(input("What's the length? "))
               except ValueError:
-                print("Please enter a number > 0.")
+                print("Not a number!")
                 continue
               else:
                 if length <= 0:
@@ -168,7 +168,7 @@ while True:
                   try:
                     width = float(input("What's the width? "))
                   except ValueError:
-                    print("Please enter a number > 0.")
+                    print("Not a number!")
                     continue
                   else:
                     if width <= 0:
@@ -178,7 +178,7 @@ while True:
                       try:
                         height = float(input("What's the height? "))
                       except ValueError:
-                        print("Please enter a number > 0.")
+                        print("Not a number!")
                         continue
                       else:
                         if height <=0:
