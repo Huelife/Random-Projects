@@ -8,27 +8,33 @@ while True:
   try:
     distance = float(input("How many miles did you travel? "))
   except ValueError:
+    print("Not a number!")
     continue
   else:
     if distance <= 0:
+      print("Please enter a number > 0.")
       continue
     break
 while True:
   try:
     gallons = float(input("How many gallons did you use? "))
   except ValueError:
+    print("Not a number!")
     continue
   else:
     if gallons <= 0:
+      print("Please enter a number > 0.")
       continue
     break
 while True:
   try:
     city = float(input("What percentage of city driving did you do? "))
   except ValueError:
+    print("Not a number!")
     continue
   else:
     if city <= 0:
+      print("Please enter a number > 0.")
       continue
     break
 print("")
