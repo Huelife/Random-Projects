@@ -3,6 +3,7 @@ from random import randint
 
 print("Hi! There are currently 8 planets in our solar system. Here are some information that I have gathered for each.")
 print("")
+
 #empty variables for each planet with string values that should contain interesting facts
 # Mercury
 me1 = "Mercury: Planet closes to the Sun."
@@ -15,6 +16,7 @@ me7 = "me7"
 me8 = "me8"
 me9 = "me9"
 me10 = "me10"
+
 # Venus
 v1 = "Venus: Second planet closes to the Sun."
 v2 = "Venus: Has no moon."
@@ -26,6 +28,7 @@ v7 = "v7"
 v8 = "v8"
 v9 = "v9"
 v10 = "v10"
+
 # Earth
 e1 = "Earth: Third planet closes to the Sun."
 e2 = "Earth: Currently, only planet known to support our definition of life."
@@ -37,6 +40,7 @@ e7 = "e7"
 e8 = "e8"
 e9 = "e9"
 e10 = "e10"
+
 # Mars
 ma1 = "Mars: Fourth planet from the Sun."
 ma2 = "Mars: Has 2 known moons: Phobos and Deimos."
@@ -48,6 +52,7 @@ ma7 = "ma7"
 ma8 = "ma8"
 ma9 = "ma9"
 ma10 = "ma10"
+
 # Jupiter
 j1 = "Jupiter: Fifth planet from the Sun."
 j2 = "Jupiter: Has 79 known moons."
@@ -59,6 +64,7 @@ j7 = "j7"
 j8 = "j8"
 j9 = "j9"
 j10 = "j10"
+
 # Saturn
 s1 = "Saturn: Sixth planet from the Sun."
 s2 = "Saturn: Has 62 known moons."
@@ -70,6 +76,7 @@ s7 = "s7"
 s8 = "s8"
 s9 = "s9"
 s10 = "s10"
+
 # Uranus
 u1 = "Uranus: Seventh planet from the Sun."
 u2 = "Uranus: Has 27 known moons."
@@ -81,6 +88,7 @@ u7 = "u7"
 u8 = "u8"
 u9 = "u9"
 u10 = "u10"
+
 # Neptune
 n1 = "Neptune: Eigth planet from the Sun."
 n2 = "Neptune: Has 14 known moons."
@@ -92,6 +100,7 @@ n7 = "n7"
 n8 = "n8"
 n9 = "n9"
 n10 = "n10"
+
 #planet tuples
 mercury_tuple = (me1,me2,me3,me4,me5,me6,me7,me8,me9,me10)
 mercury_tuple2 = ("mercury", "MERCURY", "Mercury", "MErcury", "me", "Me")
@@ -109,6 +118,7 @@ uranus_tuple = (u1,u2,u3,u4,u5,u6,u7,u8,u9,u10)
 uranus_tuple2 = ("uranus", "URANUS", "Uranus", "URanus", "u", "U")
 neptune_tuple = (n1,n2,n3,n4,n5,n6,n7,n8,n9,n10)
 neptune_tuple2 = ("neptune", "NEPTUNE", "Neptune", "NEptune", "n", "N")
+
 #planet dictionary
 planet_dict = {
   mercury_tuple2: mercury_tuple,
@@ -120,6 +130,7 @@ planet_dict = {
   uranus_tuple2: uranus_tuple,
   neptune_tuple2: neptune_tuple
 }
+
 #while loop continues until user enters 'Q'
 while True:
   try:
@@ -135,4 +146,6 @@ while True:
       if planet in key:
         print(value[roll])
         print("")
+    else:
+      print("{} is an invalid option.".format(planet))
     continue
