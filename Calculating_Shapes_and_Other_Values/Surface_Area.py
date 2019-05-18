@@ -2,7 +2,7 @@
 from decimal import Decimal
 from math import pi
 
-print("Let's calculate surface area!\nPlease choose one of the following shapes:\nbox, sphere, or pyramid.")
+print("Let's calculate surface area!\nPlease choose one of the following shapes:\n'box', 'sphere', or 'pyramid'.")
 print("")
 #possible inputs for box and pyramid
 shape_box = ("box", "BOX", "bOx", "BoX", "boX", "Box", "BOx")
@@ -20,27 +20,33 @@ while True:
         try:
           length = float(input("What's the length of the {}? ".format(shape)))
         except ValueError:
+          print("Not a number!")
           continue
         else:
           if length <= 0:
+            print("Please input a value > 0.")
             continue
           break
       while True:
         try:
           width = float(input("What's the width of the {}? ".format(shape)))
         except ValueError:
+          print("Not a number!")
           continue
         else:
           if width <= 0:
+            print("Please input a value > 0.")
             continue
           break
       while True:
         try:
           height = float(input("What's the height of the {}? ".format(shape)))
         except ValueError:
+          print("Not a number!")
           continue
         else:
           if height <= 0:
+            print("Please input a value > 0.")
             continue
           break
 #user input of height, width, and length used
@@ -62,9 +68,11 @@ while True:
         try:
           radius = float(input("What's the radius? "))
         except ValueError:
+          print("Not a number!")
           continue
         else:
           if radius <= 0:
+            print("Please input a value > 0.")
             continue
           break
 #user input of radius is used
@@ -74,5 +82,6 @@ while True:
       print("")
       print("The surface area of your sphere is: {} units^2".format(sarea))
     else:
+      print("{} is not a valid input.".format(shape))
       continue
     break
