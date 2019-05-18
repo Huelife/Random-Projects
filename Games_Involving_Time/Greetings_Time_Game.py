@@ -105,4 +105,5 @@ while True:
   try:
     get_input()
   except IndexError:
+    print("Error!")
     continue
