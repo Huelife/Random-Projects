@@ -17,9 +17,16 @@ def Leg_Ax():
 
 print("Choose your weapon!")
 print("")
+
 #creating weapon_list list and weapon_list_02 dict
 weapon_list = ["Legendary Sword", "Legendary Shield", "Legendary Gun", "Legendary Bow", "Legendary Axe"]
-weapon_list_02 = {"1":Leg_Sw,"2":Leg_Sh,"3":Leg_Gu,"4":Leg_Bo,"5":Leg_Ax}
+weapon_list_02 = {
+  "1":Leg_Sw,
+  "2":Leg_Sh,
+  "3":Leg_Gu,
+  "4":Leg_Bo,
+  "5":Leg_Ax
+}
 print(weapon_list)
 print("")
 
@@ -36,4 +43,6 @@ while True:
       print("")
       weapon_list_02[weapon]()
       print("")
+    else:
+      print("{} is an invalid option.".format(weapon))
     continue
