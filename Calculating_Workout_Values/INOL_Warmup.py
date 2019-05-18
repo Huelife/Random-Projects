@@ -10,6 +10,7 @@ while True:
   try:
     sets_total = int(input("How many warmup sets do you have? "))
   except ValueError:
+    print("Not a number!")
     continue
   else:
     if sets_total <= 0:
@@ -29,6 +30,7 @@ for x in range(sets_total):
     try:
       warmup_weight = float(input("What's your {} warmup weight? ".format(sets[x])))
     except ValueError:
+      print("Not a number!")
       continue
     else:
       if warmup_weight <= 0:
@@ -40,6 +42,7 @@ for x in range(sets_total):
     try:
       warmup_percentage = float(input("What's your {} warmup percentage of your 1 rep max? ".format(sets[x])))
     except ValueError:
+      print("Not a number!")
       continue
     else:
       if warmup_percentage <= 0 or warmup_percentage > 100:
@@ -51,6 +54,7 @@ for x in range(sets_total):
     try:
       warmup_set = int(input("How many sets in your {} warmup? ".format(sets[x])))
     except ValueError:
+      print("Not a number!")
       continue
     else:
       if warmup_set <= 0:
@@ -62,6 +66,7 @@ for x in range(sets_total):
     try:
       warmup_rep = int(input("How many reps in your {} warmup? ".format(sets[x])))
     except ValueError:
+      print("Not a number!")
       continue
     else:
       if warmup_rep <= 0:
