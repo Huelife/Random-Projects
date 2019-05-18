@@ -69,6 +69,7 @@ while True:
         you += 1
       elif your_total > dealer_total and your_total <= 21:
         you += 1
+
     else:
       print("{} is an invalid option.".format(play))
       continue
