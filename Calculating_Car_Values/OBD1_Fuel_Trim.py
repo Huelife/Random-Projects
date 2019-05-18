@@ -10,6 +10,7 @@ multimeter on DCVolts at the lowest setting, probe
 your red positive wire to the Vf1 pin and probe your 
 black negative wire to the E1 pin.""")
 print("")
+
 #values used to determine cutoff for each percentage, voltages, and whether car is running rich, normal, or lean
 # < 0v = SUPER rich, -2x
 # 0-1.24v = rich, -11 to -20
@@ -78,6 +79,7 @@ y_range = 1
 percentage = -20
 fuel_trim_percentage = 0
 fuel_trim = ""
+
 #program loops until user inputs a float value
 while True:
   try:
@@ -107,6 +109,7 @@ while True:
       x_range += 125
       y_range += 125      
     break
+    
 #printed results
 print("")
 print("Your car is running {},\nwith a {}% fuel trim.".format(fuel_trim,fuel_trim_percentage))
