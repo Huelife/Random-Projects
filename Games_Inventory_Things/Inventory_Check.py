@@ -1,6 +1,8 @@
 print("Let's check your inventory!")
+
 #setting items in inventory list
 inventory = ["sword","helmet","armor","shield","gun","boots","gloves"]
+
 #while loop continues until user inputs 'check' string
 while True:
   try:
@@ -18,14 +20,18 @@ while True:
     else:
       print("{} is an invalid option.".format(check))
       continue
+      
 print("You've picked up (3) more swords! Let's check how many swords you have now!")
+
 #creating add_sword function that adds 'sword' to inventory[1]
 def add_sword():
   inventory.insert(1, "sword")
+  
 #three 'swords' are added to inventory list
 add_sword()
 add_sword()
 add_sword()
+
 #while loop continues until user inputs 'sword' string
 while True:
   try:
