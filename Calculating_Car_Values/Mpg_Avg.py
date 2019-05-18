@@ -1,5 +1,5 @@
 from statistics import mean
-#for later//import datetime
+
 mpg_dict = {
   "04/12/18": 18.3,
   "04/14/18": 21.6,
@@ -29,6 +29,8 @@ mpg_dict = {
   "04/17/19": 20.9,
   "05/02/19": 22.5
 }
+
 mpg_add = [mpg_dict[key] for key in mpg_dict]
 mpg_avg  = round((mean(mpg_add)),1)
+
 print("Current mpg avg: {}".format(mpg_avg))
