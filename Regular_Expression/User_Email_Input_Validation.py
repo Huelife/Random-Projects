@@ -11,5 +11,7 @@ while True:
   else:
     if re.search(user_email_check, user_email):
       print("Match")
+      break
     else:
       print("Invalid")
+      continue
