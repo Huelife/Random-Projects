@@ -5,6 +5,7 @@ while True:
   try:
     weight = float(input("How much weight would you like to convert? "))
   except ValueError:
+    print("Not a number!")
     continue
   else:
     if weight <= 0:
@@ -31,6 +32,7 @@ while True:
       unit1 = "lbs"
       unit2 = "kgs"
     else:
+      print("{} is not a valid choice.".format(units))
       continue
     break
 #printing initial weight with units and converted weight with units
