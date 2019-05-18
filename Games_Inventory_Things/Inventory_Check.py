@@ -16,6 +16,7 @@ while True:
       print("")
       break
     else:
+      print("{} is an invalid option.".format(check))
       continue
 print("You've picked up (3) more swords! Let's check how many swords you have now!")
 #creating add_sword function that adds 'sword' to inventory[1]
@@ -38,4 +39,5 @@ while True:
       print("You have ({}) swords".format(inventory.count("sword")))
       break
     else:
+      print("{} is an invalid option.".format(sword_value))
       continue
