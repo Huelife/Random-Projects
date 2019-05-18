@@ -8,9 +8,11 @@ while True:
   try:
     iweight = float(input("What's the weight in grams?  "))
   except ValueError:
+    print("Not a number!")
     continue
   else:
     if iweight <= 0:
+      print("Please enter a number > 0.")
       continue
     break
 
@@ -22,9 +24,11 @@ while True:
   try:
     time = int(input("How man minutes was your candle burning for? "))
   except ValueError:
+    print("Not a number!")
     continue
   else:
     if time <= 0:
+      print("Please enter a number > 0.")
       continue
     break
 #while loop continues until a value > 0 is chosen
@@ -32,9 +36,11 @@ while True:
   try:
     fweight = float(input("How much does your candle weigh now? "))
   except ValueError:
+    print("Not a number!")
     continue
   else:
     if fweight < 0:
+      print("Please enter a number > 0.")
       continue
     break
 #all values obtained by user input is calculated, rounded up, and printed for user
