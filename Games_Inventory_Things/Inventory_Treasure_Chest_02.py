@@ -37,9 +37,8 @@ while True:
         for stats_column in stats_c:
           print(" ",stats_column,stats_c[stats_column])
         print("_"*25)
-      break
     elif pickup == "no":
       break
     else:
       print("{} is an invalid option.".format(pickup))
-      continue
+    continue
