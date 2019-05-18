@@ -11,6 +11,7 @@ print("")
 #while loop continues until either wins = 3 or turns = 5, user loses when turns = 5 and wins < 3
 turn = 0
 wins = 0
+
 while True:
   try:
     print("-"*30)
@@ -19,9 +20,8 @@ while True:
   except ValueError:
     continue
   else:
+#adding turn value, calling 4 random integers, adding the values for user and dealer, and printing the results              
     if play == "":
-       
-#adding turn value, calling 4 random integers, adding the values for user and dealer, and printing the results
       turn += 1
       roll_one = randint(1,6)
       roll_two = randint(1,6)
@@ -65,6 +65,7 @@ while True:
           break
         else: 
           continue
+       
     else:
       print("{} is an invalid option.".format(play))
       continue
