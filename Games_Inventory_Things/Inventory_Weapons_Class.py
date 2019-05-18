@@ -41,7 +41,6 @@ while True:
       print(weapon)
       print("="*len(weapon))
       print("".join("%s: %s\n" % stats for stats in vars(weapon_list[weapon]).items()))
-      continue
     else:
       print("{} is an invalid option.".format(weapon))
-      continue
+    continue
