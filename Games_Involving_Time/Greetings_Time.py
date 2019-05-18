@@ -35,6 +35,7 @@ while True:
           print(value.evening,name.title()+"!")
         break
       else:
+        print("{} is an invalid option.".format(name))
         continue
       break
     break
