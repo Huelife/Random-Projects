@@ -15,6 +15,7 @@ class Item_Stats:
     self.rng = rng
     self.name = name
     self.desc = desc
+    
   def __repr__(self):
     return str(self.name)
   
