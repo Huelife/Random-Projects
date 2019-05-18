@@ -1,9 +1,11 @@
 from math import pi,sqrt
+
 #-----------------------Area-Volume-Super-Class------------------
 class Area_Volume:
   shape_name = ""
   def __init__(self,name):
     self.name = name
+    
 #-----------------------Area-Classes-----------------------------
 class Circle_Area(Area_Volume):
   def __init__(self,name,radius,area):
@@ -27,6 +29,7 @@ class Triangle_Area(Area_Volume):
     self.base = base
     self.area = (height * base) / 2
     super().__init__(name)
+    
 #-----------------------Volume-Classes----------------------------
 class Sphere(Area_Volume):
   def __init__(self,name,radius,volume,surface_area):
@@ -55,6 +58,7 @@ class Pyramid(Area_Volume):
     self.volume = round(((length * width * height) / 3),1)
     self.surface_area = round(((length * width) + (length * sqrt(((width / 2)**2) + (height**2))) + (width * sqrt(((length / 2)**2) + (height**2)))),1)
     super().__init__(name)
+    
 #-----------------------Shapes-Dict-------------------------------
 shapes_dict = {
   "circle": Circle_Area,
@@ -64,6 +68,7 @@ shapes_dict = {
   "box": Box,
   "pyramid": Pyramid
 }
+
 #-----------------------while loop continues until user chooses an option
 while True:
   try:
@@ -71,6 +76,7 @@ while True:
   except ValueError:
     continue
   else:
+    
 #-----------------------while loop for area----------------------    
     if user_area_volume == "area":
       while True:
@@ -124,6 +130,7 @@ while True:
           else:
             print("{} option not available.".format(user_shape))
           break
+          
 #-----------------------while loop for volume--------------------
     elif user_area_volume == "volume" or user_area_volume == "surface area":
       while True:
