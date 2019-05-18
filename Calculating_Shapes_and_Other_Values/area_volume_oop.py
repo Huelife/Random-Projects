@@ -86,6 +86,7 @@ while True:
         except ValueError:
           continue
         else:
+          
           if user_shape in shapes_dict and user_shape == "circle":
             while True:
               try:
@@ -93,7 +94,7 @@ while True:
               except ValueError:
                 print("Not a number!")
                 continue
-              else:
+              else:             
                 if radius <= 0:
                   print("Please enter a number > 0.")
                   continue
@@ -101,6 +102,7 @@ while True:
                 print("Area: {} units^2".format(shapes_dict[user_shape]("",radius,"").area))
                 print("")
                 break
+                
           elif user_shape in shapes_dict and user_shape == "square" or user_shape == "triangle":
             while True:
               try:
@@ -108,7 +110,7 @@ while True:
               except ValueError:
                 print("Not a number!")
                 continue
-              else:
+              else:         
                 if height <= 0:
                   print("Please enter a number > 0.")
                   continue
@@ -118,7 +120,7 @@ while True:
                   except ValueError:
                     print("Not a number!")
                     continue
-                  else:
+                  else:              
                     if base <= 0:
                       print("Please enter a number > 0.")
                       continue 
@@ -127,6 +129,7 @@ while True:
                     print("")
                     break
                 break
+                
           else:
             print("{} option not available.".format(user_shape))
           break
@@ -140,6 +143,7 @@ while True:
         except ValueError:
           continue
         else:
+          
           if user_shape in shapes_dict and user_shape == "sphere":
             while True:
               try:
@@ -160,6 +164,7 @@ while True:
                   print("Surface Area: {} units^2".format(shapes_dict[user_shape]("",radius,"","").surface_area))
                   print("")
                 break
+                
           elif user_shape in shapes_dict and user_shape == "box" or user_shape == "pyramid":
             while True:
               try:
@@ -202,9 +207,11 @@ while True:
                         break
                     break
                 break
+                
           else:
             print("{} option not available.".format(user_shape))
           break
+          
     else:
       print("{} option not available.".format(user_area_volume))
     break
