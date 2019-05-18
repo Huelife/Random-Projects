@@ -7,6 +7,7 @@ while True:
   try:
     weight = float(input("How much weight are you using? "))
   except ValueError:
+    print("Not a number!")
     continue
   else:
     if weight <= 0:
@@ -18,6 +19,7 @@ while True:
   try:
     perc = float(input("What % is this weight of your 1 rep max? "))
   except ValueError:
+    print("Not a number!")
     continue
   else:
     if perc <= 0 or perc > 100:
@@ -29,6 +31,7 @@ while True:
   try:
     sets = int(input("How many sets did you do? "))
   except ValueError:
+    print("Not a number!")
     continue
   else:
     if sets <= 0:
@@ -40,6 +43,7 @@ while True:
   try:
     reps = int(input("How many reps did you do? "))
   except ValueError:
+    print("Not a number!")
     continue
   else:
     if reps <= 0:
