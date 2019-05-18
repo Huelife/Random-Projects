@@ -131,7 +131,7 @@ while True:
             print("{} option not available.".format(user_shape))
           break
           
-#-----------------------while loop for volume--------------------
+#-----------------------while loop for volume/surface area-------
     elif user_area_volume == "volume" or user_area_volume == "surface area":
       while True:
         try:
