@@ -1,20 +1,21 @@
 from math import pi,sqrt
 
 #-----------------------Area-Volume-Super-Class------------------
-class Area_Volume:
+class AreaVolume:
   shape_name = ""
+  
   def __init__(self,name):
     self.name = name
     
 #-----------------------Area-Classes-----------------------------
-class Circle_Area(Area_Volume):
+class CircleArea(AreaVolume):
   def __init__(self,name,radius,area):
     self.shape_name = "circle"
     self.radius = radius
     self.area = round((pi * (radius ** 2)),1)
     super().__init__(name)
 
-class Square_Area(Area_Volume):
+class SquareArea(AreaVolume):
   def __init__(self,name,height,base,area):
     self.shape_name = "square"
     self.height = height
@@ -22,7 +23,7 @@ class Square_Area(Area_Volume):
     self.area = height * base
     super().__init__(name)
 
-class Triangle_Area(Area_Volume):
+class TriangleArea(AreaVolume):
   def __init__(self,name,height,base,area):
     self.shape_name = "triangle"
     self.height = height
@@ -31,7 +32,7 @@ class Triangle_Area(Area_Volume):
     super().__init__(name)
     
 #-----------------------Volume-Classes----------------------------
-class Sphere(Area_Volume):
+class Sphere(AreaVolume):
   def __init__(self,name,radius,volume,surface_area):
     self.shape_name = "sphere"
     self.radius = radius
@@ -39,7 +40,7 @@ class Sphere(Area_Volume):
     self.surface_area = round(((4 * pi) * (radius ** 2)),1)
     super().__init__(name)
 
-class Box(Area_Volume):
+class Box(AreaVolume):
   def __init__(self,name,length,width,height,volume,surface_area):
     self.shape_name = "box"
     self.length = length
@@ -49,7 +50,7 @@ class Box(Area_Volume):
     self.surface_area = (2 * length * width) + (2 * width * height) + (2 * length * height)
     super().__init__(name)
 
-class Pyramid(Area_Volume):
+class Pyramid(AreaVolume):
   def __init__(self,name,length,width,height,volume,surface_area):
     self.shape_name = "pyramid"
     self.length = length
@@ -61,9 +62,9 @@ class Pyramid(Area_Volume):
     
 #-----------------------Shapes-Dict-------------------------------
 shapes_dict = {
-  "circle": Circle_Area,
-  "square": Square_Area,
-  "triangle": Triangle_Area,
+  "circle": CircleArea,
+  "square": SquareArea,
+  "triangle": TriangleArea,
   "sphere": Sphere,
   "box": Box,
   "pyramid": Pyramid
