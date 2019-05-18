@@ -34,6 +34,7 @@ while True:
       roll_two = randint(1,13)
       dealer_roll_one = randint(1,13)
       dealer_roll_two = randint(1,13)  
+           
  #setting value of 1 for user and dealer
       if roll_one == 1 and roll_two == 1:
         cards_numbers[roll_two] = 11
@@ -47,13 +48,16 @@ while True:
         cards_numbers[dealer_roll_one] = 11
       elif dealer_roll_two == 1:
         cards_numbers[dealer_roll_two] = 11
+
 #setting total value of cards for dealer and user
       your_total = cards_numbers[roll_one] + cards_numbers[roll_two]
       dealer_total = cards_numbers[dealer_roll_one] + cards_numbers[dealer_roll_two]
+
 #printing playing card images and total, using the created lists, based on the random numbers created for user and dealer
       print("You: [{}][{}] = {}".format(cards_letters[roll_one],cards_letters[roll_two],your_total))
       print("Dealer: [{}][{}] = {}".format(cards_letters[dealer_roll_one],cards_letters[dealer_roll_two],dealer_total))
       print("")
+           
 #determining if user wins, wins with black jack, loses, or if it's a draw
 #user only gets 1 chance, unless it's a draw. Game repeats for draws until user wins or loses
       if your_total == 21 and dealer_total < 21:
