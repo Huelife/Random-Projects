@@ -19,6 +19,7 @@ legendary_axe = Weapon_stats("+200","+25",0,0,"+50",0,0,0)
 
 print("Choose your weapon!")
 print("")
+
 #declaring weapon_list dict and printing the item names
 weapon_list = {"Legendary Sword":legendary_sword, "Legendary Shield":legendary_shield, "Legendary Gun":legendary_gun, "Legendary Bow":legendary_bow, "Legendary Axe":legendary_axe}
 for key, value in weapon_list.items():
@@ -40,4 +41,7 @@ while True:
       print(weapon)
       print("="*len(weapon))
       print("".join("%s: %s\n" % stats for stats in vars(weapon_list[weapon]).items()))
-    continue
+      continue
+    else:
+      print("{} is an invalid option.".format(weapon))
+      continue
