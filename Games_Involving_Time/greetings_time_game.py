@@ -15,6 +15,7 @@ class Game:
   def __init__(self,name):
     self.name = name
     Game.objects[self.class_name] = self
+    
   def get_reply(self):
     return self.reply
 
@@ -38,6 +39,7 @@ class Peter(Game):
     elif self.time > 19 and self.time < 24:
       greeting = "Let's party!"
     return self._reply + "\n\nPeter:\n" + greeting
+  
   @reply.setter
   def reply(self,value):
     self._reply = value
@@ -64,6 +66,7 @@ class Rob(Game):
     elif self.time > 19 and self.time < 24:
       greeting = "Let's go bar hopping!"
     return self._reply + "\n\nRob:\n" + greeting
+  
   @reply.setter
   def reply(self,value):
     self._reply = value
