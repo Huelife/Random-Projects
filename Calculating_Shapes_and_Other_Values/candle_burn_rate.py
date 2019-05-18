@@ -56,6 +56,7 @@ print("")
 tweight = (iweight - fweight)
 rate = tweight / time
 srate = Decimal(str(rate)).quantize(Decimal('.01'), rounding=ROUND_UP)
+
 ttime = iweight / float(srate)
 hours = ttime / 60.0
 shours = Decimal(str(hours)).quantize(Decimal('.01'), rounding=ROUND_UP)
