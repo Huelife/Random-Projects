@@ -1,6 +1,7 @@
 #full inventory check program
 print("")
 print("Let's check your inventory!")
+
 #setting item class for attributes
 class Item_Stats:
   def __init__(self,stre,agi,spd,defe,vit,res,pie,rng,name,desc):
@@ -16,6 +17,7 @@ class Item_Stats:
     self.desc = desc
   def __repr__(self):
     return str(self.name)
+  
 #setting individual item stats from inventory
 bronze_sword = Item_Stats("+100","+50","+50",0,0,0,0,0,"Bronze Sword","A cheap, but effective sword for combat.")
 steel_sword = Item_Stats("+150","+100","+100",0,0,0,0,0,"Steel Sword","A strong, sturdy sword for combat.")
@@ -44,6 +46,7 @@ legendary_boots = Item_Stats(0,"+300","+300",0,0,"+55",0,0,"Legendary Boots","A 
 cloth_gloves = Item_Stats("+50","+100","+100",0,0,0,0,0,"Cloth Gloves","A cheap, but effective pair of gloves for defense.")
 leather_gloves = Item_Stats("+100","+150","+150",0,0,0,0,0,"Leather Gloves","A strong, sturdy pair of gloves for defense.")
 legendary_gloves = Item_Stats("+200","+300","+300",0,0,0,0,0,"Legendary Gloves","A powerful pair of gloves for defense.")
+
 #setting items in swords,helmets,armors,shields,guns,boots,and gloves list
 swords = [bronze_sword,bronze_sword,bronze_sword,steel_sword,steel_sword,legendary_sword]
 helmets = [bronze_helmet,bronze_helmet,bronze_helmet,steel_helmet,steel_helmet,legendary_helmet]
@@ -52,9 +55,11 @@ shields = [bronze_shield,bronze_shield,bronze_shield,steel_shield,steel_shield,l
 guns = [bronze_gun,bronze_gun,bronze_gun,steel_gun,steel_gun,legendary_gun]
 boots = [cloth_boots,cloth_boots,cloth_boots,leather_boots,leather_boots,legendary_boots]
 gloves = [cloth_gloves,cloth_gloves,cloth_gloves,leather_gloves,leather_gloves,legendary_gloves]
+
 #setting items in inventory_gear tuple and inventory_gear_list tuple
 inventory_gear = (swords,helmets,armors,shields,guns,boots,gloves)
 inventory_gear_list = ("Swords","Helmets","Armors","Shields","Guns","Boots","Gloves")
+
 #while loop continues until user inputs 'Quit'
 while True:
   try:
@@ -76,8 +81,9 @@ while True:
         else:
           if check_gear == "Quit":
             break
-          elif check_gear == "Check Swords":
+ 
 #while loop for sword stats
+          elif check_gear == "Check Swords":
             while True:
               try:
                 print("Sword list({}):".format(len(swords)))
@@ -124,8 +130,9 @@ while True:
                   print("_"*len(legendary_sword.desc))
                   print("")
                 continue
+
+#while loop for helmet stats                
           elif check_gear == "Check Helmets":
-#while loop for helmet stats
             while True:
               try:
                 print("Helmet list({}):".format(len(helmets)))
@@ -172,8 +179,9 @@ while True:
                   print("_"*len(legendary_helmet.desc))
                   print("")
                 continue
+                
+#while loop for armor stats                
           elif check_gear == "Check Armors":
-#while loop for armor stats
             while True:
               try:
                 print("Armor list({}):".format(len(armors)))
@@ -220,8 +228,9 @@ while True:
                   print("_"*len(legendary_armor.desc))
                   print("")
                 continue
+                
+#while loop for shield stats               
           elif check_gear == "Check Shields":
-#while loop for shield stats
             while True:
               try:
                 print("Shield list({}):".format(len(shields)))
@@ -268,8 +277,9 @@ while True:
                   print("_"*len(legendary_shield.desc))
                   print("")
                 continue
+                
+#while loop for gun stats                
           elif check_gear == "Check Guns":
-#while loop for gun stats
             while True:
               try:
                 print("Guns list({}):".format(len(guns)))
@@ -319,8 +329,9 @@ while True:
                   print("_"*len(legendary_gun.desc))
                   print("")
                 continue
+                
+#while loop for boots stats                
           elif check_gear == "Check Boots":
-#while loop for boots stats
             while True:
               try:
                 print("Boots list({}):".format(len(boots)))
@@ -367,8 +378,9 @@ while True:
                   print("_"*len(legendary_boots.desc))
                   print("")
                 continue
+                
+#while loop for gloves stats                
           elif check_gear == "Check Gloves":
-#while loop for gloves stats
             while True:
               try:
                 print("Gloves list({}):".format(len(gloves)))
