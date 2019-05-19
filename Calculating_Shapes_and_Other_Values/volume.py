@@ -2,21 +2,22 @@
 from decimal import Decimal
 from math import pi
 
-print("Let's calculate volume! Please choose one of the following shapes:\n'box', 'sphere', or 'pyramid'.")
+print("""Let's calculate volume! Please choose one of the following shapes:
+'box', 'sphere', or 'pyramid'.""")
 print("")
 
-box_tuple = ("box", "BOX", "bOx", "BoX", "boX", "Box", "BOx")
-pyramid_tuple = ("pyramid", "PYRAMID", "Pyramid", "pYRAMID", "PYramid", "PYRamid", "pYramid")
+box_tuple = ("box","bo","ox","bx")
+pyramid_tuple = ("pyramid","pyr","pramid","pyramd","pyrami","puramid","pyd")
 
 #program loops until given shape is chosen and user inputs float value > 0
 while True:
   try:
-    shape = input("What shape is the object? ")
+    shape = input("What shape is the object? ").lower()
   except ValueError:
     continue
   else:
     
-#user can input 'box' in 7 different formats
+#user can input 'box' and 'pyramid' in different formats
     if shape in box_tuple or shape in pyramid_tuple:
       while True:
         try:
@@ -52,13 +53,13 @@ while True:
             continue
           break
           
-#volume of a box is calculated and printed using user input values: length, width, and height
+#volume of a box is calculated and printed
       if shape in box_tuple:
         volume = length * width * height
         print("")
         print("The volume of your box is: " + str(volume) + " units^3")
         
-#volume of a pyramid is calculated and printed using user input value: length, width, and height. Rounding used to 0.1 of a decimal
+#volume of a pyramid is calculated, printed, and rounded to 0.1 of a decimal
       elif shape in pyramid_tuple:
         volume = (length * width * height) / 3
         svolume = Decimal(str(volume)).quantize(Decimal('.1'))
@@ -66,7 +67,7 @@ while True:
         print("The volume of your pyramid is: " + str(svolume) + " units^3")
         
 #user can input 'sphere' in 7 different formats
-    elif shape in ("sphere", "SPHERE", "Sphere", "sPHERE", "SPhere", "SPHere", "sPhere"):
+    elif shape in ("sphere","sphre","sphr","sph","spher","shere","phere"):
       while True:
         try:
           radius = float(input("What's the radius? "))
@@ -79,7 +80,7 @@ while True:
             continue
           break
           
-#volume of a sphere is calculated and printed using user input value: radius. Pi value and rounding used to 0.1 of a decimal
+#volume of a sphere is calculated, printed, and rounded to 0.1 of a decimal
       volume = (4/3) * pi * (radius ** 3)
       svolume = Decimal(str(volume)).quantize(Decimal('.1'))
     
