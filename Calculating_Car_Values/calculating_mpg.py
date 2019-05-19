@@ -43,7 +43,7 @@ while True:
     
 print("")
 
-#calculating highway percentage, overall mpg, city mpg, and highway mpg and rounding them
+#calculating and rounding values
 mpg = distance / gallons
 smpg = Decimal(str(mpg)).quantize(Decimal('.1'))
 highway = 100.0 - city
@@ -51,8 +51,10 @@ highway = 100.0 - city
 city100 = 0.857 * mpg
 highway100 = mpg / 0.807
 
-scity100 = Decimal(str(city100)).quantize(Decimal('.1'), rounding=ROUND_UP)
-shighway100 = Decimal(str(highway100)).quantize(Decimal('.1'), rounding=ROUND_DOWN)
+scity100 = (Decimal(str(city100)).quantize
+            (Decimal('.1'), rounding=ROUND_UP))
+shighway100 = (Decimal(str(highway100)).quantize
+               (Decimal('.1'), rounding=ROUND_DOWN))
 
 #printing current mpg, and city and highway percentage
 print("Your mpg is: {}".format(smpg))
