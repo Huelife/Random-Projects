@@ -1,13 +1,14 @@
 #importing decimal and rounding to round up
 from decimal import Decimal, ROUND_UP
 
-print("Hi! Let's figure out your candle's burn rate!\nFirst, weigh your candle before your burn it.")
+print("""Hi! Let's figure out your candle's burn rate!
+First, weigh your candle before you burn it.""")
 print("")
 
 #while loop continues until a value >= 0 is chosen
 while True:
   try:
-    iweight = float(input("What's the weight in grams?  "))
+    iweight = float(input("What's the weight in grams? "))
   except ValueError:
     print("Not a number!")
     continue
@@ -47,10 +48,7 @@ while True:
       continue
     break
     
-#all values obtained by user input is calculated, rounded up, and printed for user
-#initial weight, time for candle burn, and final weight are from user input
-#total weight difference, rate of burn, total time in minutes, and total time in hours calculated from user input
-#these actions are done outside of any of the previous while loops
+#all values calculated, rounded up, and printed for user
 #rate of burn and total time in hours rounded to 0.01 of a decimal
 print("")
 tweight = (iweight - fweight)
@@ -62,5 +60,7 @@ hours = ttime / 60.0
 shours = Decimal(str(hours)).quantize(Decimal('.01'), rounding=ROUND_UP)
 
 #rate is in grams/mins and how many total hours the candle can burn for
-print("Ok! Your candle burns at a rate of about: {} grams/minute".format(srate))
-print("Your candle should be able to burn for approximately: {} hours".format(shours))
+print("Ok! Your candle burns at a rate of about: {} grams/minute"
+      .format(srate))
+print("Your candle should be able to burn for approximately: {} hours"
+      .format(shours))
