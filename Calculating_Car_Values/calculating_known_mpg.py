@@ -21,9 +21,13 @@ while True:
     city100 = 0.857 * mpg
     highway100 = mpg / 0.807
 
-    scity100 = Decimal(str(city100)).quantize(Decimal('.1'), rounding=ROUND_UP)
-    shighway100 = Decimal(str(highway100)).quantize(Decimal('.1'), rounding=ROUND_DOWN)
+    scity100 = (Decimal(str(city100)).quantize
+                (Decimal('.1'), rounding=ROUND_UP))
+    shighway100 = (Decimal(str(highway100)).quantize
+                   (Decimal('.1'), rounding=ROUND_DOWN))
 
-    print("If you drove 100% City, your mpg would be: {}".format(scity100))
-    print("If you drove 100% Highway, your mpg would be: {}".format(shighway100))
+    print("If you drove 100% City, your mpg would be: {}"
+          .format(scity100))
+    print("If you drove 100% Highway, your mpg would be: {}"
+          .format(shighway100))
     break
