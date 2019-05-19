@@ -11,7 +11,8 @@ your red positive wire to the Vf1 pin and probe your
 black negative wire to the E1 pin.""")
 print("")
 
-#values used to determine cutoff for each percentage, voltages, and whether car is running rich, normal, or lean
+#values used to determine cutoff for each percentage,
+#voltages, and whether car is running rich, normal, or lean
 # < 0v = SUPER rich, -2x
 # 0-1.24v = rich, -11 to -20
 # 1.25-3.75v = normal, -10 to +10
@@ -112,4 +113,5 @@ while True:
     
 #printed results
 print("")
-print("Your car is running {},\nwith a {}% fuel trim.".format(fuel_trim,fuel_trim_percentage))
+print("Your car is running {},\nwith a {}% fuel trim."
+      .format(fuel_trim,fuel_trim_percentage))
