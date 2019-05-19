@@ -14,14 +14,15 @@ while True:
 #printing number of items in inventory list
       print("")
       print("You have {} items in your inventory.".format(len(inventory)))
-      print("Let's check what you have: {}".format(inventory))
+      print("Let's check what you have: \n{}".format(inventory))
       print("")
       break
     else:
       print("{} is an invalid option.".format(check))
       continue
       
-print("You've picked up (3) more swords! Let's check how many swords you have now!")
+print("You've picked up (3) more swords! "
+      "Let's check how many swords you have now!")
 
 #creating add_sword function that adds 'sword' to inventory[1]
 def add_sword():
@@ -35,7 +36,8 @@ add_sword()
 #while loop continues until user inputs 'sword' string
 while True:
   try:
-    sword_value = input("Type 'sword' to check the total number of swords in your inventory. ")
+    sword_value = input("Type 'sword' to check the total "
+                        "number of swords in your inventory. ")
   except ValueError:
     continue
   else:
