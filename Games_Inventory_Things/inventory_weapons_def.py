@@ -23,7 +23,8 @@ print("Choose your weapon!")
 print("")
 
 #creating weapon_list list and weapon_list_02 dict
-weapon_list = ["Legendary Sword", "Legendary Shield", "Legendary Gun", "Legendary Bow", "Legendary Axe"]
+weapon_list = ["Legendary Sword","Legendary Shield","Legendary Gun",
+               "Legendary Bow","Legendary Axe"]
 
 weapon_list_02 = {
   "1":Leg_Sw,
@@ -33,13 +34,15 @@ weapon_list_02 = {
   "5":Leg_Ax
 }
 
-print(weapon_list)
+for i in weapon_list:
+  print(i)
 print("")
 
 #while loop continues until user inputs 'Quit'
 while True:
   try:
-    weapon = input("Enter a number from 1-5 to see weapon name and attributes, otherwise, enter 'Quit' to leave. ")
+    weapon = input("Enter a number from 1-5 to see weapon name and "
+                   "attributes, otherwise,\nenter 'Quit' to leave. ")
   except ValueError:
     continue
   else:
