@@ -6,9 +6,11 @@ print("Let's figure out your daily INOL value!")
 print("")
 
 #sets tuple created with 12 possible values that can be called
-sets = ("first","second","third","fourth","fifth","sixth","seventh","eighth","ninth","tenth","eleventh","twelfth")
+sets = ("first","second","third","fourth","fifth","sixth","seventh","eighth",
+       "ninth","tenth","eleventh","twelfth")
 
-#while loop created to determine total sets. While loop continues until user inputs an int > 0, but less than 13 
+#while loop created to determine total sets
+#While loop continues until user inputs an int > 0, but less than 13 
 while True:
   try:
     sets_total = int(input("How many warmup sets do you have? "))
@@ -30,10 +32,11 @@ inol_add = 0
 #for loop created, program loops based on total sets from user input
 for x in range(sets_total):
 #while loop continues until user inputs a float value > 0
-#fluff code, lines 33-42 can be deleted without affecting program, warmup_weight value isnt used
+#fluff code, lines 33-42 can be deleted without affecting program
   while True:
     try:
-      warmup_weight = float(input("What's your {} warmup weight? ".format(sets[x])))
+      warmup_weight = (float(input("What's your {} warmup weight? "
+                      .format(sets[x]))))
     except ValueError:
       print("Not a number!")
       continue
@@ -46,20 +49,23 @@ for x in range(sets_total):
 #while loop continues until user inputs a float value > 0 and <= 100
   while True:
     try:
-      warmup_percentage = float(input("What's your {} warmup percentage of your 1 rep max? ".format(sets[x])))
+      warmup_percent = (float(input
+                       ("What's your {} warmup percentage of your 1 rep max? "
+                       .format(sets[x]))))
     except ValueError:
       print("Not a number!")
       continue
     else:
-      if warmup_percentage <= 0 or warmup_percentage > 100:
-        print("Percentage should be greater than 0, but less than or equal to 100.")
+      if warmup_percent <= 0 or warmup_percent > 100:
+        print("Percentage should be > 0, but <= 100.")
         continue
       break
       
 #while loop continues until user inputs an int value > 0
   while True:
     try:
-      warmup_set = int(input("How many sets in your {} warmup? ".format(sets[x])))
+      warmup_set = (int(input("How many sets in your {} warmup? "
+                   .format(sets[x]))))
     except ValueError:
       print("Not a number!")
       continue
@@ -72,7 +78,8 @@ for x in range(sets_total):
 #while loop continues until user inputs an int value > 0
   while True:
     try:
-      warmup_rep = int(input("How many reps in your {} warmup? ".format(sets[x])))
+      warmup_rep = (int(input("How many reps in your {} warmup? "
+                   .format(sets[x]))))
     except ValueError:
       print("Not a number!")
       continue
@@ -81,12 +88,12 @@ for x in range(sets_total):
         print("Reps should be greater than 0.")
         continue
         
-#inol value is calculated with two different formulas: 1) for 0 < perc value <= 99, and 2) for 99 < perc value <= 100
+#inol value is calculated with two different formulas
 #no perc value > 100 used
 #inol value for current set is also rounded to 0.001 decimal and printed
-      elif warmup_percentage > 0 and warmup_percentage <= 99:
-        warmup_inol = (warmup_set * warmup_rep) / (100.0 - warmup_percentage)
-      elif warmup_percentage > 99 and warmup_percentage <= 100:
+      elif warmup_percent > 0 and warmup_percent <= 99:
+        warmup_inol = (warmup_set * warmup_rep) / (100.0 - warmup_percent)
+      elif warmup_percent > 99 and warmup_percent <= 100:
         warmup_inol = (warmup_set * warmup_rep)
       swarmup_inol = Decimal(str(warmup_inol)).quantize(Decimal('.001'))
       
