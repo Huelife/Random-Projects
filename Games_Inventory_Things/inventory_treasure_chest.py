@@ -3,16 +3,29 @@
 from random import randint
 
 #stats dictionary for 'Damage', 'Agility', and 'Speed' with values
-stats_a = {"Damage:": [300, 2, 3],"Agility:": [150, 5, 5],"Speed:": [150, 5, 5],}
-stats_b = {"Damage:": [220, 2, 2],"Agility:": [190, 8, 8],"Speed:": [190, 8, 8],}
-stats_c = {"Damage:": [150, 1, 1],"Agility:": [300, 10, 10],"Speed:": [300, 10, 10],}
+stats_a = {
+  "Damage:": [300, 2, 3],
+  "Agility:": [150, 5, 5],
+  "Speed:": [150, 5, 5],
+}
+stats_b = {
+  "Damage:": [220, 2, 2],
+  "Agility:": [190, 8, 8],
+  "Speed:": [190, 8, 8],
+}
+stats_c = {
+  "Damage:": [150, 1, 1],
+  "Agility:": [300, 10, 10],
+  "Speed:": [300, 10, 10],
+}
 
 pickup_random = 0
 
 #while loop continues until user input is 'no'
 while True:
   try:
-    pickup = input("Please choose 'yes' or 'no'.\nDo you want to open the treasure chest? ")
+    pickup = input("Please choose 'yes' or 'no'. "
+                   "\nDo you want to open the treasure chest? ")
   except ValueError:
     continue
   else:
