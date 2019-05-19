@@ -10,7 +10,8 @@ class Greetings:
     self.evening = evening
 
 bob = Greetings("How's the weather,","Afternoon,","Evening,")
-peter = Greetings("What's up, how's your morning so far","Good afternoon,","It's a great evening,")
+peter = (Greetings("What's up, how's your morning so far","Good afternoon,",
+        "It's a great evening,"))
 anne = Greetings("How's your morning,","Good day,","Good evening,")
 
 name_dict = {
@@ -21,21 +22,21 @@ name_dict = {
 
 while True:
   try:
-    name = input("Choose 'Bob', 'Peter', or 'Anne'. ").lower()
+    name = input("Choose 'bob', 'peter', or 'anne'. ").lower()
   except ValueError:
     continue
-  else:
-    for key,value in name_dict.items():
-      if name in name_dict and name == key:
-        if now.hour >= 0 and now.hour < 12:
-          print(value.morning,name.title()+"!?")
-        elif now.hour >= 12 and now.hour < 18:
-          print(value.afternoon,name.title()+"!")
-        elif now.hour >= 18 and now.hour < 24:
-          print(value.evening,name.title()+"!")
-        break
-      else:
-        print("{} is an invalid option.".format(name))
-        continue
-      break
+  else:    
+    if name in name_dict:
+      for key,value in name_dict.items():
+        if name == key:
+          if now.hour >= 0 and now.hour < 12:
+            print(value.morning,key.title()+"!?")
+          elif now.hour >= 12 and now.hour < 18:
+            print(value.afternoon,key.title()+"!")
+          elif now.hour >= 18 and now.hour < 24:
+            print(value.evening,key.title()+"!")
+          break
+    else:
+      print("{} is an invalid option.".format(key))
+      continue
     break
