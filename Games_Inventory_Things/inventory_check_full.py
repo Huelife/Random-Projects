@@ -20,51 +20,80 @@ class Item_Stats:
     return str(self.name)
   
 #setting individual item stats from inventory
-bronze_sword = Item_Stats("+100","+50","+50",0,0,0,0,0,"Bronze Sword","A cheap, but effective sword for combat.")
-steel_sword = Item_Stats("+150","+100","+100",0,0,0,0,0,"Steel Sword","A strong, sturdy sword for combat.")
-legendary_sword = Item_Stats("+300","+200","+200",0,0,0,0,0,"Legendary Sword","A powerful sword for combat.")
+bronze_sword = Item_Stats("+100","+50","+50",0,0,0,0,0,"Bronze Sword",
+                          "A cheap, but effective sword for combat.")
+steel_sword = Item_Stats("+150","+100","+100",0,0,0,0,0,"Steel Sword",
+                         "A strong, sturdy sword for combat.")
+legendary_sword = Item_Stats("+300","+200","+200",0,0,0,0,0,"Legendary Sword",
+                             "A powerful sword for combat.")
 
-bronze_helmet = Item_Stats(0,0,0,"+75","+75","+11",0,0,"Bronze Helmet","A cheap, but effective helmet for defense.")
-steel_helmet = Item_Stats(0,0,0,"+100","+100","+35",0,0,"Steel Helmet","A strong, sturdy helmet for defense.")
-legendary_helmet = Item_Stats(0,0,0,"+180","+180","+75",0,0,"Legendary Helmet","A powerful helmet for defense.")
+bronze_helmet = Item_Stats(0,0,0,"+75","+75","+11",0,0,"Bronze Helmet",
+                           "A cheap, but effective helmet for defense.")
+steel_helmet = Item_Stats(0,0,0,"+100","+100","+35",0,0,"Steel Helmet",
+                          "A strong, sturdy helmet for defense.")
+legendary_helmet = Item_Stats(0,0,0,"+180","+180","+75",0,0,
+                         "Legendary Helmet","A powerful helmet for defense.")
 
-bronze_armor = Item_Stats(0,0,0,"+150","+150","+30",0,0,"Bronze Armor","A cheap, but effective armor for defense.")
-steel_armor = Item_Stats(0,0,0,"+200","+200","+70",0,0,"Steel Armor","A strong, sturdy armor for defense.")
-legendary_armor = Item_Stats(0,0,0,"+300","+300","+100",0,0,"Legendary Armor","A powerful armor for defense.")
+bronze_armor = Item_Stats(0,0,0,"+150","+150","+30",0,0,"Bronze Armor",
+                          "A cheap, but effective armor for defense.")
+steel_armor = Item_Stats(0,0,0,"+200","+200","+70",0,0,"Steel Armor",
+                         "A strong, sturdy armor for defense.")
+legendary_armor = Item_Stats(0,0,0,"+300","+300","+100",0,0,"Legendary Armor",
+                             "A powerful armor for defense.")
 
-bronze_shield = Item_Stats(0,0,0,"+80","+80","+50",0,0,"Bronze Shield","A cheap, but effective shield for defense.")
-steel_shield = Item_Stats(0,0,0,"+125","+125","+95",0,0,"Steel Shield","A strong, sturdy shield for defense.")
-legendary_shield = Item_Stats(0,0,0,"+200","+200","+200",0,0,"Legendary Shield","A powerful shield for defense.")
+bronze_shield = Item_Stats(0,0,0,"+80","+80","+50",0,0,"Bronze Shield",
+                           "A cheap, but effective shield for defense.")
+steel_shield = Item_Stats(0,0,0,"+125","+125","+95",0,0,"Steel Shield",
+                          "A strong, sturdy shield for defense.")
+legendary_shield = Item_Stats(0,0,0,"+200","+200","+200",0,0,
+                          "Legendary Shield","A powerful shield for defense.")
 
-bronze_gun = Item_Stats("+125","+55",0,0,0,0,"+100","+100","Bronze Gun","A cheap, but effective gun for combat.")
-steel_gun = Item_Stats("+185","+85",0,0,0,0,"+200","+200","Steel Gun","A strong, sturdy gun for combat.")
-legendary_gun = Item_Stats("+355","+185",0,0,0,0,"+300","+300","Legendary Gun","A powerful gun for combat.")
+bronze_gun = Item_Stats("+125","+55",0,0,0,0,"+100","+100","Bronze Gun",
+                        "A cheap, but effective gun for combat.")
+steel_gun = Item_Stats("+185","+85",0,0,0,0,"+200","+200","Steel Gun",
+                       "A strong, sturdy gun for combat.")
+legendary_gun = Item_Stats("+355","+185",0,0,0,0,"+300","+300",
+                           "Legendary Gun","A powerful gun for combat.")
 
-cloth_boots = Item_Stats(0,"+50","+50",0,0,"+5",0,0,"Cloth Boots","A cheap, but effective pair of boots for defense.")
-leather_boots = Item_Stats(0,"+100","+100",0,0,"+25",0,0,"Leather Boots","A strong, sturdy pair of boots for defense.")
-legendary_boots = Item_Stats(0,"+300","+300",0,0,"+55",0,0,"Legendary Boots","A powerful pair of boots for defense.")
+cloth_boots = Item_Stats(0,"+50","+50",0,0,"+5",0,0,"Cloth Boots",
+                         "A cheap, but effective pair of boots for defense.")
+leather_boots = Item_Stats(0,"+100","+100",0,0,"+25",0,0,"Leather Boots",
+                           "A strong, sturdy pair of boots for defense.")
+legendary_boots = Item_Stats(0,"+300","+300",0,0,"+55",0,0,"Legendary Boots",
+                             "A powerful pair of boots for defense.")
 
-cloth_gloves = Item_Stats("+50","+100","+100",0,0,0,0,0,"Cloth Gloves","A cheap, but effective pair of gloves for defense.")
-leather_gloves = Item_Stats("+100","+150","+150",0,0,0,0,0,"Leather Gloves","A strong, sturdy pair of gloves for defense.")
-legendary_gloves = Item_Stats("+200","+300","+300",0,0,0,0,0,"Legendary Gloves","A powerful pair of gloves for defense.")
+cloth_gloves = Item_Stats("+50","+100","+100",0,0,0,0,0,"Cloth Gloves",
+                        "A cheap, but effective pair of gloves for defense.")
+leather_gloves = Item_Stats("+100","+150","+150",0,0,0,0,0,"Leather Gloves",
+                            "A strong, sturdy pair of gloves for defense.")
+legendary_gloves = Item_Stats("+200","+300","+300",0,0,0,0,0,
+                  "Legendary Gloves","A powerful pair of gloves for defense.")
 
 #setting items in swords,helmets,armors,shields,guns,boots,and gloves list
-swords = [bronze_sword,bronze_sword,bronze_sword,steel_sword,steel_sword,legendary_sword]
-helmets = [bronze_helmet,bronze_helmet,bronze_helmet,steel_helmet,steel_helmet,legendary_helmet]
-armors = [bronze_armor,bronze_armor,bronze_armor,steel_armor,steel_armor,legendary_armor]
-shields = [bronze_shield,bronze_shield,bronze_shield,steel_shield,steel_shield,legendary_shield]
+swords = [bronze_sword,bronze_sword,bronze_sword,steel_sword,steel_sword,
+          legendary_sword]
+helmets = [bronze_helmet,bronze_helmet,bronze_helmet,steel_helmet,
+           steel_helmet,legendary_helmet]
+armors = [bronze_armor,bronze_armor,bronze_armor,steel_armor,steel_armor,
+          legendary_armor]
+shields = [bronze_shield,bronze_shield,bronze_shield,steel_shield,
+           steel_shield,legendary_shield]
 guns = [bronze_gun,bronze_gun,bronze_gun,steel_gun,steel_gun,legendary_gun]
-boots = [cloth_boots,cloth_boots,cloth_boots,leather_boots,leather_boots,legendary_boots]
-gloves = [cloth_gloves,cloth_gloves,cloth_gloves,leather_gloves,leather_gloves,legendary_gloves]
+boots = [cloth_boots,cloth_boots,cloth_boots,leather_boots,leather_boots,
+         legendary_boots]
+gloves = [cloth_gloves,cloth_gloves,cloth_gloves,leather_gloves,
+          leather_gloves,legendary_gloves]
 
 #setting items in inventory_gear tuple and inventory_gear_list tuple
 inventory_gear = (swords,helmets,armors,shields,guns,boots,gloves)
-inventory_gear_list = ("Swords","Helmets","Armors","Shields","Guns","Boots","Gloves")
+inventory_gear_list = ("Swords","Helmets","Armors","Shields","Guns","Boots",
+                       "Gloves")
 
 #while loop continues until user inputs 'Quit'
 while True:
   try:
-    open_inventory = input("Enter 'Open Inventory' to check inventory gear or 'Quit' to leave. ")
+    open_inventory = input("Enter 'Open Inventory' to check inventory gear "
+                           "\nor 'Quit' to leave. ")
   except ValueError:
     continue
   else:
@@ -76,7 +105,8 @@ while True:
           print("Gear options:")
           for inventory_gear_list_names in inventory_gear_list:
             print(" {}".format(inventory_gear_list_names))
-          check_gear = input("Enter 'Check Swords' or other gear options. Enter 'Quit' to leave. ")
+          check_gear = input("Enter 'Check Swords' or other gear options. "
+                             "\nEnter 'Quit' to leave. ")
         except ValueError:
           continue
         else:
@@ -90,7 +120,8 @@ while True:
                 print("Sword list({}):".format(len(swords)))
                 for swords_list in swords:
                   print(" {}".format(swords_list))
-                check_swords_stats = input("Enter 'Check Bronze Sword' or other sword options. Enter 'Quit' to leave. ")
+                check_swords_stats = input("Enter 'Check Bronze Sword' or "
+                             "other sword options.\nEnter 'Quit' to leave. ")
               except ValueError:
                 continue
               else:
@@ -139,7 +170,8 @@ while True:
                 print("Helmet list({}):".format(len(helmets)))
                 for helmets_list in helmets:
                   print(" {}".format(helmets_list))
-                check_helmets_stats = input("Enter 'Check Bronze Helmet' or other helmet options. Enter 'Quit' to leave. ")
+                check_helmets_stats = input("Enter 'Check Bronze Helmet' or "
+                            "other helmet options.\nEnter 'Quit' to leave. ")
               except ValueError:
                 continue
               else:
@@ -188,7 +220,8 @@ while True:
                 print("Armor list({}):".format(len(armors)))
                 for armors_list in armors:
                   print(" {}".format(armors_list))
-                check_armors_stats = input("Enter 'Check Bronze Armor' or other armor options. Enter 'Quit' to leave. ")
+                check_armors_stats = input("Enter 'Check Bronze Armor' or "
+                             "other armor options.\nEnter 'Quit' to leave. ")
               except ValueError:
                 continue
               else:
@@ -237,7 +270,8 @@ while True:
                 print("Shield list({}):".format(len(shields)))
                 for shields_list in shields:
                   print(" {}".format(shields_list))
-                check_shields_stats = input("Enter 'Check Bronze Shield' or other shield options. Enter 'Quit' to leave. ")
+                check_shields_stats = input("Enter 'Check Bronze Shield' or "
+                            "other shield options.\nEnter 'Quit' to leave. ")
               except ValueError:
                 continue
               else:
@@ -286,7 +320,8 @@ while True:
                 print("Guns list({}):".format(len(guns)))
                 for guns_list in guns:
                   print(" {}".format(guns_list))
-                check_guns_stats = input("Enter 'Check Bronze Guns' or other gun options. Enter 'Quit' to leave. ")
+                check_guns_stats = input("Enter 'Check Bronze Guns' or "
+                            "other gun options.\nEnter 'Quit' to leave. ")
               except ValueError:
                 continue
               else:
@@ -338,7 +373,8 @@ while True:
                 print("Boots list({}):".format(len(boots)))
                 for boots_list in boots:
                   print(" {}".format(boots_list))
-                check_boots_stats = input("Enter 'Check Cloth Boots' or other boots options. Enter 'Quit' to leave. ")
+                check_boots_stats = input("Enter 'Check Cloth Boots' or "
+                           "other boots options.\nEnter 'Quit' to leave. ")
               except ValueError:
                 continue
               else:
@@ -387,7 +423,8 @@ while True:
                 print("Gloves list({}):".format(len(gloves)))
                 for gloves_list in gloves:
                   print(" {}".format(gloves_list))
-                check_gloves_stats = input("Enter 'Check Cloth Gloves' or other gloves options. Enter 'Quit' to leave. ")
+                check_gloves_stats = input("Enter 'Check Cloth Gloves' or "
+                            "other gloves options.\nEnter 'Quit' to leave. ")
               except ValueError:
                 continue
               else:
