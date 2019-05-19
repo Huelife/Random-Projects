@@ -63,4 +63,5 @@ for i in range(Y_RANGE):
 
 x_random_percent = round(((x_random/Y_RANGE)*100),1)
 
-print("Finding {} in numbers_set,\n{}/{},\n{}%".format(FIND_VALUE,x_random,Y_RANGE,x_random_percent))
+print("Finding {} in numbers_set,\n{}/{},\n{}%"
+     .format(FIND_VALUE,x_random,Y_RANGE,x_random_percent))
