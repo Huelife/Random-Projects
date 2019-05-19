@@ -1,6 +1,7 @@
 #creating Weapon_stats class for attributes
 class Weapon_stats:
-  def __init__(self,Strength,Agility,Speed,Defence,Vitality,Resistance,Piercing,Range):
+  def __init__(self,Strength,Agility,Speed,Defence,Vitality,Resistance,
+               Piercing,Range):
     self.Strength = Strength
     self.Agility = Agility
     self.Speed = Speed
@@ -21,7 +22,14 @@ print("Choose your weapon!")
 print("")
 
 #declaring weapon_list dict and printing the item names
-weapon_list = {"Legendary Sword":legendary_sword, "Legendary Shield":legendary_shield, "Legendary Gun":legendary_gun, "Legendary Bow":legendary_bow, "Legendary Axe":legendary_axe}
+weapon_list = {
+  "Legendary Sword": legendary_sword,
+  "Legendary Shield": legendary_shield,
+  "Legendary Gun": legendary_gun,
+  "Legendary Bow": legendary_bow,
+  "Legendary Axe":legendary_axe
+}
+
 for key, value in weapon_list.items():
   print(key)
 print("")
@@ -29,7 +37,8 @@ print("")
 #while loop continues until user inputs 'Quit'
 while True:
   try:
-    weapon = input("Choose a weapon to show its attributes, otherwise, enter 'Quit' to leave. ")
+    weapon = input("Choose a weapon to show its attributes, "
+                   "otherwise, enter 'Quit' to leave. ")
   except ValueError:
     continue
   else:
@@ -40,7 +49,8 @@ while True:
       print("="*len(weapon))
       print(weapon)
       print("="*len(weapon))
-      print("".join("%s: %s\n" % stats for stats in vars(weapon_list[weapon]).items()))
+      print("".join("%s: %s\n" % stats for stats in vars(weapon_list[weapon])
+            .items()))
     else:
       print("{} is an invalid option.".format(weapon))
     continue
