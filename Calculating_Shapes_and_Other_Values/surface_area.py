@@ -2,22 +2,24 @@
 from decimal import Decimal
 from math import pi
 
-print("Let's calculate surface area!\nPlease choose one of the following shapes:\n'box', 'sphere', or 'pyramid'.")
+print("""Let's calculate surface area!
+Please choose one of the following shapes:
+'box', 'sphere', or 'pyramid'.""")
 print("")
 
 #possible inputs for box and pyramid
-shape_box = ("box", "BOX", "bOx", "BoX", "boX", "Box", "BOx")
-shape_pyramid = ("pyramid", "PYRAMID", "Pyramid", "pYRAMID", "PYramid", "PYRamid", "pYramid")
+shape_box = ("box","bo","ox","bx")
+shape_pyramid = ("pyramid","pyr","pramid","pyramd","pyrami","puramid","pyd")
 
-#while loop continues until a given shape is chosen and a float value > 0 is used
+#while loop continues until a shape is chosen and a float value > 0 picked
 while True:
   try:
-    shape = input("What shape is the object? ")
+    shape = input("What shape is the object? ").lower()
   except ValueError:
     continue
   else:
     
-#user can input 'box' in 7 different formats and 'pyramid' in 7 different formats
+#user can input 'box' in different formats and 'pyramid' in different formats
     if shape in shape_box or shape in shape_pyramid:
       while True:
         try:
@@ -54,22 +56,25 @@ while True:
           break
           
 #user input of height, width, and length used
-#formula for area of a box is calulated and printed
-        if shape in shape_box:
-          area = (2*(height * width)) + (2*(height * length)) + (2*(width * length))
-          print("")
-          print("The surface area of your {} is: {} units^2".format(shape,area))
+#area of a box is calulated and printed
+      if shape in shape_box:
+        area = ((2*(height * width)) + (2*(height * length)) +
+               (2*(width * length)))
+        print("")
+        print("The surface area of your {} is: {} units^2".format(shape,area))
           
 #user input of length, width, and height is used
-#formula for area of a pyramid is calculated, rounded to 0.1 of a decimal, and printed
-        elif shape in shape_pyramid:
-          area = length * width + (length % (((width / 2)*(width / 2)) + (height*height))) + (width % (((length / 2)*(length / 2)) + (height*height)))
-          sarea = Decimal(str(area)).quantize(Decimal('.1'))
-          print("")
-          print("The surface area of your {} is: {} units^2".format(shape,sarea))
+#area of a pyramid is calculated, rounded to 0.1 of a decimal, and printed
+      elif shape in shape_pyramid:
+        area = (length * width + (length % (((width / 2)*(width / 2)) +
+               (height*height))) + (width % (((length / 2)*(length / 2)) +
+               (height*height))))
+        sarea = Decimal(str(area)).quantize(Decimal('.1'))
+        print("")
+        print("The surface area of your {} is: {} units^2".format(shape,sarea))
           
 #user can input 'sphere' in 7 different formats
-    elif shape in ("sphere", "SPHERE", "Sphere", "sPHERE", "SPhere", "SPHere", "sPhere"):
+    elif shape in ("sphere","sphre","sphr","sph","spher","shere","phere"):
       while True:
         try:
           radius = float(input("What's the radius? "))
@@ -83,7 +88,7 @@ while True:
           break
           
 #user input of radius is used
-#formula for area of a sphere is calculated, rounded to 0.1 of a decimal and printed
+#area of a sphere is calculated, rounded to 0.1 of a decimal and printed
       area = 4 * pi * (radius ** 2)
       sarea = Decimal(str(area)).quantize(Decimal('.1'))
       print("")
