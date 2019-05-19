@@ -47,7 +47,8 @@ class Box(AreaVolume):
     self.width = width
     self.height = height
     self.volume = length * width * height
-    self.surface_area = (2 * length * width) + (2 * width * height) + (2 * length * height)
+    self.surface_area = (2 * length * width) + (2 * width * height) + 
+                        (2 * length * height)
     super().__init__(name)
 
 class Pyramid(AreaVolume):
@@ -57,7 +58,9 @@ class Pyramid(AreaVolume):
     self.width = width
     self.height = height
     self.volume = round(((length * width * height) / 3),1)
-    self.surface_area = round(((length * width) + (length * sqrt(((width / 2)**2) + (height**2))) + (width * sqrt(((length / 2)**2) + (height**2)))),1)
+    self.surface_area = round(((length * width) + 
+                        (length * sqrt(((width / 2)**2) + (height**2))) + 
+                        (width * sqrt(((length / 2)**2) + (height**2)))),1)
     super().__init__(name)
     
 #-----------------------Shapes-Dict-------------------------------
@@ -73,7 +76,8 @@ shapes_dict = {
 #-----------------------while loop continues until user chooses an option
 while True:
   try:
-    user_area_volume = input("Do you want to find 'area', 'volume', or 'surface area'? ").lower()
+    user_area_volume = input("Do you want to find 'area', 'volume', 
+                       or 'surface area'? ").lower()
   except ValueError:
     continue
   else:
@@ -100,11 +104,13 @@ while True:
                   print("Please enter a number > 0.")
                   continue
                 print("")
-                print("Area: {} units^2".format(shapes_dict[user_shape]("",radius,"").area))
+                print("Area: {} units^2".format(shapes_dict[user_shape]\
+                                                ("",radius,"").area))
                 print("")
                 break
                 
-          elif user_shape in shapes_dict and user_shape == "square" or user_shape == "triangle":
+          elif user_shape in shapes_dict and user_shape == "square" or \
+                             user_shape == "triangle":
             while True:
               try:
                 height = float(input("What's the height? "))
@@ -126,7 +132,8 @@ while True:
                       print("Please enter a number > 0.")
                       continue 
                     print("")
-                    print("Area: {} units^2".format(shapes_dict[user_shape]("",height,base,"").area))
+                    print("Area: {} units^2".format(shapes_dict\
+                          [user_shape]("",height,base,"").area))
                     print("")
                     break
                 break
@@ -136,7 +143,8 @@ while True:
           break
           
 #-----------------------while loop for volume/surface area-------
-    elif user_area_volume == "volume" or user_area_volume == "surface area":
+    elif user_area_volume == "volume" or user_area_volume == \
+                             "surface area":
       while True:
         try:
           print("  sphere\n  box\n  pyramid")
@@ -158,15 +166,18 @@ while True:
                   continue
                 elif user_area_volume == "volume":
                   print("")
-                  print("Volume: {} units^3".format(shapes_dict[user_shape]("",radius,"","").volume))
+                  print("Volume: {} units^3".format(shapes_dict\
+                         [user_shape]("",radius,"","").volume))
                   print("")
                 elif user_area_volume == "surface area":
                   print("")
-                  print("Surface Area: {} units^2".format(shapes_dict[user_shape]("",radius,"","").surface_area))
+                  print("Surface Area: {} units^2".format(shapes_dict\
+                          [user_shape]("",radius,"","").surface_area))
                   print("")
                 break
                 
-          elif user_shape in shapes_dict and user_shape == "box" or user_shape == "pyramid":
+          elif user_shape in shapes_dict and user_shape == "box" \
+                             or user_shape == "pyramid":
             while True:
               try:
                 length = float(input("What's the length? "))
@@ -199,11 +210,15 @@ while True:
                           continue
                         elif user_area_volume == "volume":
                           print("")
-                          print("Volume: {} units^3".format(shapes_dict[user_shape]("",length,width,height,"","").volume))
+                          print("Volume: {} units^3".format(\
+                                 shapes_dict[user_shape]("",\
+                                 length,width,height,"","").volume))
                           print("")
                         elif user_area_volume == "surface area":
                           print("")
-                          print("Surface Area: {} units^2".format(shapes_dict[user_shape]("",length,width,height,"","").surface_area))
+                          print("Surface Area: {} units^2".format(\
+                               shapes_dict[user_shape]("",length,\
+                               width,height,"","").surface_area))
                           print("")
                         break
                     break
