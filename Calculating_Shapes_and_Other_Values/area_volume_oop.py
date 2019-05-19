@@ -76,8 +76,8 @@ shapes_dict = {
 #-----------------------while loop continues until user chooses an option
 while True:
   try:
-    user_area_volume = input("Do you want to find\
-    'area', 'volume', or 'surface area'? ").lower()
+    user_area_volume = input("Do you want to find 'area', 'volume', or \
+    'surface area'? ").lower()
   except ValueError:
     continue
   else:
