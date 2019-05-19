@@ -25,7 +25,7 @@ while True:
     continue
   else:
     if perc <= 0 or perc > 100:
-      print("Percentage should be greater than 0, but less than or equal to 100.")
+      print("Percentage should be > 0, but <= 100.")
       continue
     break
     
@@ -55,8 +55,7 @@ while True:
       continue
     break
     
-#INOL is calculated and rounded with 2 different equations, one for: 0 < perc <= 99; and 99 < perc <= 100. No perc > 100 taken
-#INOL requires user input for: weight, perc, sets, and reps. Weight value is not used in the current equations
+#INOL is calculated and rounded with 2 different equations
 if perc > 0 and perc <= 99:
   inol = round(float((sets * reps) / (100.0 - perc)),3)
 elif perc > 99 and perc <= 100:
