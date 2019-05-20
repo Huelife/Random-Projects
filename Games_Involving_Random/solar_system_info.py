@@ -1,10 +1,11 @@
 #importing randint to randomize what gets printed
 from random import randint
 
-print("Hi! There are currently 8 planets in our solar system. Here are some information that I have gathered for each.")
+print("Hi! There are currently 8 planets in our solar system."
+      "\nHere are some information that I have gathered for each.")
 print("")
 
-#empty variables for each planet with string values that should contain interesting facts
+#variables for each planet containing interesting facts
 # Mercury
 me1 = "Mercury: Planet closes to the Sun."
 me2 = "Mercury: Has no moon."
@@ -141,7 +142,8 @@ planet_dict = {
 #while loop continues until user enters 'Q'
 while True:
   try:
-    planet = input("Which planet would you like information on? Enter 'Q' to quit. ")
+    planet = input("Which planet would you like information on?"
+                   "\nEnter 'Q' to quit. ")
   except ValueError:
     continue
   else:
@@ -149,10 +151,12 @@ while True:
     roll = randint(0,9)
     if planet == "Q":
       break
-    for key,value in planet_dict.items():
-      if planet in key:
-        print(value[roll])
-        print("")
+    elif any(planet in planet_dict for planet in planet_dict):
+      for key,value in planet_dict.items():
+        if planet in key:
+          print(value[roll])
+          print("")
     else:
       print("{} is an invalid option.".format(planet))
+      print("")
     continue
