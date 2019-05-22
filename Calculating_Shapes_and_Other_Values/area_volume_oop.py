@@ -31,7 +31,7 @@ class TriangleArea(AreaVolume):
     self.area = (height * base) / 2
     super().__init__(name)
     
-#-----------------------Volume-Classes----------------------------
+#-----------------------Volume-Surface Area Classes--------------
 class Sphere(AreaVolume):
   def __init__(self,name,radius,volume,surface_area):
     self.shape_name = "sphere"
