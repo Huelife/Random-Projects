@@ -1,3 +1,5 @@
+# kgs_to_lbs.py: convert between metric and imperial units
+
 print("Let's convert pounds and kilograms!")
 print("")
 
