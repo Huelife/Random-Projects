@@ -12,7 +12,7 @@ class Greetings:
     self.afternoon = afternoon
     self.evening = evening
 
-#bob,peter,anne objects given attributes
+#bob,peter,and anne objects given attributes
 bob = Greetings("How's the weather,","Afternoon,","Evening,")
 peter = (Greetings("What's up, how's your morning so far","Good afternoon,",
         "It's a great evening,"))
