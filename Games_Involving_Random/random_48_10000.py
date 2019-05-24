@@ -1,5 +1,8 @@
+#random_48_10000.py: rolls 26 random numbers from 1-50, 10000 times
+
 from random import randint
 
+#int variables
 x_random = 0
 FIND_VALUE = 48
 Y_RANGE = 10000
@@ -30,6 +33,7 @@ x = 0
 y = 0
 z = 0
 
+#random numbers are iterated 10000 times
 for i in range(Y_RANGE):
   numbers_set = [a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,z]
   a = randint(1,50)
@@ -61,7 +65,9 @@ for i in range(Y_RANGE):
   if FIND_VALUE in numbers_set:
     x_random += 1
 
+#percentage of times random 48 pops up
 x_random_percent = round(((x_random/Y_RANGE)*100),1)
 
+#4 different information printed
 print("Finding {} in numbers_set,\n{}/{},\n{}%"
      .format(FIND_VALUE,x_random,Y_RANGE,x_random_percent))
