@@ -1,20 +1,22 @@
+#inol_single.py: Prints a single INOL value based on user input
+
 #INOL stands for Intensity Number Of Lifts
 print("Let's figure out your INOL value!")
 print("")
 
 #while loop continues until a float value > 0 is entered
-#fluff code from lines 7-16, not used in the end and deletable
-while True:
-  try:
-    weight = float(input("How much weight are you using? "))
-  except ValueError:
-    print("Not a number!")
-    continue
-  else:
-    if weight <= 0:
-      print("Weight should be greater than 0.")
-      continue
-    break
+#fluff code from lines 7-19, not used in the end, commented out for now
+#while True:
+#  try:
+#    weight = float(input("How much weight are you using? "))
+#  except ValueError:
+#    print("Not a number!")
+#    continue
+#  else:
+#    if weight <= 0:
+#      print("Weight should be greater than 0.")
+#      continue
+#    break
     
 #while loop continues until a float value > 0, but less than 100, is entered
 while True:
