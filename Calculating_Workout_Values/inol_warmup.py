@@ -1,8 +1,10 @@
+#inol_warmup.py: Calculating multiple warmup INOL values
+
 #importing decimal for rounding
 from decimal import Decimal
 
 #INOL stands for Intensity Number Of Lifts
-print("Let's figure out your daily INOL value!")
+print("Let's figure out your daily warmup INOL value!")
 print("")
 
 #sets tuple created with 12 possible values that can be called
@@ -101,9 +103,9 @@ for x in range(sets_total):
       inol_add += swarmup_inol
   
       print("")
-      print("INOL: {}".format(swarmup_inol))
+      print("INOL: {}.".format(swarmup_inol))
       print("")
       break
       
 #total inol value from each added set is printed
-print("Total warmup INOL: {}".format(inol_add))
+print("Total warmup INOL: {}.".format(inol_add))
