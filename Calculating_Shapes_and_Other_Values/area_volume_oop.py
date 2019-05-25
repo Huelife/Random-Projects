@@ -1,3 +1,5 @@
+#area_volume_oop.py: Calculating area,surface area,and volume of shapes
+
 from math import pi,sqrt
 
 #-----------------------Area-Volume-Super-Class------------------
@@ -76,8 +78,8 @@ shapes_dict = {
 #-----------------------while loop continues until user chooses an option
 while True:
   try:
-    user_area_volume = (input\
-    ("Do you want to find 'area', 'volume', or 'surface area'? ").lower())
+    user_area_volume = (input("Do you want to find 'area', 'volume', or "
+                              "'surface area'? ").lower())
   except ValueError:
     continue
   else:
@@ -104,7 +106,7 @@ while True:
                   print("Please enter a number > 0.")
                   continue
                 print("")
-                print("Area: {} units^2".format(shapes_dict[user_shape]
+                print("Area: {} units^2.".format(shapes_dict[user_shape]
                                                 ("",radius,"").area))
                 print("")
                 break
@@ -132,7 +134,7 @@ while True:
                       print("Please enter a number > 0.")
                       continue 
                     print("")
-                    print("Area: {} units^2".format(shapes_dict
+                    print("Area: {} units^2.".format(shapes_dict
                           [user_shape]("",height,base,"").area))
                     print("")
                     break
@@ -166,12 +168,12 @@ while True:
                   continue
                 elif user_area_volume == "volume":
                   print("")
-                  print("Volume: {} units^3".format(shapes_dict
+                  print("Volume: {} units^3.".format(shapes_dict
                          [user_shape]("",radius,"","").volume))
                   print("")
                 elif user_area_volume == "surface area":
                   print("")
-                  print("Surface Area: {} units^2".format(shapes_dict
+                  print("Surface Area: {} units^2.".format(shapes_dict
                           [user_shape]("",radius,"","").surface_area))
                   print("")
                 break
@@ -210,13 +212,13 @@ while True:
                           continue
                         elif user_area_volume == "volume":
                           print("")
-                          print("Volume: {} units^3".format
+                          print("Volume: {} units^3.".format
                                (shapes_dict[user_shape]("",length,
                                     width,height,"","").volume))
                           print("")
                         elif user_area_volume == "surface area":
                           print("")
-                          print("Surface Area: {} units^2".format
+                          print("Surface Area: {} units^2.".format
                                (shapes_dict[user_shape]("",length,
                                 width,height,"","").surface_area))
                           print("")
