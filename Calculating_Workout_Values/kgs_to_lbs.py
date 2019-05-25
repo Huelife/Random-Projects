@@ -1,4 +1,4 @@
-# kgs_to_lbs.py: convert between metric and imperial units
+# kgs_to_lbs.py: Convert between metric and imperial units
 
 print("Let's convert pounds and kilograms!")
 print("")
@@ -12,7 +12,7 @@ while True:
     continue
   else:
     if weight <= 0:
-      print("Please enter a value > 0")
+      print("Please enter a value > 0.")
       continue
     break
     
