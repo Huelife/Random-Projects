@@ -1,3 +1,5 @@
+#dice_game.py: Dice game with 3/5 chances to win
+
 #importing randint for random integars
 from random import randint
 
@@ -15,7 +17,7 @@ wins = 0
 while True:
   try:
     print("-"*30)
-    print("Turn", turn + 1)
+    print("Turn",turn + 1)
     play = input("Press enter to play. ")
   except ValueError:
     continue
@@ -30,8 +32,8 @@ while True:
       dealer_roll_two = randint(1,6)
       dealer_roll_total = dealer_roll_one + dealer_roll_two
 
-      print("Your roll: [{}][{}] = {}".format(roll_one,roll_two,roll_total))
-      print("Dealer roll: [{}][{}] = {}"
+      print("Your roll: [{}][{}] = {}.".format(roll_one,roll_two,roll_total))
+      print("Dealer roll: [{}][{}] = {}."
             .format(dealer_roll_one,dealer_roll_two,dealer_roll_total))
        
 #if/elif statements to determine when while loop stops
