@@ -1,3 +1,5 @@
+#inventory_weapons_def.py: Weapon stats using functions and print
+
 #declaring functions that print item stats associated with weapon_list list
 def Leg_Sw():
   print("You've chosen the Legendary Sword!")
@@ -26,6 +28,7 @@ print("")
 weapon_list = ["Legendary Sword","Legendary Shield","Legendary Gun",
                "Legendary Bow","Legendary Axe"]
 
+#weapon_list_02 dict
 weapon_list_02 = {
   "1":Leg_Sw,
   "2":Leg_Sh,
@@ -34,6 +37,7 @@ weapon_list_02 = {
   "5":Leg_Ax
 }
 
+#for loop printing all items in weapon_list
 for i in weapon_list:
   print(i)
 print("")
