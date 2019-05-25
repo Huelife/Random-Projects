@@ -1,7 +1,7 @@
 #importing decimal and round values
 from decimal import Decimal, ROUND_UP, ROUND_DOWN
 
-print("Let's calculate City/Highway MPG!")
+print("Let's calculate city/highway mpg!")
 print("")
 
 #gathering input from user for miles, gallons, and city percentage driving
@@ -31,7 +31,7 @@ while True:
     
 while True:
   try:
-    city = float(input("What percentage of city driving did you do? "))
+    city_per = float(input("What percentage of city driving did you do? "))
   except ValueError:
     print("Not a number!")
     continue
@@ -45,22 +45,22 @@ print("")
 
 #calculating and rounding values
 mpg = distance / gallons
-smpg = Decimal(str(mpg)).quantize(Decimal('.1'))
-highway = 100.0 - city
+mpg_round = Decimal(str(mpg)).quantize(Decimal('.1'))
+highway_per = 100.0 - city_per
 
 city100 = 0.857 * mpg
 highway100 = mpg / 0.807
 
-scity100 = (Decimal(str(city100)).quantize
+city100_round = (Decimal(str(city100)).quantize
             (Decimal('.1'), rounding=ROUND_UP))
-shighway100 = (Decimal(str(highway100)).quantize
+highway100_round = (Decimal(str(highway100)).quantize
                (Decimal('.1'), rounding=ROUND_DOWN))
 
 #printing current mpg, and city and highway percentage
-print("Your mpg is: {}".format(smpg))
-print("You drove: {}% City/{}% Highway".format(city,highway))
+print("Your mpg is: {}.".format(mpg_round))
+print("You drove: {}% city/{}% highway.".format(city_per,highway_per))
 print("")
 
 #printing mpg if user drives 100% city or 100% highway
-print("If you drove 100% City, your mpg would be: {}".format(scity100))
-print("If you drove 100% Highway, your mpg would be: {}".format(shighway100))
+print("If you drove 100% city, your mpg would be: {}.".format(city100_round))
+print("If you drove 100% highway, your mpg would be: {}.".format(highway100_round))
