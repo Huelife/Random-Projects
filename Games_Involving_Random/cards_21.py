@@ -1,3 +1,5 @@
+#cards_21.py: Card game playing 21/Black Jack
+
 #importing randint
 from random import randint
 
