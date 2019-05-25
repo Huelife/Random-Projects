@@ -1,4 +1,4 @@
-#random_48_10000.py: rolls 26 random numbers from 1-50, 10000 times
+#random_48_10000.py: Rolls 26 random numbers from 1-50, 10000 times
 
 from random import randint
 
