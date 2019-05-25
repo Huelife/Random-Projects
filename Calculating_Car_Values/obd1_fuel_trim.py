@@ -5,10 +5,10 @@ multimeter for this procedure. First, warm up your car
 to normal operating temperatures for 5-10 minutes. Then, 
 rev your engine at approximately 2500 rpms for 2 minutes 
 and let it idle afterwards. Now, open the diagnostic 
-port in the engine bay on the passenger side. Using the 
-multimeter on DCVolts at the lowest setting, probe 
-your red positive wire to the Vf1 pin and probe your 
-black negative wire to the E1 pin.""")
+port in the engine bay. Using the multimeter on DCVolts 
+at the lowest setting, probe your red positive wire to 
+the Vf1 pin and probe your black negative wire to the 
+E1 pin.""")
 print("")
 
 #values used to determine cutoff for each percentage,
@@ -21,6 +21,7 @@ print("")
 
 # 0.125 = 1 %
 
+#for loop  generator values for correct output
 x_range = -124
 y_range = 1
 percentage = -20
