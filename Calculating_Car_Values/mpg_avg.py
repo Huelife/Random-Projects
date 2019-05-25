@@ -1,5 +1,6 @@
 from statistics import mean
 
+#dictionairy for mpg by date
 mpg_dict = {
   "04/12/18": 18.3,
   "04/14/18": 21.6,
@@ -31,7 +32,8 @@ mpg_dict = {
   "05/21/19": 22.1,
 }
 
+#adding all mpg values, averaging them, and printing them
 mpg_add = [mpg_dict[key] for key in mpg_dict]
 mpg_avg  = round((mean(mpg_add)),1)
 
-print("Current mpg avg: {}".format(mpg_avg))
+print("Current mpg avg: {}.".format(mpg_avg))
