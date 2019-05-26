@@ -3,7 +3,7 @@
 import re
 
 #email check currently doesnt check for foreign characters
-user_email_check = r"[äöüéèA-Z0-9a-z!#\$%*/?\|\^\{\}`~&'+\-=_]+@[äöüéèA-Z0-9a-z!#\$%*/?\|\^\{\}`~&'+\-=_]+\.[a-z]{2,3}"
+email_check = r"[äöüéèA-Z0-9a-z!#\$%*/?\|\^\{\}`~&'+\-=_]+@[äöüéèA-Z0-9a-z!#\$%*/?\|\^\{\}`~&'+\-=_]+\.[a-z]{2,3}"
 
 #loop continues until user inputs a valid email address
 while True:
@@ -12,7 +12,7 @@ while True:
   except ValueError:
     continue
   else:
-    if re.search(user_email_check,user_email):
+    if re.search(email_check,user_email):
       print("Match!")
       break
     else:
