@@ -1,7 +1,7 @@
 #candle_burn_rate.py: Calculating candle burn rate and total hour
 
 #importing decimal and rounding to round up
-from decimal import Decimal, ROUND_UP
+from decimal import Decimal,ROUND_UP
 
 print("""Hi! Let's figure out your candle's burn rate!
 First, weigh your candle before you burn it.""")
@@ -55,11 +55,11 @@ while True:
 print("")
 tweight = (iweight - fweight)
 rate = tweight / time
-srate = Decimal(str(rate)).quantize(Decimal('.01'), rounding=ROUND_UP)
+srate = Decimal(str(rate)).quantize(Decimal('.01'),rounding=ROUND_UP)
 
 ttime = iweight / float(srate)
 hours = ttime / 60.0
-shours = Decimal(str(hours)).quantize(Decimal('.01'), rounding=ROUND_UP)
+shours = Decimal(str(hours)).quantize(Decimal('.01'),rounding=ROUND_UP)
 
 #rate is in grams/mins and how many total hours the candle can burn for
 print("Ok! Your candle burns at a rate of about: {} grams/minute"
