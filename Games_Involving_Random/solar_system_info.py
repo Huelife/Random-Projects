@@ -1,4 +1,4 @@
-#solar_system_info.py: random information about our 8 planets
+#solar_system_info.py: Random information about our 8 planets
 
 #importing randint to randomize what gets printed
 from random import randint
@@ -12,7 +12,7 @@ print("")
 me1 = "Mercury: Planet closes to the Sun."
 me2 = "Mercury: Has no moon."
 me3 = "Mercury: Smallest planet."
-me4 = "me4"
+me4 = "Mercury: A rotational day is 58 days, 15 hours, and 30 minutes."
 me5 = "me5"
 me6 = "me6"
 me7 = "me7"
@@ -24,7 +24,7 @@ me10 = "me10"
 v1 = "Venus: Second planet closes to the Sun."
 v2 = "Venus: Has no moon."
 v3 = "Venus: Hottest planet."
-v4 = "v4"
+v4 = "Venus: Atmosphere is 96% carbon dioxide and 3% nitrogen."
 v5 = "v5"
 v6 = "v6"
 v7 = "v7"
