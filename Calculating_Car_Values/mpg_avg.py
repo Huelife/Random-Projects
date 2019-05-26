@@ -1,3 +1,5 @@
+#mpg_avg.py: My car's mpg and the date it was calculated
+
 from statistics import mean
 
 #dictionairy for mpg by date
