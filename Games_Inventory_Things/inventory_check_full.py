@@ -1,4 +1,5 @@
-#full inventory check program
+#inventory_check_full.py: Full inventory check module with multiple items
+
 print("")
 print("Let's check your inventory!")
 
