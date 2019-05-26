@@ -65,4 +65,4 @@ elif perc > 99 and perc <= 100:
   
 #INOL value printed
 print("")
-print("Your INOL is: {}".format(inol))
+print("Your INOL is: {}.".format(inol))
