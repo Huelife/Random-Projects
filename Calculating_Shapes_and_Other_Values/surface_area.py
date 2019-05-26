@@ -71,9 +71,10 @@ while True:
         area = (length * width + (length % (((width / 2)*(width / 2)) +
                (height*height))) + (width % (((length / 2)*(length / 2)) +
                (height*height))))
-        sarea = Decimal(str(area)).quantize(Decimal('.1'))
+        area_round = Decimal(str(area)).quantize(Decimal('.1'))
         print("")
-        print("The surface area of your {} is: {} units^2".format(shape,sarea))
+        print("The surface area of your {} is: {} units^2"
+              .format(shape,area_round))
           
 #user can input 'sphere' in 7 different formats
     elif shape in ("sphere","sphre","sphr","sph","spher","shere","phere"):
@@ -92,9 +93,10 @@ while True:
 #user input of radius is used
 #area of a sphere is calculated, rounded to 0.1 of a decimal and printed
       area = 4 * pi * (radius ** 2)
-      sarea = Decimal(str(area)).quantize(Decimal('.1'))
+      area_round = Decimal(str(area)).quantize(Decimal('.1'))
       print("")
-      print("The surface area of your sphere is: {} units^2".format(sarea))
+      print("The surface area of your sphere is: {} units^2"
+            .format(area_round))
       
     else:
       print("{} is not a valid input.".format(shape))
