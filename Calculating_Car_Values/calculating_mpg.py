@@ -54,9 +54,9 @@ city100 = 0.857 * mpg
 highway100 = mpg / 0.807
 
 city100_round = (Decimal(str(city100)).quantize
-            (Decimal('.1'), rounding=ROUND_UP))
+            (Decimal('.1'),rounding=ROUND_UP))
 highway100_round = (Decimal(str(highway100)).quantize
-               (Decimal('.1'), rounding=ROUND_DOWN))
+               (Decimal('.1'),rounding=ROUND_DOWN))
 
 #printing current mpg, and city and highway percentage
 print("Your mpg is: {}.".format(mpg_round))
