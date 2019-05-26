@@ -24,12 +24,11 @@ def Leg_Ax():
 print("Choose your weapon!")
 print("")
 
-#creating weapon_list list and weapon_list_02 dict
+#creating weapon_list and weapon_dict
 weapon_list = ["Legendary Sword","Legendary Shield","Legendary Gun",
                "Legendary Bow","Legendary Axe"]
 
-#weapon_list_02 dict
-weapon_list_02 = {
+weapon_dict = {
   "1":Leg_Sw,
   "2":Leg_Sh,
   "3":Leg_Gu,
@@ -54,7 +53,7 @@ while True:
       break
     elif weapon in ("1","2","3","4","5"):
       print("")
-      weapon_list_02[weapon]()
+      weapon_dict[weapon]()
       print("")
     else:
       print("{} is an invalid option.".format(weapon))
