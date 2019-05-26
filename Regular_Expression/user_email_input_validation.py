@@ -12,9 +12,9 @@ while True:
   except ValueError:
     continue
   else:
-    if re.search(user_email_check, user_email):
-      print("Match")
+    if re.search(user_email_check,user_email):
+      print("Match!")
       break
     else:
-      print("Invalid")
+      print("Invalid.")
       continue
