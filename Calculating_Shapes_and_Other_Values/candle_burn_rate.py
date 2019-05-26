@@ -1,3 +1,5 @@
+#candle_burn_rate.py: Calculating candle burn rate and total hour
+
 #importing decimal and rounding to round up
 from decimal import Decimal, ROUND_UP
 
