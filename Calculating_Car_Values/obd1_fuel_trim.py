@@ -55,7 +55,7 @@ while True:
         fuel_trim = "lean"
       elif vf > 5000:
         fuel_trim = "SUPER LEAN"
-      percentage += 1
+      perc += 1
       x_range += 125
       y_range += 125      
     break
