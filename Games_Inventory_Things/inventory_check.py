@@ -1,3 +1,5 @@
+#inventory_check.py: Simple inventory check with 1 item
+
 print("Let's check your inventory!")
 
 #setting items in inventory list
