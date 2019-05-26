@@ -1,3 +1,5 @@
+#calculating_known_mpg.py: 100% city or 100% highway mpg calculated
+
 #importing decimal and rounding
 from decimal import Decimal, ROUND_UP, ROUND_DOWN
 
