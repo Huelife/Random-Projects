@@ -1,4 +1,4 @@
-#greetings_time.py: prints a greeting depending on hour of the day
+#greetings_time.py: Prints a greeting depending on hour of the day
 
 import datetime
 
@@ -17,17 +17,19 @@ bob = Greetings("How's the weather,","Afternoon,","Evening,")
 peter = (Greetings("What's up, how's your morning so far","Good afternoon,",
         "It's a great evening,"))
 anne = Greetings("How's your morning,","Good day,","Good evening,")
+chuck = Greetings("Morning,","Yo,","Let's party,")
 
 name_dict = {
   "bob": bob,
   "peter": peter,
-  "anne": anne
+  "anne": anne,
+  "chuck": chuck
 }
 
 #while loop continues until user chooses either bob, peter, or anne
 while True:
   try:
-    name = input("Choose 'bob', 'peter', or 'anne'. ").lower()
+    name = input("Choose 'bob', 'peter', 'anne', or 'chuck'. ").lower()
   except ValueError:
     continue
   else:    
