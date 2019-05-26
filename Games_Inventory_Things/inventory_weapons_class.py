@@ -1,5 +1,5 @@
 #creating Weapon_stats class for attributes
-class Weapon_stats:
+class WeaponStats:
   def __init__(self,Strength,Agility,Speed,Defence,Vitality,Resistance,
                Piercing,Range):
     self.Strength = Strength
@@ -12,11 +12,11 @@ class Weapon_stats:
     self.Range = Range
 
 #stat values for items in weapon_list
-legendary_sword = Weapon_stats("+100","+50","+50",0,0,0,0,0)
-legendary_shield = Weapon_stats(0,0,0,"+200","+200","+200",0,0)
-legendary_gun = Weapon_stats(0,"+100","+200",0,0,0,"+100",0)
-legendary_bow = Weapon_stats(0,"+200","+200",0,0,0,0,"+100")
-legendary_axe = Weapon_stats("+200","+25",0,0,"+50",0,0,0)
+legendary_sword = WeaponStats("+100","+50","+50",0,0,0,0,0)
+legendary_shield = WeaponStats(0,0,0,"+200","+200","+200",0,0)
+legendary_gun = WeaponStats(0,"+100","+200",0,0,0,"+100",0)
+legendary_bow = WeaponStats(0,"+200","+200",0,0,0,0,"+100")
+legendary_axe = WeaponStats("+200","+25",0,0,"+50",0,0,0)
 
 print("Choose your weapon!")
 print("")
