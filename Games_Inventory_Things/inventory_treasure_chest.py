@@ -1,4 +1,5 @@
-#simple treasure chest game with 3 items
+#inventory_treasure_chest.py: Simple treasure chest game with 3 items
+
 #importing randint for random values
 from random import randint
 
