@@ -1,3 +1,5 @@
+#obd1_fuel_trim.py: Calculating fuel trim for my obd1 car
+
 #printing to user to find vf value
 print("""Hi! Let's figure out your cars Learned Value Fuel Trims! 
 You will need a 10 megaohm+ input impedance voltmeter/
