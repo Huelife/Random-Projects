@@ -26,8 +26,8 @@ print("")
 #for loop  generator values for correct output
 x_range = -124
 y_range = 1
-percentage = -20
-fuel_trim_percentage = 0
+perc = -20
+fuel_trim_perc = 0
 fuel_trim = ""
 
 #program loops until user inputs a float value
@@ -40,11 +40,11 @@ while True:
   else:
     for i in range(51):
       if vf in range(x_range,y_range):
-        fuel_trim_percentage = percentage
+        fuel_trim_perc = perc
       elif vf < -125:
-        fuel_trim_percentage = "-2x"
+        fuel_trim_perc = "-2x"
       elif vf > 6250:
-        fuel_trim_percentage = "3x"
+        fuel_trim_perc = "3x"
       if vf < 0:
         fuel_trim = "SUPER RICH"
       elif vf in range(-1,1250):
@@ -63,4 +63,4 @@ while True:
 #printed results
 print("")
 print("Your car is running {},\nwith a {}% fuel trim."
-      .format(fuel_trim,fuel_trim_percentage))
+      .format(fuel_trim,fuel_trim_perc))
