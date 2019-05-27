@@ -24,7 +24,7 @@ cards_num4 = [0,1,2,3,4,5,6,7,8,9,10,10,10,10]
 #    hitme = input("Type HITME to add card, otherwise, type STAY")
 #    if hitme == "HITME":
 
-you = 0
+win = 0
 
 #while loop that continues until 'you' variable is '1' or more
 while True:
@@ -70,14 +70,14 @@ while True:
 #determining if user wins, wins with black jack, loses, or if it's a draw
 #Game repeats for draws until user wins or loses
       if your_total == 21 and dealer_total < 21:
-        you += 1
+        win += 1
       elif your_total == dealer_total:
         print("DRAW!")
         continue
       elif your_total <= 21 and dealer_total > 21:
-        you += 1
+        win += 1
       elif your_total > dealer_total and your_total <= 21:
-        you += 1
+        win += 1
 
     else:
       print("{} is an invalid option.".format(play))
@@ -85,9 +85,9 @@ while True:
     break
 
 #printing if user wins or loses
-if you >= 1 and your_total == 21:
+if win >= 1 and your_total == 21:
   print("Black Jack! CONGRATULATIONS! YOUVE WON!")
-elif you >=1:
+elif win >=1:
   print("CONGRATULATIONS! YOUVE WON!")
 else:
   print("Sorry... You lose...")
