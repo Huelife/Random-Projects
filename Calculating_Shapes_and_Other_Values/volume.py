@@ -64,9 +64,9 @@ while True:
 #volume of a pyramid is calculated, printed, and rounded to 0.1 of a decimal
       elif shape in pyramid_tuple:
         volume = (length * width * height) / 3
-        svolume = Decimal(str(volume)).quantize(Decimal('.1'))
+        volume_round = Decimal(str(volume)).quantize(Decimal('.1'))
         print("")
-        print("The volume of your pyramid is: " + str(svolume) + " units^3")
+        print("The volume of your pyramid is: " + str(volume_round) + " units^3")
         
 #user can input 'sphere' in 7 different formats
     elif shape in ("sphere","sphre","sphr","sph","spher","shere","phere"):
@@ -84,10 +84,10 @@ while True:
           
 #volume of a sphere is calculated, printed, and rounded to 0.1 of a decimal
       volume = (4/3) * pi * (radius ** 3)
-      svolume = Decimal(str(volume)).quantize(Decimal('.1'))
+      volume_round = Decimal(str(volume)).quantize(Decimal('.1'))
     
       print("")
-      print("The volume of your sphere is: " + str(svolume) + " units^3")
+      print("The volume of your sphere is: " + str(volume_round) + " units^3")
       
     else:
       print("{} is not a valid option.".format(shape))
