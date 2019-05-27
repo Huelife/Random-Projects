@@ -20,10 +20,10 @@ anne = Greetings("How's your morning,","Good day,","Good evening,")
 chuck = Greetings("Morning,","Yo,","Let's party,")
 
 name_dict = {
-  "bob": bob,
-  "peter": peter,
-  "anne": anne,
-  "chuck": chuck
+  "bob":bob,
+  "peter":peter,
+  "anne":anne,
+  "chuck":chuck
 }
 
 #while loop continues until user chooses either bob, peter, or anne
