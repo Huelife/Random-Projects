@@ -9,16 +9,16 @@ print("")
 
 #variables for each planet containing interesting facts
 # Mercury
-me1 = "Mercury: Planet closes to the Sun."
-me2 = "Mercury: Has no moon."
-me3 = "Mercury: Smallest planet."
-me4 = "Mercury: A rotational day is 58 days, 15 hours, and 30 minutes."
+me0 = "Mercury: Planet closes to the Sun."
+me1 = "Mercury: Has no moon."
+me2 = "Mercury: Smallest planet."
+me3 = "Mercury: A rotational day is 58 days, 15 hours, and 30 minutes."
+me4 = "me4"
 me5 = "me5"
 me6 = "me6"
 me7 = "me7"
 me8 = "me8"
 me9 = "me9"
-me10 = "me10"
 
 # Venus
 v1 = "Venus: Second planet closes to the Sun."
@@ -105,7 +105,7 @@ n9 = "n9"
 n10 = "n10"
 
 #planet tuples
-mercury_tuple = (me1,me2,me3,me4,me5,me6,me7,me8,me9,me10)
+mercury_tuple = (me0,me1,me2,me3,me4,me5,me6,me7,me8,me9)
 mercury_tuple2 = ("mercury","me")
 
 venus_tuple = (v1,v2,v3,v4,v5,v6,v7,v8,v9,v10)
@@ -141,7 +141,7 @@ planet_dict = {
   neptune_tuple2:neptune_tuple
 }
 
-#while loop continues until user enters 'Q'
+#while loop continues until user enters 'q'
 while True:
   try:
     planet = input("Which planet would you like information on?"
