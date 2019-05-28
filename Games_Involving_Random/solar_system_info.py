@@ -21,16 +21,16 @@ me8 = "me8"
 me9 = "me9"
 
 # Venus
-v1 = "Venus: Second planet closes to the Sun."
-v2 = "Venus: Has no moon."
-v3 = "Venus: Hottest planet."
-v4 = "Venus: Atmosphere is 96% carbon dioxide and 3% nitrogen."
+v0 = "Venus: Second planet closes to the Sun."
+v1 = "Venus: Has no moon."
+v2 = "Venus: Hottest planet."
+v3 = "Venus: Atmosphere is 96% carbon dioxide and 3% nitrogen."
+v4 = "v4"
 v5 = "v5"
 v6 = "v6"
 v7 = "v7"
 v8 = "v8"
 v9 = "v9"
-v10 = "v10"
 
 # Earth
 e1 = "Earth: Third planet closes to the Sun."
@@ -108,7 +108,7 @@ n10 = "n10"
 mercury_tuple = (me0,me1,me2,me3,me4,me5,me6,me7,me8,me9)
 mercury_tuple2 = ("mercury","me")
 
-venus_tuple = (v1,v2,v3,v4,v5,v6,v7,v8,v9,v10)
+venus_tuple = (v0,v1,v2,v3,v4,v5,v6,v7,v8,v9)
 venus_tuple2 = ("venus","v")
 
 earth_tuple = (e1,e2,e3,e4,e5,e6,e7,e8,e9,e10)
