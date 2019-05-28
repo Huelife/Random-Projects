@@ -97,13 +97,13 @@ for x in range(sets_total):
         warmup_inol = (warmup_set * warmup_rep) / (100.0 - warmup_perc)
       elif warmup_perc > 99 and warmup_perc <= 100:
         warmup_inol = (warmup_set * warmup_rep)
-      swarmup_inol = Decimal(str(warmup_inol)).quantize(Decimal('.001'))
+      warmup_inol_round = Decimal(str(warmup_inol)).quantize(Decimal('.001'))
       
 #inol for current set is added to inol_add
-      inol_add += swarmup_inol
+      inol_add += warmup_inol_round
   
       print("")
-      print("INOL: {}.".format(swarmup_inol))
+      print("INOL: {}.".format(warmup_inol_round))
       print("")
       break
       
