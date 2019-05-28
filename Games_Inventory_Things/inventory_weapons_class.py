@@ -23,10 +23,10 @@ print("")
 
 #declaring weapon_list dict and printing the item names
 weapon_list = {
-  "Legendary Sword": legendary_sword,
-  "Legendary Shield": legendary_shield,
-  "Legendary Gun": legendary_gun,
-  "Legendary Bow": legendary_bow,
+  "Legendary Sword":legendary_sword,
+  "Legendary Shield":legendary_shield,
+  "Legendary Gun":legendary_gun,
+  "Legendary Bow":legendary_bow,
   "Legendary Axe":legendary_axe
 }
 
