@@ -21,8 +21,8 @@ class Item_Stats:
     return str(self.name)
   
 #setting individual item stats from inventory
-bronze_sword = Item_Stats("+100","+50","+50",0,0,0,0,0,"Bronze Sword",
-                          "A cheap, but effective sword for combat.")
+bronze_sword = Item_Stats("Bronze Sword","A cheap, but effective sword for "
+                          "combat.","+100","+50","+50",0,0,0,0,0)
 steel_sword = Item_Stats("+150","+100","+100",0,0,0,0,0,"Steel Sword",
                          "A strong, sturdy sword for combat.")
 legendary_sword = Item_Stats("+300","+200","+200",0,0,0,0,0,"Legendary Sword",
