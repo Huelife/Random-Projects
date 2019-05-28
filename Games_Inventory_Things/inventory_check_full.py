@@ -30,8 +30,8 @@ legendary_sword = Item_Stats("Legendary Sword","A powerful sword for combat.",
 
 bronze_helmet = Item_Stats("Bronze Helmet","A cheap, but effective helmet "
                            "for defense.",0,0,0,"+75","+75","+11",0,0)
-steel_helmet = Item_Stats(0,0,0,"+100","+100","+35",0,0,"Steel Helmet",
-                          "A strong, sturdy helmet for defense.")
+steel_helmet = Item_Stats("Steel Helmet","A strong, sturdy helmet for "
+                          "defense.",0,0,0,"+100","+100","+35",0,0)
 legendary_helmet = Item_Stats(0,0,0,"+180","+180","+75",0,0,
                          "Legendary Helmet","A powerful helmet for defense.")
 
