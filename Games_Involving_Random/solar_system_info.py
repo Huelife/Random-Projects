@@ -145,13 +145,13 @@ planet_dict = {
 while True:
   try:
     planet = input("Which planet would you like information on?"
-                   "\nEnter 'Q' to quit. ").lower()
+                   "\nEnter 'q' to quit. ").lower()
   except ValueError:
     continue
   else:
     print("")
     roll = randint(0,9)
-    if planet == "Q":
+    if planet == "q":
       break
     elif any(planet in planet_dict for planet in planet_dict):
       for key,value in planet_dict.items():
