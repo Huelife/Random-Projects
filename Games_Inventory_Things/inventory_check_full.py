@@ -5,7 +5,9 @@ print("Let's check your inventory!")
 
 #setting item class for attributes
 class Item_Stats:
-  def __init__(self,stre,agi,spd,defe,vit,res,pie,rng,name,desc):
+  def __init__(self,name,desc,stre,agi,spd,defe,vit,res,pie,rng):
+    self.name = name
+    self.desc = desc
     self.stre = stre
     self.agi = agi
     self.spd = spd
@@ -13,9 +15,7 @@ class Item_Stats:
     self.vit = vit
     self.res = res
     self.pie = pie
-    self.rng = rng
-    self.name = name
-    self.desc = desc
+    self.rng = rng 
     
   def __repr__(self):
     return str(self.name)
