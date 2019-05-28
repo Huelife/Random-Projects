@@ -57,16 +57,16 @@ ma8 = "ma8"
 ma9 = "ma9"
 
 # Jupiter
-j1 = "Jupiter: Fifth planet from the Sun."
-j2 = "Jupiter: Has 79 known moons."
-j3 = "Jupiter: Largest planet."
-j4 = "Jupiter: Has 3 rings."
-j5 = "Jupiter: Is a gas giant."
+j0 = "Jupiter: Fifth planet from the Sun."
+j1 = "Jupiter: Has 79 known moons."
+j2 = "Jupiter: Largest planet."
+j3 = "Jupiter: Has 3 rings."
+j4 = "Jupiter: Is a gas giant."
+j5 = "j5"
 j6 = "j6"
 j7 = "j7"
 j8 = "j8"
 j9 = "j9"
-j10 = "j10"
 
 # Saturn
 s1 = "Saturn: Sixth planet from the Sun."
@@ -117,7 +117,7 @@ earth_tuple2 = ("earth","e")
 mars_tuple = (ma0,ma1,ma2,ma3,ma4,ma5,ma6,ma7,ma8,ma9)
 mars_tuple2 = ("mars","ma")
 
-jupiter_tuple = (j1,j2,j3,j4,j5,j6,j7,j8,j9,j10)
+jupiter_tuple = (j0,j1,j2,j3,j4,j5,j6,j7,j8,j9)
 jupiter_tuple2 = ("jupiter","j")
 
 saturn_tuple = (s1,s2,s3,s4,s5,s6,s7,s8,s9,s10)
