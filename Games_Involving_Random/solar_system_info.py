@@ -45,16 +45,16 @@ e8 = "e8"
 e9 = "e9"
 
 # Mars
-ma1 = "Mars: Fourth planet from the Sun."
-ma2 = "Mars: Has 2 known moons: Phobos and Deimos."
-ma3 = "Mars: Atmosphere is 95.3% carbon dioxide."
+ma0 = "Mars: Fourth planet from the Sun."
+ma1 = "Mars: Has 2 known moons: Phobos and Deimos."
+ma2 = "Mars: Atmosphere is 95.3% carbon dioxide."
+ma3 = "ma3"
 ma4 = "ma4"
 ma5 = "ma5"
 ma6 = "ma6"
 ma7 = "ma7"
 ma8 = "ma8"
 ma9 = "ma9"
-ma10 = "ma10"
 
 # Jupiter
 j1 = "Jupiter: Fifth planet from the Sun."
@@ -114,7 +114,7 @@ venus_tuple2 = ("venus","v")
 earth_tuple = (e0,e1,e2,e3,e4,e5,e6,e7,e8,e9)
 earth_tuple2 = ("earth","e")
 
-mars_tuple = (ma1,ma2,ma3,ma4,ma5,ma6,ma7,ma8,ma9,ma10)
+mars_tuple = (ma0,ma1,ma2,ma3,ma4,ma5,ma6,ma7,ma8,ma9)
 mars_tuple2 = ("mars","ma")
 
 jupiter_tuple = (j1,j2,j3,j4,j5,j6,j7,j8,j9,j10)
