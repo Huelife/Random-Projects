@@ -5,19 +5,21 @@ from random import randint
 
 #stats dictionary for 'Damage', 'Agility', and 'Speed' with values
 stats_a = {
-  "Damage:": [300, 2, 3],
-  "Agility:": [150, 5, 5],
-  "Speed:": [150, 5, 5],
+  "Damage:":[300, 2, 3],
+  "Agility:":[150, 5, 5],
+  "Speed:":[150, 5, 5],
 }
+
 stats_b = {
-  "Damage:": [220, 2, 2],
-  "Agility:": [190, 8, 8],
-  "Speed:": [190, 8, 8],
+  "Damage:":[220, 2, 2],
+  "Agility:":[190, 8, 8],
+  "Speed:":[190, 8, 8],
 }
+
 stats_c = {
-  "Damage:": [150, 1, 1],
-  "Agility:": [300, 10, 10],
-  "Speed:": [300, 10, 10],
+  "Damage:":[150, 1, 1],
+  "Agility:":[300, 10, 10],
+  "Speed:":[300, 10, 10],
 }
 
 pickup_random = 0
