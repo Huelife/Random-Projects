@@ -33,16 +33,16 @@ v8 = "v8"
 v9 = "v9"
 
 # Earth
-e1 = "Earth: Third planet closes to the Sun."
-e2 = "Earth: Currently, only planet known to support our definition of life."
-e3 = "Earth: Has 1 moon: the Moon."
-e4 = "Earth: 71% of the surface is covered in water."
-e5 = "Earth: Atmosphere is 78.09% nitrogen and 20.95% oxygen."
+e0 = "Earth: Third planet closes to the Sun."
+e1 = "Earth: Currently, only planet known to support our definition of life."
+e2 = "Earth: Has 1 moon: the Moon."
+e3 = "Earth: 71% of the surface is covered in water."
+e4 = "Earth: Atmosphere is 78.09% nitrogen and 20.95% oxygen."
+e5 = "e5"
 e6 = "e6"
 e7 = "e7"
 e8 = "e8"
 e9 = "e9"
-e10 = "e10"
 
 # Mars
 ma1 = "Mars: Fourth planet from the Sun."
@@ -111,7 +111,7 @@ mercury_tuple2 = ("mercury","me")
 venus_tuple = (v0,v1,v2,v3,v4,v5,v6,v7,v8,v9)
 venus_tuple2 = ("venus","v")
 
-earth_tuple = (e1,e2,e3,e4,e5,e6,e7,e8,e9,e10)
+earth_tuple = (e0,e1,e2,e3,e4,e5,e6,e7,e8,e9)
 earth_tuple2 = ("earth","e")
 
 mars_tuple = (ma1,ma2,ma3,ma4,ma5,ma6,ma7,ma8,ma9,ma10)
