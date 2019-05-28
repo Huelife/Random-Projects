@@ -28,7 +28,7 @@ print("You've picked up (3) more swords! "
 
 #creating add_sword function that adds 'sword' to inventory[1]
 def add_sword():
-  inventory.insert(1, "sword")
+  inventory.insert(1,"sword")
   
 #three 'swords' are added to inventory list
 add_sword()
