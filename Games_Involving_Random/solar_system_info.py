@@ -69,16 +69,16 @@ j8 = "j8"
 j9 = "j9"
 
 # Saturn
-s1 = "Saturn: Sixth planet from the Sun."
-s2 = "Saturn: Has 62 known moons."
-s3 = "Saturn: Has 7 major rings."
-s4 = "Saturn: Is a gas giant."
+s0 = "Saturn: Sixth planet from the Sun."
+s1 = "Saturn: Has 62 known moons."
+s2 = "Saturn: Has 7 major rings."
+s3 = "Saturn: Is a gas giant."
+s4 = "s4"
 s5 = "s5"
 s6 = "s6"
 s7 = "s7"
 s8 = "s8"
 s9 = "s9"
-s10 = "s10"
 
 # Uranus
 u1 = "Uranus: Seventh planet from the Sun."
@@ -120,7 +120,7 @@ mars_tuple2 = ("mars","ma")
 jupiter_tuple = (j0,j1,j2,j3,j4,j5,j6,j7,j8,j9)
 jupiter_tuple2 = ("jupiter","j")
 
-saturn_tuple = (s1,s2,s3,s4,s5,s6,s7,s8,s9,s10)
+saturn_tuple = (s0,s1,s2,s3,s4,s5,s6,s7,s8,s9)
 saturn_tuple2 = ("saturn","s")
 
 uranus_tuple = (u1,u2,u3,u4,u5,u6,u7,u8,u9,u10)
