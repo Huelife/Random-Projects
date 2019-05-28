@@ -145,7 +145,7 @@ planet_dict = {
 while True:
   try:
     planet = input("Which planet would you like information on?"
-                   "\nEnter 'Q' to quit. ")
+                   "\nEnter 'Q' to quit. ").lower()
   except ValueError:
     continue
   else:
