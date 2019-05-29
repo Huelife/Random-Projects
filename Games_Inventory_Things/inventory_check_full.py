@@ -42,12 +42,12 @@ steel_armor = ItemStats("Steel Armor","A strong, sturdy armor for defense.",
 legendary_armor = ItemStats("Legendary Armor","A powerful armor for defense.",
                             0,0,0,"+300","+300","+100",0,0)
 
-bronze_shield = ItemStats(0,0,0,"+80","+80","+50",0,0,"Bronze Shield",
-                           "A cheap, but effective shield for defense.")
-steel_shield = ItemStats(0,0,0,"+125","+125","+95",0,0,"Steel Shield",
-                          "A strong, sturdy shield for defense.")
-legendary_shield = ItemStats(0,0,0,"+200","+200","+200",0,0,
-                          "Legendary Shield","A powerful shield for defense.")
+bronze_shield = ItemStats("Bronze Shield","A cheap, but effective shield "
+                          "for defense.",0,0,0,"+80","+80","+50",0,0)
+steel_shield = ItemStats("Steel Shield","A strong, sturdy shield for "
+                         "defense.",0,0,0,"+125","+125","+95",0,0)
+legendary_shield = ItemStats("Legendary Shield","A powerful shield for "
+                             "defense.",0,0,0,"+200","+200","+200",0,0)
 
 bronze_gun = ItemStats("+125","+55",0,0,0,0,"+100","+100","Bronze Gun",
                         "A cheap, but effective gun for combat.")
