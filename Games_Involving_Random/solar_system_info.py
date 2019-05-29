@@ -93,16 +93,16 @@ u8 = "u8"
 u9 = "u9"
 
 # Neptune
-n1 = "Neptune: Eighth planet from the Sun."
-n2 = "Neptune: Has 14 known moons."
-n3 = "Neptune: Atmosphere is 80% hydrogen and 19% helium."
-n4 = "Neptune: Has 6 rings."
-n5 = "Neptune: Is an ice giant."
+n0 = "Neptune: Eighth planet from the Sun."
+n1 = "Neptune: Has 14 known moons."
+n2 = "Neptune: Atmosphere is 80% hydrogen and 19% helium."
+n3 = "Neptune: Has 6 rings."
+n4 = "Neptune: Is an ice giant."
+n5 = "n5"
 n6 = "n6"
 n7 = "n7"
 n8 = "n8"
 n9 = "n9"
-n10 = "n10"
 
 #planet tuples
 mercury_tuple = (me0,me1,me2,me3,me4,me5,me6,me7,me8,me9)
@@ -126,7 +126,7 @@ saturn_tuple2 = ("saturn","s")
 uranus_tuple = (u0,u1,u2,u3,u4,u5,u6,u7,u8,u9)
 uranus_tuple2 = ("uranus","u")
 
-neptune_tuple = (n1,n2,n3,n4,n5,n6,n7,n8,n9,n10)
+neptune_tuple = (n0,n1,n2,n3,n4,n5,n6,n7,n8,n9)
 neptune_tuple2 = ("neptune","n")
 
 #planet dictionary
