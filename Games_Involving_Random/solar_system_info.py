@@ -3,8 +3,8 @@
 #importing randint to randomize what gets printed
 from random import randint
 
-print("Hi! There are currently 8 planets in our solar system."
-      "\nHere are some information that I have gathered for each.")
+print("Hi! There are currently 8 planets in our solar system,"
+      "\nhere are some information that I have gathered for each.")
 print("")
 
 #variables for each planet containing interesting facts
