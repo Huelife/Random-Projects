@@ -106,7 +106,7 @@ n9 = "n9"
 
 #planet tuples
 mercury_tuple = (me0,me1,me2,me3,me4,me5,me6,me7,me8,me9)
-mercury_check = ("mercury","me")
+mercury_check = ("mercury","me","mer","merc","mrcry","mercur")
 
 venus_tuple = (v0,v1,v2,v3,v4,v5,v6,v7,v8,v9)
 venus_check = ("venus","v")
