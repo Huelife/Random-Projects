@@ -109,7 +109,7 @@ mercury_tuple = (me0,me1,me2,me3,me4,me5,me6,me7,me8,me9)
 mercury_check = ("mercury","me","mer","merc","mrcry","mercur")
 
 venus_tuple = (v0,v1,v2,v3,v4,v5,v6,v7,v8,v9)
-venus_check = ("venus","v")
+venus_check = ("venus","v","ve","ven","venu","vns")
 
 earth_tuple = (e0,e1,e2,e3,e4,e5,e6,e7,e8,e9)
 earth_check = ("earth","e")
