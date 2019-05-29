@@ -4,7 +4,7 @@ print("")
 print("Let's check your inventory!")
 
 #setting item class for attributes
-class Item_Stats:
+class ItemStats:
   def __init__(self,name,desc,stre,agi,spd,defe,vit,res,pie,rng):
     self.name = name
     self.desc = desc
@@ -21,53 +21,53 @@ class Item_Stats:
     return str(self.name)
   
 #setting individual item stats from inventory
-bronze_sword = Item_Stats("Bronze Sword","A cheap, but effective sword for "
+bronze_sword = ItemStats("Bronze Sword","A cheap, but effective sword for "
                           "combat.","+100","+50","+50",0,0,0,0,0)
-steel_sword = Item_Stats("Steel Sword","A strong, sturdy sword for combat.",
+steel_sword = ItemStats("Steel Sword","A strong, sturdy sword for combat.",
                          "+150","+100","+100",0,0,0,0,0)
-legendary_sword = Item_Stats("Legendary Sword","A powerful sword for combat.",
+legendary_sword = ItemStats("Legendary Sword","A powerful sword for combat.",
                              "+300","+200","+200",0,0,0,0,0)
 
-bronze_helmet = Item_Stats("Bronze Helmet","A cheap, but effective helmet "
+bronze_helmet = ItemStats("Bronze Helmet","A cheap, but effective helmet "
                            "for defense.",0,0,0,"+75","+75","+11",0,0)
-steel_helmet = Item_Stats("Steel Helmet","A strong, sturdy helmet for "
+steel_helmet = ItemStats("Steel Helmet","A strong, sturdy helmet for "
                           "defense.",0,0,0,"+100","+100","+35",0,0)
-legendary_helmet = Item_Stats("Legendary Helmet","A powerful helmet for "
+legendary_helmet = ItemStats("Legendary Helmet","A powerful helmet for "
                               "defense.",0,0,0,"+180","+180","+75",0,0)
 
-bronze_armor = Item_Stats(0,0,0,"+150","+150","+30",0,0,"Bronze Armor",
+bronze_armor = ItemStats(0,0,0,"+150","+150","+30",0,0,"Bronze Armor",
                           "A cheap, but effective armor for defense.")
-steel_armor = Item_Stats(0,0,0,"+200","+200","+70",0,0,"Steel Armor",
+steel_armor = ItemStats(0,0,0,"+200","+200","+70",0,0,"Steel Armor",
                          "A strong, sturdy armor for defense.")
-legendary_armor = Item_Stats(0,0,0,"+300","+300","+100",0,0,"Legendary Armor",
+legendary_armor = ItemStats(0,0,0,"+300","+300","+100",0,0,"Legendary Armor",
                              "A powerful armor for defense.")
 
-bronze_shield = Item_Stats(0,0,0,"+80","+80","+50",0,0,"Bronze Shield",
+bronze_shield = ItemStats(0,0,0,"+80","+80","+50",0,0,"Bronze Shield",
                            "A cheap, but effective shield for defense.")
-steel_shield = Item_Stats(0,0,0,"+125","+125","+95",0,0,"Steel Shield",
+steel_shield = ItemStats(0,0,0,"+125","+125","+95",0,0,"Steel Shield",
                           "A strong, sturdy shield for defense.")
-legendary_shield = Item_Stats(0,0,0,"+200","+200","+200",0,0,
+legendary_shield = ItemStats(0,0,0,"+200","+200","+200",0,0,
                           "Legendary Shield","A powerful shield for defense.")
 
-bronze_gun = Item_Stats("+125","+55",0,0,0,0,"+100","+100","Bronze Gun",
+bronze_gun = ItemStats("+125","+55",0,0,0,0,"+100","+100","Bronze Gun",
                         "A cheap, but effective gun for combat.")
-steel_gun = Item_Stats("+185","+85",0,0,0,0,"+200","+200","Steel Gun",
+steel_gun = ItemStats("+185","+85",0,0,0,0,"+200","+200","Steel Gun",
                        "A strong, sturdy gun for combat.")
-legendary_gun = Item_Stats("+355","+185",0,0,0,0,"+300","+300",
+legendary_gun = ItemStats("+355","+185",0,0,0,0,"+300","+300",
                            "Legendary Gun","A powerful gun for combat.")
 
-cloth_boots = Item_Stats(0,"+50","+50",0,0,"+5",0,0,"Cloth Boots",
+cloth_boots = ItemStats(0,"+50","+50",0,0,"+5",0,0,"Cloth Boots",
                          "A cheap, but effective pair of boots for defense.")
-leather_boots = Item_Stats(0,"+100","+100",0,0,"+25",0,0,"Leather Boots",
+leather_boots = ItemStats(0,"+100","+100",0,0,"+25",0,0,"Leather Boots",
                            "A strong, sturdy pair of boots for defense.")
-legendary_boots = Item_Stats(0,"+300","+300",0,0,"+55",0,0,"Legendary Boots",
+legendary_boots = ItemStats(0,"+300","+300",0,0,"+55",0,0,"Legendary Boots",
                              "A powerful pair of boots for defense.")
 
-cloth_gloves = Item_Stats("+50","+100","+100",0,0,0,0,0,"Cloth Gloves",
+cloth_gloves = ItemStats("+50","+100","+100",0,0,0,0,0,"Cloth Gloves",
                         "A cheap, but effective pair of gloves for defense.")
-leather_gloves = Item_Stats("+100","+150","+150",0,0,0,0,0,"Leather Gloves",
+leather_gloves = ItemStats("+100","+150","+150",0,0,0,0,0,"Leather Gloves",
                             "A strong, sturdy pair of gloves for defense.")
-legendary_gloves = Item_Stats("+200","+300","+300",0,0,0,0,0,
+legendary_gloves = ItemStats("+200","+300","+300",0,0,0,0,0,
                   "Legendary Gloves","A powerful pair of gloves for defense.")
 
 #setting items in swords,helmets,armors,shields,guns,boots,and gloves list
