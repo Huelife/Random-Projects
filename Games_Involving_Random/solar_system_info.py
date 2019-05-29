@@ -81,16 +81,16 @@ s8 = "s8"
 s9 = "s9"
 
 # Uranus
-u1 = "Uranus: Seventh planet from the Sun."
-u2 = "Uranus: Has 27 known moons."
-u3 = "Uranus: Axis of rotation is basically on its sides."
-u4 = "Uranus: Has 13 rings."
-u5 = "Uranus: Is an ice giant."
+u0 = "Uranus: Seventh planet from the Sun."
+u1 = "Uranus: Has 27 known moons."
+u2 = "Uranus: Axis of rotation is basically on its sides."
+u3 = "Uranus: Has 13 rings."
+u4 = "Uranus: Is an ice giant."
+u5 = "u5"
 u6 = "u6"
 u7 = "u7"
 u8 = "u8"
 u9 = "u9"
-u10 = "u10"
 
 # Neptune
 n1 = "Neptune: Eighth planet from the Sun."
@@ -123,7 +123,7 @@ jupiter_tuple2 = ("jupiter","j")
 saturn_tuple = (s0,s1,s2,s3,s4,s5,s6,s7,s8,s9)
 saturn_tuple2 = ("saturn","s")
 
-uranus_tuple = (u1,u2,u3,u4,u5,u6,u7,u8,u9,u10)
+uranus_tuple = (u0,u1,u2,u3,u4,u5,u6,u7,u8,u9)
 uranus_tuple2 = ("uranus","u")
 
 neptune_tuple = (n1,n2,n3,n4,n5,n6,n7,n8,n9,n10)
