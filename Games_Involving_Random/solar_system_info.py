@@ -106,39 +106,39 @@ n9 = "n9"
 
 #planet tuples
 mercury_tuple = (me0,me1,me2,me3,me4,me5,me6,me7,me8,me9)
-mercury_tuple2 = ("mercury","me")
+mercury_check = ("mercury","me")
 
 venus_tuple = (v0,v1,v2,v3,v4,v5,v6,v7,v8,v9)
-venus_tuple2 = ("venus","v")
+venus_check = ("venus","v")
 
 earth_tuple = (e0,e1,e2,e3,e4,e5,e6,e7,e8,e9)
-earth_tuple2 = ("earth","e")
+earth_check = ("earth","e")
 
 mars_tuple = (ma0,ma1,ma2,ma3,ma4,ma5,ma6,ma7,ma8,ma9)
-mars_tuple2 = ("mars","ma")
+mars_check = ("mars","ma")
 
 jupiter_tuple = (j0,j1,j2,j3,j4,j5,j6,j7,j8,j9)
-jupiter_tuple2 = ("jupiter","j")
+jupiter_check = ("jupiter","j")
 
 saturn_tuple = (s0,s1,s2,s3,s4,s5,s6,s7,s8,s9)
-saturn_tuple2 = ("saturn","s")
+saturn_check = ("saturn","s")
 
 uranus_tuple = (u0,u1,u2,u3,u4,u5,u6,u7,u8,u9)
-uranus_tuple2 = ("uranus","u")
+uranus_check = ("uranus","u")
 
 neptune_tuple = (n0,n1,n2,n3,n4,n5,n6,n7,n8,n9)
-neptune_tuple2 = ("neptune","n")
+neptune_check = ("neptune","n")
 
 #planet dictionary
 planet_dict = {
-  mercury_tuple2:mercury_tuple,
-  venus_tuple2:venus_tuple,
-  earth_tuple2:earth_tuple,
-  mars_tuple2:mars_tuple,
-  jupiter_tuple2:jupiter_tuple,
-  saturn_tuple2:saturn_tuple,
-  uranus_tuple2:uranus_tuple,
-  neptune_tuple2:neptune_tuple
+  mercury_check:mercury_tuple,
+  venus_check:venus_tuple,
+  earth_check:earth_tuple,
+  mars_check:mars_tuple,
+  jupiter_check:jupiter_tuple,
+  saturn_check:saturn_tuple,
+  uranus_check:uranus_tuple,
+  neptune_check:neptune_tuple
 }
 
 #while loop continues until user enters 'q'
