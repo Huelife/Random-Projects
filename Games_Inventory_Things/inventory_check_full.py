@@ -63,12 +63,12 @@ leather_boots = ItemStats("Leather Boots","A strong, sturdy pair of boots "
 legendary_boots = ItemStats("Legendary Boots","A powerful pair of boots for "
                             "defense.",0,"+300","+300",0,0,"+55",0,0)
 
-cloth_gloves = ItemStats("+50","+100","+100",0,0,0,0,0,"Cloth Gloves",
-                        "A cheap, but effective pair of gloves for defense.")
-leather_gloves = ItemStats("+100","+150","+150",0,0,0,0,0,"Leather Gloves",
-                            "A strong, sturdy pair of gloves for defense.")
-legendary_gloves = ItemStats("+200","+300","+300",0,0,0,0,0,
-                  "Legendary Gloves","A powerful pair of gloves for defense.")
+cloth_gloves = ItemStats("Cloth Gloves","A cheap, but effective pair of "
+                         "gloves for defense.","+50","+100","+100",0,0,0,0,0)
+leather_gloves = ItemStats("Leather Gloves","A strong, sturdy pair of gloves"
+                           " for defense.","+100","+150","+150",0,0,0,0,0)
+legendary_gloves = ItemStats("Legendary Gloves","A powerful pair of gloves "
+                             "for defense.","+200","+300","+300",0,0,0,0,0)
 
 #setting items in swords,helmets,armors,shields,guns,boots,and gloves list
 swords = [bronze_sword,bronze_sword,bronze_sword,steel_sword,steel_sword,
