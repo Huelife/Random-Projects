@@ -112,7 +112,7 @@ venus_tuple = (v0,v1,v2,v3,v4,v5,v6,v7,v8,v9)
 venus_check = ("venus","v","ve","ven","venu","vns")
 
 earth_tuple = (e0,e1,e2,e3,e4,e5,e6,e7,e8,e9)
-earth_check = ("earth","e")
+earth_check = ("earth","e","ea","ear","eart","erth")
 
 mars_tuple = (ma0,ma1,ma2,ma3,ma4,ma5,ma6,ma7,ma8,ma9)
 mars_check = ("mars","ma")
