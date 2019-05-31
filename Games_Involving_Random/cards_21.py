@@ -19,10 +19,10 @@ cards_num2 = [0,1,2,3,4,5,6,7,8,9,10,10,10,10]
 cards_num3 = [0,1,2,3,4,5,6,7,8,9,10,10,10,10]
 cards_num4 = [0,1,2,3,4,5,6,7,8,9,10,10,10,10]
 
-#things I want to add later
+def hit_me():
 # if dealer = 16-21 stay
 #    hitme = input("Type HITME to add card, otherwise, type STAY")
-#    if hitme == "HITME":
+#    if hitme == "HITME":  
 
 win = 0
 
