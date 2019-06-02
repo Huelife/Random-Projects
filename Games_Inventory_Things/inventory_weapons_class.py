@@ -30,8 +30,7 @@ weapon_list = {
   "Legendary Axe":legendary_axe
 }
 
-for key, value in weapon_list.items():
-  print(key)
+[print(key) for key, value in weapon_list.items()]
 print("")
 
 #while loop continues until user inputs 'Quit'
