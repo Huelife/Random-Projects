@@ -14,10 +14,10 @@ print("--"*20)
 
 #value of cards and image of cards displayed
 cards_letters = (0,"A",2,3,4,5,6,7,8,9,10,"J","Q","K")
-cards_num = [0,1,2,3,4,5,6,7,8,9,10,10,10,10]
-cards_num2 = [0,1,2,3,4,5,6,7,8,9,10,10,10,10]
-cards_num3 = [0,1,2,3,4,5,6,7,8,9,10,10,10,10]
-cards_num4 = [0,1,2,3,4,5,6,7,8,9,10,10,10,10]
+cards_num = [0,11,2,3,4,5,6,7,8,9,10,10,10,10]
+cards_num2 = [0,11,2,3,4,5,6,7,8,9,10,10,10,10]
+cards_num3 = [0,11,2,3,4,5,6,7,8,9,10,10,10,10]
+cards_num4 = [0,11,2,3,4,5,6,7,8,9,10,10,10,10]
 
 def hit_me():
   pass
@@ -41,21 +41,11 @@ while True:
       dealer_roll_one = randint(1,13)
       dealer_roll_two = randint(1,13)  
            
- #setting value of 1 for user and dealer
+#setting value of 1 for user and dealer
       if roll_one == 1 and roll_two == 1:
-        cards_num[roll_one] = 11
-        cards_num2[roll_two] = 1        
-      elif roll_one == 1 and roll_two != 1:
-        cards_num[roll_one] = 11
-      elif roll_two == 1 and roll_one != 1:
-        cards_num2[roll_two] = 11
+        cards_num[roll_two] = 1     
       if dealer_roll_one == 1 and dealer_roll_two == 1:
-        cards_num3[dealer_roll_one] = 11
-        cards_num4[dealer_roll_two] = 1
-      elif dealer_roll_one == 1 and dealer_roll_two != 1:
-        cards_num3[dealer_roll_one] = 11
-      elif dealer_roll_two == 1 and dealer_roll_one != 1:
-        cards_num4[dealer_roll_two] = 11
+        cards_num3[dealer_roll_two] = 1
 
 #setting total value of cards for dealer and user
       your_total = cards_num[roll_one] + cards_num2[roll_two]
