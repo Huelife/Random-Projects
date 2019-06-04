@@ -65,8 +65,8 @@ j4 = "Jupiter: Is a gas giant."
 j5 = "Jupiter: Is 318 times the mass of Earth."
 j6 = "Jupiter: Is the fastest spinning planet."
 j7 = "Jupiter: Magnetic field is 14 times stronger than Earth's."
-j8 = "j8"
-j9 = "j9"
+j8 = "Jupiter: Has storms."
+j9 = "Jupiter: Named after the Roman god of the sky and thunder."
 
 # Saturn
 s0 = "Saturn: Sixth planet from the Sun."
