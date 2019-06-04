@@ -17,8 +17,8 @@ me4 = "Mercury: The second hottest planet."
 me5 = "Mercury: The most cratered planet."
 me6 = "Mercury: Surface temperature is from -173 to 427 Celsius."
 me7 = "Mercury: Is named for the Roman messenger to the gods."
-me8 = "me8"
-me9 = "me9"
+me8 = "Mercury: Has organics and ice."
+me9 = "Mercury: Has a very thin atmosphere."
 
 # Venus
 v0 = "Venus: Second planet closes to the Sun."
