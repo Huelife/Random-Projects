@@ -100,8 +100,8 @@ n3 = "Neptune: Has 6 rings."
 n4 = "Neptune: Is an ice giant."
 n5 = "Neptune: Is named for the Roman god of the sea."
 n6 = "Neptune: Has storms."
-n7 = "n7"
-n8 = "n8"
+n7 = "Neptune: Has the second largest planetary gravity."
+n8 = "Neptune: Is the densest planet."
 n9 = "n9"
 
 #planet tuples
