@@ -29,8 +29,8 @@ v4 = "Venus: A rotational day is 116 days, 18 hours, and 0 minutes."
 v5 = "Venus: Rotates opposite of most other planets."
 v6 = "Venus: Is referred to as the 'morning star' and 'evening star'."
 v7 = "Venus: Named after the Roman goddess of love and beauty."
-v8 = "v8"
-v9 = "v9"
+v8 = "Venus: Orbits the Sun every 224.7 Earth days."
+v9 = "Venus: Is sometimes called Earth's 'sister planet'."
 
 # Earth
 e0 = "Earth: Third planet closes to the Sun."
