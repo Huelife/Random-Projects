@@ -102,7 +102,7 @@ n5 = "Neptune: Is named for the Roman god of the sea."
 n6 = "Neptune: Has storms."
 n7 = "Neptune: Has the second largest planetary gravity."
 n8 = "Neptune: Is the densest planet."
-n9 = "n9"
+n9 = "Neptune: Takes 164.8 Earth years to orbit the Sun."
 
 #planet tuples
 mercury_tuple = (me0,me1,me2,me3,me4,me5,me6,me7,me8,me9)
