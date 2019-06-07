@@ -72,7 +72,7 @@ class Rob(Game):
 
 rob = Rob("Robert")
 
-#hello function
+#hello function, checking if first word is hello
 def hello(name):
   if name in Game.objects:
     return Game.objects[name].get_reply()
@@ -94,7 +94,6 @@ def get_input():
   else:
     print(speak_verb("nothing"))
 
-#speak dictionairy
 speak = {
   "hello": hello
 }
