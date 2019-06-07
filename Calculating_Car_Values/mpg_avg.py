@@ -2,7 +2,7 @@
 
 from statistics import mean
 
-#dictionairy for mpg by date
+#dictionary for mpg by date
 mpg_dict = {
   "04/12/18": 18.3,
   "04/14/18": 21.6,
