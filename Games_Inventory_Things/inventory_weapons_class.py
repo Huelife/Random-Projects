@@ -1,3 +1,5 @@
+#inventory_weapons_class.py: Inventory stats using class attributes
+
 #creating Weapon_stats class for attributes
 class WeaponStats:
   def __init__(self,Strength,Agility,Speed,Defence,Vitality,Resistance,
