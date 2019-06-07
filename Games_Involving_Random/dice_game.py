@@ -1,6 +1,5 @@
 #dice_game.py: Dice game with 3/5 chances to win
 
-#importing randint for random integars
 from random import randint
 
 print("Let's play a dice game!")
@@ -10,10 +9,10 @@ print("""Rules are simple:
        < 3 wins by 5 turns loses.""")
 print("")
 
-#while loop continues until either wins = 3 or turns = 5
 turn = 0
 wins = 0
 
+#while loop continues until either wins = 3 or turns = 5
 while True:
   try:
     print("-"*30)
@@ -21,15 +20,15 @@ while True:
     play = input("Press enter to play. ")
   except ValueError:
     continue
-  else:
-#adding turn value, calling 4 random integers, and adding the values          
+  else:         
     if play == "":
       turn += 1
       roll_one = randint(1,6)
-      roll_two = randint(1,6)
-      roll_total = roll_one + roll_two
+      roll_two = randint(1,6)      
       dealer_roll_one = randint(1,6)
       dealer_roll_two = randint(1,6)
+
+      roll_total = roll_one + roll_two
       dealer_roll_total = dealer_roll_one + dealer_roll_two
 
       print("Your roll: [{}][{}] = {}.".format(roll_one,roll_two,roll_total))
