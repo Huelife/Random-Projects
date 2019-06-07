@@ -1,6 +1,5 @@
 #cards_21.py: Card game playing 21/Black Jack
 
-#importing randint
 from random import randint
 
 #rules and info for user
@@ -27,14 +26,13 @@ def hit_me():
 
 win = 0
 
-#while loop that continues until 'you' variable is '1' or more
+#while loop that continues until 'win' variable is '1' or more
 while True:
   try:
     play = input("Press enter to play! ")
   except ValueError:
     continue
   else:
-#game begins with 4 random rolls from 1-13 when user presses enter
     if play == "":
       roll_one = randint(1,13)
       roll_two = randint(1,13)
