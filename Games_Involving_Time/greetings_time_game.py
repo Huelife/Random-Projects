@@ -5,8 +5,6 @@ import datetime
 now = datetime.datetime.now()
 datetime.time(now.hour)
 
-current_time = now.hour
-
 #creating Game superclass
 class Game:
   class_name = ""
@@ -24,7 +22,7 @@ class Game:
 class Peter(Game):
   def __init__(self,name):
     self.class_name = "peter"
-    self.time = current_time
+    self.time = now.hour
     self._reply = "\nPeter:\nWhat's up!?"
     super().__init__(name)
 
@@ -51,7 +49,7 @@ peter = Peter("Pete")
 class Rob(Game):
   def __init__(self,name):
     self.class_name = "rob"
-    self.time = current_time
+    self.time = now.hour
     self._reply = "\nRob:\nYo!"
     super().__init__(name)
 
