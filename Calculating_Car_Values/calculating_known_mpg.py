@@ -1,6 +1,5 @@
 #calculating_known_mpg.py: 100% city or 100% highway mpg calculated
 
-#importing decimal and rounding
 from decimal import Decimal, ROUND_UP, ROUND_DOWN
 
 print("Let's calculate city/highway mpg!")
@@ -19,7 +18,7 @@ while True:
       print("Please enter a number > 0.")
       continue
       
-#calculating, rounding, and printing 100% city and 100% highway mpg
+    #calculating, rounding, and printing 100% city and 100% highway mpg
     city100 = 0.857 * mpg
     highway100 = mpg / 0.807
 
