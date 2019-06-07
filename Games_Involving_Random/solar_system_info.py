@@ -1,6 +1,5 @@
 #solar_system_info.py: Random information about our 8 planets
 
-#importing randint to randomize what gets printed
 from random import randint
 
 print("Hi! There are currently 8 planets in our solar system,"
