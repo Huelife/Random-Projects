@@ -1,6 +1,5 @@
 #inventory_treasure_chest.py: Simple treasure chest game with 3 items
 
-#importing randint for random values
 from random import randint
 
 #stats dictionary for 'Damage', 'Agility', and 'Speed' with values
