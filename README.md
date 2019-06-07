@@ -18,6 +18,11 @@ Python 3 programs I've written while learning, separated into (7) folders:
    - inol_warmup.py
    - kgs_to_lbs.py
 4) Games_Inventory_Things
+   - inventory_check.py
+   - inventory_check_full.py
+   - inventory_treasure_chest.py
+   - inventory_weapons_class.py
+   - inventory_weapons_def.py
 5) Games_Involving_Random
 6) Games_Involving_Time
 7) Regular_Expression
