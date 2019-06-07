@@ -1,6 +1,5 @@
 #calculating_mpg.py: Mpg based on mileage, gallons, driving conditions
 
-#importing decimal and round values
 from decimal import Decimal, ROUND_UP, ROUND_DOWN
 
 print("Let's calculate city/highway mpg!")
