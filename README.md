@@ -13,7 +13,10 @@ Python 3 programs I've written while learning, separated into (7) folders:
    - candle_burn_rate.py
    - surface_area.py
    - volume.py
-3) Calculating_Workout_Values
+3) Calculating_Workout_Values:
+   - inol_single.py
+   - inol_warmup.py
+   - kgs_to_lbs.py
 4) Games_Inventory_Things
 5) Games_Involving_Random
 6) Games_Involving_Time
