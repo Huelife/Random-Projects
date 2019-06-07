@@ -1,6 +1,5 @@
 #inol_warmup.py: Calculating multiple warmup INOL values
 
-#importing decimal for rounding
 from decimal import Decimal
 
 #INOL stands for Intensity Number Of Lifts
