@@ -29,4 +29,6 @@ Python 3 programs I've written while learning, separated into (7) folders:
    - random_48_10000.py
    - solar_system_info.py
 6) Games_Involving_Time:
+   - greetings_time.py
+   - greetings_time_game.py
 7) Regular_Expression:
