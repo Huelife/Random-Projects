@@ -1,6 +1,5 @@
 #greetings_time_game.py: Time game with different responses
 
-#importing datetime and setting hour value to check current hour
 import datetime
 
 now = datetime.datetime.now()
