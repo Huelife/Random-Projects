@@ -36,7 +36,6 @@ weapon_dict = {
   "5":Leg_Ax
 }
 
-#for loop printing all items in weapon_list
 for i in weapon_list:
   print(i)
 print("")
