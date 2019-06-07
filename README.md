@@ -32,3 +32,6 @@ Python 3 programs I've written while learning, separated into (7) folders:
    - greetings_time.py
    - greetings_time_game.py
 7) Regular_Expression:
+   - date_check.py
+   - hr_check.py
+   - user_email_input_validation.py
