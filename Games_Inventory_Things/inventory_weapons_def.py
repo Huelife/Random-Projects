@@ -36,8 +36,7 @@ weapon_dict = {
   "5":Leg_Ax
 }
 
-for i in weapon_list:
-  print(i)
+[print(i) for i in weapon_list]
 print("")
 
 #while loop continues until user inputs 'Quit'
