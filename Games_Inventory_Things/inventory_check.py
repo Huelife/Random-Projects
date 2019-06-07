@@ -13,7 +13,6 @@ while True:
     continue
   else:
     if check == "check":
-#printing number of items in inventory list
       print("")
       print("You have {} items in your inventory.".format(len(inventory)))
       print("Let's check what you have: \n{}".format(inventory))
@@ -26,11 +25,9 @@ while True:
 print("You've picked up (3) more swords! "
       "Let's check how many swords you have now!")
 
-#creating add_sword function that adds 'sword' to inventory[1]
 def add_sword():
   inventory.insert(1,"sword")
   
-#three 'swords' are added to inventory list
 add_sword()
 add_sword()
 add_sword()
@@ -44,7 +41,6 @@ while True:
     continue
   else:
     if sword_value == "sword":
-#entering 'sword' prints total number of 'swords' in inventory list
       print("")
       print("You have ({}) swords".format(inventory.count("sword")))
       break
