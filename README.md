@@ -1,5 +1,5 @@
 # Random-Projects
-Python 3 programs I've written while learning, separated into (7) folders
+Python 3 programs written while learning, separated into (7) folders
 ------------------------------
 - Most of the modules were renamed, but their commit history is still in the repository
 
