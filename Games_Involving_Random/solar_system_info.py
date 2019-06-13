@@ -39,8 +39,8 @@ e3 = "Earth: 71% of the surface is covered in water."
 e4 = "Earth: Atmosphere is 78.09% nitrogen and 20.95% oxygen."
 e5 = "Earth: There are 7 continents, separated by 5 oceans."
 e6 = "Earth: As of May 2019, human population is at 7.7 billion."
-e7 = "e7"
-e8 = "e8"
+e7 = "Earth: Named from Old English 'ertha' meaning ground or land."
+e8 = "Earth: Gravity between Earth and Moon causes tides."
 e9 = "e9"
 
 # Mars
