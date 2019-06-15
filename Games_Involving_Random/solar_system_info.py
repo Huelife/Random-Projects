@@ -89,7 +89,7 @@ u5 = "Uranus: Takes 84 Earth years to orbit the Sun."
 u6 = "Uranus: Named after the Latinised version of the Greek god of the sky."
 u7 = "Uranus: Mass is 14.5 times that of Earth."
 u8 = "Uranus: Has a rocky, silicate/iron-nickel core."
-u9 = "u9"
+u9 = "Uranus: Is the coldest planet."
 
 # Neptune
 n0 = "Neptune: Eighth planet from the Sun."
