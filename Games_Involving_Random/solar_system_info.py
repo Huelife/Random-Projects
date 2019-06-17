@@ -41,7 +41,7 @@ e5 = "Earth: There are 7 continents, separated by 5 oceans."
 e6 = "Earth: As of May 2019, human population is at 7.7 billion."
 e7 = "Earth: Named from Old English 'ertha' meaning ground or land."
 e8 = "Earth: Gravity between Earth and Moon causes tides."
-e9 = "e9"
+e9 = "Earth: Life appeared within the first billion years."
 
 # Mars
 ma0 = "Mars: Fourth planet from the Sun."
