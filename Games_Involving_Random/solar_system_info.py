@@ -51,7 +51,7 @@ ma3 = "Mars: Named after the Roman god of war."
 ma4 = "Mars: Has frozen water at its poles."
 ma5 = "Mars: In 30-50 million years, Phobos will crash on mars or rip apart."
 ma6 = "Mars: Slightly more than half the size of Earth."
-ma7 = "ma7"
+ma7 = "Mars: Is called the Red Planet due to iron-rich dust."
 ma8 = "ma8"
 ma9 = "ma9"
 
