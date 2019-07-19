@@ -52,7 +52,7 @@ ma4 = "Mars: Has frozen water at its poles."
 ma5 = "Mars: In 30-50 million years, Phobos will crash on mars or rip apart."
 ma6 = "Mars: Slightly more than half the size of Earth."
 ma7 = "Mars: Is called the Red Planet due to iron-rich dust."
-ma8 = "ma8"
+ma8 = "Mars: Equator is about 80 degrees F, but poles can get down to -199."
 ma9 = "ma9"
 
 # Jupiter
